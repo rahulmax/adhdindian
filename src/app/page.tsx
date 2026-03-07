@@ -568,18 +568,16 @@ export default function Home() {
   }, [search, city, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, sort]);
 
   const activeFilterCount =
-    (city ? 1 : 0) + (mode ? 1 : 0) + (stimulants ? 1 : 0) +
+    (mode ? 1 : 0) + (stimulants ? 1 : 0) +
     (adultADHD ? 1 : 0) + (acceptsPrior ? 1 : 0) + (doesDiagnosis ? 1 : 0);
 
   function clearFilters() {
-    setCity(null);
     setMode(null);
     setStimulants(null);
     setAdultADHD(false);
     setAcceptsPrior(false);
     setDoesDiagnosis(false);
     setSearch("");
-    localStorage.setItem("selectedCity", "all");
   }
 
   function changeCity() {
@@ -667,7 +665,7 @@ export default function Home() {
             <button
               onClick={() => setShowFilters(!showFilters)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                showFilters || activeFilterCount > (city ? 1 : 0)
+                showFilters || activeFilterCount > 0
                   ? "bg-accent text-white"
                   : "bg-surface text-muted hover:bg-surface-hover"
               }`}
@@ -703,26 +701,6 @@ export default function Home() {
       {showFilters && (
         <div className="bg-surface border-b border-border">
           <div className="max-w-lg mx-auto px-4 py-4 space-y-4">
-            {/* City */}
-            <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">City</p>
-              <div className="flex flex-wrap gap-2">
-                <FilterChip label="All Cities" active={city === null} onClick={() => { setCity(null); localStorage.setItem("selectedCity", "all"); }} />
-                {cities.map((c) => (
-                  <FilterChip
-                    key={c}
-                    label={c}
-                    active={city === c}
-                    onClick={() => {
-                      const next = city === c ? null : c;
-                      setCity(next);
-                      localStorage.setItem("selectedCity", next || "all");
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-
             {/* Consultation Mode */}
             <div>
               <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">Consultation Mode</p>

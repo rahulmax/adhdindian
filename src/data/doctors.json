@@ -1,0 +1,3573 @@
+[
+  {
+    "id": 1,
+    "name": "Anjali Karira",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Have noticed on Practo,( but it's good to ask.)",
+    "city": "Mumbai",
+    "address": "Dr. Farooquis Polyclinic - Bandra West, St. Martin's Road, Off Turner Road, Landmark : Near Popley Jewelers",
+    "contact": "9769432208",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 1500,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Its too soon to tell. Although up until now, she's been very approachable, one doesn't have to hesitate, listens patiently and is interrogative. Openly discusses medicine options."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "She's absolutely amazing. Listens patiently, very knowledgeable about ADHD meds, extremely sweet. She also tries to listen and give advice, not just prescribe meds."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Sasha Raikhy",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Over call and whatsapp",
+    "city": "Delhi",
+    "address": "Possitive Vibes, Safdarjung enclave, Delhi",
+    "contact": "9599111798",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The doc was very comfortable to talk to and listened patiently. I didn't mention ADHD at all. The doctor herself said it might be that so I don't think there is problem regarding stigma. The management at the clinic though has been less than ideal in my experience."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "It was good. But they were initially forcing me to do a mental therapy for ADHD in a machine.\n\nBut we finally went off with the stimulants and its working fine. \nI had severe anxiety issues and major depressive disorder so she is helping me with that as well.\nOverall, i am very satisfied.\n\nOne thing is that, she does not explain what each medicine individually does, like how does x stimulant work, what ADHD actually is, and etc."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Naveen Jayaram -",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Sakra world hospital official website. Or direct whatsapp.",
+    "city": "Bangalore",
+    "address": "Sakra world hospital, Bellandur AND GHC, Whitefield (Both Bangalore))",
+    "contact": "7019262627(discontinued),8197341114",
+    "fee": 850,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly doctor"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Friendly doctor"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Porrselvi ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google Meet",
+    "city": "Chennai",
+    "address": "UBHC, Saligramam, Chennai",
+    "contact": "9047452258",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I had an amazing experience with her. As someone with extreme therapy trauma from horrendous prior experiences, she made me feel safe and comfortable and most of all we had a good time talking to each other. She's extremely friendly and takes the time to teach us about ADHD and how the brain works. She doesn't care about society or anything they have to say and she doesn't want us to care either because our mental health is our priority. Trust me, with her, it cannot go wrong. 100% recommend."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I have mixed feelings about Porrselvi. To her credit, she is friendly and easy to talk to, she is affirming of Adult ADHD and has a good understanding of how it manifests, and she has no stigma about stimulants. She is also helpful with comorbities of ADHD, like OCD and anxiety. In all these respects, she is great. Unfortunately, though, I don't think she is very helpful with guiding someone to learn coping techniques for ADHD symptoms. Sure, she suggests for coping techniques for executive dysfunction and anxiety, but for me, the fact that adopting those coping techniques is difficult is why I want to get help. But I hit a wall with her there - she didn't seem to understand that suggestions of \"doing so-and-so will help\" are somewhat pointless if doing that so-and-so is just exceptionally difficult. Intrusive anxious thoughts won't just go away just by willing it."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pramit Rastogi -",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp, Zoom, Google Meet",
+    "city": "Gurgaon",
+    "address": "I'm not sure.",
+    "contact": "9910434400",
+    "fee": 4500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Rastogi is a very thorough and friendly professional- he takes personal concerns around medication and tracking seriously, is careful when prescribing multiple medications, and encourages a degree of personal agency and responsibility in your treatment."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Dr. arun b nair",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Trivandrum",
+    "address": "Keshavadaspuram , aiswarya nagar",
+    "contact": "Idk",
+    "fee": 200,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very good doctor , highly renowned in kerala"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Dr. Dharmendra Singh",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "Disha Neuropsychiatry clinic CR park Delhi",
+    "contact": "7665480358",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Dharmendra is friendly and supportive, though He's quite good at optimising medication, I'd suggest going to a clinical psychologist for CBT"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Arindam Mondal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Apollo Gleneagles, Kolkata",
+    "contact": "9038888309",
+    "fee": 1200,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Negative",
+        "text": "He was alright, his manner was a little brusque and he said some insensitive things about ADHD and seems to hold some common misconceptions that people with ADHD cannot do well academically or that stimulant medication makes you 'clever'."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dr. Shivani Agarwal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google meet",
+    "city": "Delhi",
+    "address": "VIMHANS, Delhi",
+    "contact": "9818846698",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She was very empathic, heard out patiently, asked a lot of questions, treated the patient as a whole person and not a set of symptoms. I have heard good feedback about her from others who have been diagnosed with ADHD by her."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Aditi Sharma",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Zoom",
+    "city": "Gurgaon",
+    "address": "Not aware of it, only know about online consultation",
+    "contact": "8368669302",
+    "fee": 2000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I have not visted them myself but their profile claims that they're neurodivergent and queer affirmative and they also appear to be interested in ending mental health stigma"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Neurodivergent affirming, is very considerate towards self diagnosis as well and willing to work based on the client's lived experience rather than just depending on clinical diagnosis/labels, also she is very understanding of the fact that we know our brains best and is willing to hear and understand any explanations that we might have come up with on our own rather than blatantly ignoring all the research we often do as \"dr google is bad\""
+      },
+      {
+        "sentiment": "Positive",
+        "text": "- very friendly -good understanding of adult adhd -no stigma around medication"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Anand Balan",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "14, Sambasivam St, Parthasarathi Puram, T. Nagar, Chennai, Tamil Nadu 600017",
+    "contact": "7550243742",
+    "fee": 1500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Simple, relatively pain-free. I told him the litany of my symptoms, and he concurred with me that I infact had adult ADD, and put me on methylphenidate."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I went in, and described all my symptoms. I already knew I probably have ADHD, so I just told him everything about that. He asked me a lot of questions, and finally gave the diagnosis. He recognises Adult ADHD and inattentive-type, and he's friendly and listens to what you're saying. He also answers your questions, especially for family members who don't know what ADHD is. He also has no problems prescribing methylphenidate, but I feel like he's too lax with prescribing stimulants; that is, he did tell me about possible loss of sleep, but he did not focus enough about the danger of developing a dependence on methylphenidate, or tell me about how to wean myself out of it if needed. He's also a psychiatrist, not a psychotherapist, so he will not help you with making lifestyle changes or with ADHD-caused anxiety and things like that, he will only prescribe stimulants for ADHD."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Dr. Meena ()/Dr. Hijab ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "reachpsych.com",
+    "city": "Bangalore",
+    "address": "ReACH Psychiatry & Counselling Center #319, 7th main, 2nd block, HRBR layout, CMR Road, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "contact": "7760218282",
+    "fee": 2500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I'm not sure whether they did a standardized assessment for diagnosing, as the clinical psychologist just did the diagnosis in the session by asking questions, and then emailed me the diagnosis that I have adhd and later asked me to take an assessment questionnaire which went into a lot more details.\n\nThey seemed friendly and had good understanding of adult ADHD and medication though."
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Dr. Amit singla",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Faridabad",
+    "address": "331 Brainblossom clinic nit Faridabad sector 16 haryana",
+    "contact": "7827297006",
+    "fee": 900,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Is amazing on first visit he understood my issue which was going from the last 8-9 years..."
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "niket kasar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "https://www.kemhospitalpune.org/specialities/psychiatry/",
+    "city": "Pune",
+    "address": "KEM hospital and private practice as well",
+    "contact": "9823783083",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My experience has been phenomenal.\n\n the doctor tested according to World health organisation standards he also did medicine suiting test before prescribing proper medication. \n this guy knows what he's doing and I am sure of it. \neven if you do not go to this guy you may take a recommendation from him for good doctor in your state."
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Alisha Lalljee (/Psychotherapist)",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Not sure (she has a website: https://alishalalljee.com/)",
+    "city": "Mumbai",
+    "address": "Savia I building, Off. Dr. Peter Dias Road, ICICI Bank lane, Take the 2nd left, Rebello Road, Near MAI Salon, Bandra West, Mumbai 400050. (Search for \"Alisha Lalljee\" on Google Maps.)",
+    "contact": "9820767137",
+    "fee": 3000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I liked my experience with her. She makes sure that her session is a safe space to discuss anything. She spends quite a few sessions studying your history and conducting different tests so that you get a proper diagnosis."
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Dr. Mayank Agrawal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Surat",
+    "address": "Next to reliance Market, Vesu, Surat, (Google maps to confirm)",
+    "contact": "8153889000",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Good. He listens to my issues properly and acknowledges them. There is some stigma with medication, but overall friendly."
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ketan Parmar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Mumbai",
+    "address": "Priya Apartments, B-106, Main, Kasthurba Rd, opp. Vyas Chemists, Borivali E, Mumbai, Maharashtra 400066",
+    "contact": "28644218",
+    "fee": 1000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Too short a relationship to comment."
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Dr. Meena aravind",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo or set up an online appointment by calling the reception. It's cheper if you call the reception",
+    "city": "Bangalore",
+    "address": "Reach psychiatry , CMR Main Rd, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "contact": "9901919669",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Please Google reach psychiatry banglore for the reception number. \nDr Meena is good and knows enough to diagnose you with adhd and prescribe medication and she does it online which is a great advantage and you can get your meds delivered from the pharmacy she recommends but she is expensive and tends to give you little time ie...just 15minutes to 25 minutes. This can be frustrating if it's an online consult. She doesn't give a lot of counseling or support. So it's just your basic psychiatrist prescribing medication."
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Harini Atturu",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": "https://www.carehospitals.com/doctor/hyderabad/hitec-city/harini-atturu-psychiatrist",
+    "city": "Hyderabad",
+    "address": "Care Hitech",
+    "contact": "4048212400",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Has a lot of experience with adhd, especially adult adhd and understand it's intricacy and the fact that it is a lot more than just inattention and hyperactivity. Also she seems to be seeing adhd patients pretty regularly hence has good experience with adhd"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "The doctor has good enough understanding of Adult ADHD. She is friendly and understands English, Telugu, Hindi (Limited). She does a provisional diagnosis. The doctor doesn't have stigma about stimulant and even prescribed me on the second visit. She has MRCPsych and completed masters in UK so takes ADHD seriously."
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Dr. Gaurav Kulkarni",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Mumbai",
+    "contact": "--",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "They were amazing."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Friendly ,\nSeems knowledgeable..\nListens well"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Devanshi Sharma",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "I forgot, somewhere in Gurugram. It's mentioned in her WhatsApp description.",
+    "contact": "9999959953",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She's well-versed and understanding about everything adult ADHD. I was diagnosed by her. I am not sure how the therapy experience will be, but I do know she primarily practices CBT."
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Dr. Porsselvi ()",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "All video platforms",
+    "city": "Chennai",
+    "address": "Not sure",
+    "contact": "9047452258",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "HIGHLY RECOMMENDED. Especially for ADHD. She is the most practical, solution oriented doc I've come across. She specializes in ADHD, but is a clinical psychologist otherwise as well so you can visit for all kinds off issues. In my experience her advice on all life aspects is extremely helpful. The affordability is a nice cherry on the top. I've never felt invalidated here."
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "kushal jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "cbsindia.org",
+    "city": "Delhi",
+    "address": "Vaishno Devi Marg, F Block, Lajpat Nagar II, Lajpat Nagar, New Delhi, Delhi 110024",
+    "contact": "9312071350",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 4000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Good. prescribes meds according to requirement."
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Dr. Mayuri Mohanty",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo, Lyberate",
+    "city": "Thane",
+    "address": "AIMS Hospital, MICD, Dombivili East, Maharashtra",
+    "contact": "7045945273",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1200,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Good. Understanding and nice."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "She is helpful, genuinely caring, and detail-oriented, making every session feel supportive and thorough."
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dr. Savita Gaikwad () and Manasi Ranade ()",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "they do it through whatsapp video calls if i remember correctly",
+    "city": "Pune",
+    "address": "Institute of Psychological Health, Annaisha, Yashshree Colony, DP road, Chandni Hotel Lane, Karve Nagar, Pune",
+    "contact": "9545246222",
+    "fee": 50,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The doctor is a bit blunt and not diplomatic, but sharp in her observations and quick to get a hold of heart of the issue. The psychologist is the best of the two i have so far visited, patient with me, and focuses on making you have the tools to deal with your own problems, which builds less dependence on the doctor. Therapy is CBT based and has helped me manage my anxiety around my diagnosis. Full disclosure: i went for depression and anxiety. Got a self referred test done for ADHD, but they did not prescribe me medication as they think PTSD and depression are playing a more significant role in my case."
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Nisha Goswamys",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bhilai",
+    "address": "Risali, Bhilai",
+    "contact": "9425294122",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 500,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "very Good"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Dr. Arnab Ghosh Hazra",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Kolkata",
+    "address": "Zenith, ILS",
+    "contact": "9674036108",
+    "fee": 1500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Negative",
+        "text": "The doctor has a lot of positive reviews on Google and Practo. When I went there he was a bit smug and kept asking me why I didn't show a psychiatrist earlier.etc.\n\nWhen I told him I was having trouble focusing and a couple more lines, he immediately prescribed Inspiral, Quogress and Cognicure and asked me to consult his wife first for a diet for ADD.\n\nThe whole interaction was barely 5-7 mins long and I was rushed out.\n\nClinic fees is 800, but he asked me to only do online for further consultation which costs 1500.\n\nWould not recommend.\n\nIn the end said this medicine causes loss of appetite and you look like you need that...( I'm a little overweight, but not an appropriate remark)"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Sachin Mangla ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Faridabad",
+    "address": "Brain Blossom",
+    "contact": "7827297006",
+    "fee": 900,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He's very understanding and doesn't dismiss your issues."
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Dr. Purnima Nagaraju",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Dhrithi Wellness Clinic, Plot No, 120, Rd Number 7, Zahara Nagar, Banjara Hills, Hyderabad, Telangana 500034",
+    "contact": "7207071253",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Neutral",
+        "text": "..."
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Dr. Shailesh Pangaonkar",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Nagpur",
+    "address": "8 nawab layout ,tilak nagar ,Nagpur-440010",
+    "contact": "2548966",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very good"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Dr. Arnab Ghosh Hajra",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "He did online consultations during the Covid years, but now he is mostly offline. But he does make time for online consultations if you ask for it.",
+    "city": "Kolkata",
+    "address": "ILS Hospitals, (Zenith Superspecialist Hospital, Belgharia), AMRI Hospitals, and 2 clinics that i don't have information over(it's available on google though)",
+    "contact": "Hospital.",
+    "fee": 1100,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is a good doctor overall, He has a good attitude towards everything and tries to help as much as he can."
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Parth Vaishnav",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Call reception to set up a consultation",
+    "city": "Ahmedabad",
+    "address": "3rd Floor Satya One Complex, Opp R 3 Mall, Nr Manav Mandir. Nr Helmet, Memnagar, Ahmedabad, Gujarat 380052",
+    "contact": "9712904377",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Has no stigma w/ stimulant medicines. Very friendly and helpful."
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Dr. Jamila Koshy",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "https://www.bbh.org.in/doctors/dr-jamila-koshy/",
+    "city": "Bangalore",
+    "address": "Baptist Hospital, Bellary Rd, Vinayakanagar, Hebbal, Bengaluru, Karnataka 560024",
+    "contact": "46404700",
+    "fee": 350,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 350,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She was very good. My therapist referred her and I started with a teleconsultation. Booked through the website and we did a Whatsapp call for nearly an hour. She asked me to come for follow up after I said I'm in Bangalore. Did a long session in person too, and asked me to do medical check ups. 3rd visit she prescribed Inspiral 10 mg once a day. \n\nShe did not have any stigma for sure. Not sure about recognizing only inattentive ADHD, but I think she would. She was quite friendly."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Very positive experience.\n\n- Very understanding towards adult adhd\n- I went in for inattentive only reasons, but it turns out I do have both. So I'm not sure, but she most likely does recognise inattentive adhd.\n- Had no stigma about stimulants, however also pointed out (rightfully) that I had more issues that needed to be dealt with, before medication could be properly effective, and would prescribe me my medication then.\n\nGo with clear expectations of what you want, have a clear conversation and preferably have someone to vouch for you. Also very queer/trans friendly. I'm not the easiest patient to deal with, and she was very friendly the whole time"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Dr. Ritwick Chatterjee",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Tele consultations via WhatsApp",
+    "city": "Pune",
+    "address": "Office No. 1, 1st floor, Westend Shopping Complex, In front of Dmart, Aundh, Pune-411007",
+    "contact": "9082835771",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Highly recommend this doctor. He also noticed my anxiety and obsessive nature and suggested meds to get to my baseline (trait vs state) before jumping to an adhd conclusion. No stigma for stimulant medication. Really patient, friendly, cool and will try to understand the environmental and biological aspects that could be affecting you."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "- super patient\n- listens and chats with patience and interest\n- no stigma about stimulants\n- can be a slight bit gimmicky with his quick analysis of yourself, but that's some party tricks they need to have esp since they also deal in children's mental health\n- overall a very good experience after having had an offline consultation"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Dr. Sudipta Roy",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Surat",
+    "address": "13/B ISHAVASYA BUNGLOWS, OPP. VAIBHAV BUNGALOWS NR CHANDNI CHOWK, B/H. SHARDAYATAN SCHOOL TOWARDS RADIANT ENGLISH ACADEMY, Piplod, Surat, Gujarat 395007",
+    "contact": "9227921315",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr was very nice and took their time to assess me. Dr was very polite and answering all the questions that I had and helped me with any doubt that I was having."
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Kamal Kishore Verma",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Mathura",
+    "address": "K.D Medical college, Mathura",
+    "contact": "8289983801",
+    "fee": 300,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "The experience was awesome; they listened very well to me and asked me to fill a self-report assessment sheet for ADHD after that they confirmed I have ADHD and provided a prescription for stimulant online."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "It was a good experience. In short if you are looking for a doctor whom you can rely online. He is the one."
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "They diagnosed my friend and prescribed Atomoxetine, she consulted through the tata 1mg app, the fees is very nominal! I don't know if they would be open to prescribing stimulants offline. But online they prescribe atomoxetine"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Ninad Baste",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Flat No. 6, Raviraj Appartment, DP Rd, above Parihar Departmental Store, Parihar Chowk, Aundh, Pune, Maharashtra 411007",
+    "contact": "9881875915",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My experience with him has been great. takes the time to listen."
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Dr. Sachin Arora",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp video call, normal voice call",
+    "city": "Delhi",
+    "address": "Dwarka, Delhi",
+    "contact": "6230771055",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They recognise inattentive type as well but will first give anti anxiety drugs for some time before starting on stimulants/atomoxetine (standard procedure)"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Dr. Archana Kadam",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "489, Mudaliar Rd, Rasta Peth, Pune, Maharashtra 411011",
+    "contact": "2026217300",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very helpful."
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Dr. Vidya Ganapathy",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "489, Mudaliar Rd, Rasta Peth, Pune, Maharashtra 411011",
+    "contact": "2026217300",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very nice"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Dr. Sonia Malhotra",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "No. 489, Mudaliar Rd, Rasta Peth, Pune, Maharashtra 411011",
+    "contact": "2026217300",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "they're good."
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Dr. Aditya Patil",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "No. 489, Mudaliar Rd, Rasta Peth, Pune, Maharashtra 411011",
+    "contact": "2026217300",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They are effective"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Dr. Jitendriya Biswal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo, maybe not anymore, Whatsapp calls",
+    "city": "Bhubaneswar",
+    "address": "Sai Health Care, Plot Number 137, First Floor , Unit 6, Landmark: Near Air Port Chaka, Bhubaneswar",
+    "contact": "9438136949",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 500,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They took time to listen to my case. And they recognised adult ADHD. They also sent stimulant meds over courier after online consultation."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "he was really friendly, he let me speak about my symptoms without interrupting and heard patiently, first we agreed upon a one-to-one conversation and then he called my father out to explain what was happening to me. He gives a lot of time to the patients. He said he would diagnose me but he didn't about which I will ask him on my next visit. He gave me options to choose for stimulants and non-stimulants and discounted on the meds"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I was a bit anxious about how to start the conversation, but he made it really easy. He asked a bit about me to break the ice, we had some casual chat, and then gradually moved into discussing my concerns. I shared all my symptoms and told him I suspected it might be ADHD. I had noted everything in my phone and just read them out to him one by one. Within 10 minutes, he was fairly confident that it was ADHD (specifically ADD, without the hyperactivity).\n\nHe was calm, reassuring, and explained that it’s manageable, and quite a few people have it. He gave me options for both stimulant and non-stimulant medications, since I wasn’t fully comfortable jumping into meds right away. He also gave me some advice on managing without medication.\n\nTime was a bit limited, I think he had about 20–30 minutes per session due to other patients, but overall, it was a solid experience. He clearly understood ADHD well and even pointed out how some doctors often misdiagnose it as just anxiety or depression. I was prepared to go to 3–4 clinics if needed to get a proper diagnosis, but he got it right on the first try. Hope this info helps someone."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "The doctor charges 600 INR per visit (one of the lowest fees ever)\nThe doctor recognises ADD\nThe doctor prescribes stimulants\nThe doctor will mail you stimulants too \nI have also recommended the doctor to a lot of my friends and they got diagnosed too :)"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "No stigma on meds, asked me what's going on, and once diagnosed asked if I wanted to start with stimulants or non-stimulants. He has his own person to dispatch medication through courier. He did very well understand adult ADHD and it was an easy talk and extremely cheap consultation. Greatly recommended!"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Non-judgemental, very attentive, listens. Took adult adhd seriously. Also acknowledged Inattentive adhd. No stigma about stimulant medication"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Dr. Rajendra Barve",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Kasaravadi, Dadar, Mumbai 400028, Maharashtra",
+    "contact": "9967564757",
+    "fee": 2500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Good experience so far. A bit on the expensive side, but an empathetic doctor and therapist who seem to know what they're doing and are serious about treatment."
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Ashish Mittal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Gurgaon",
+    "address": "Confidence Clinic is a psychiatry clinic in Sapphire Mall, Sector 49, Gurgaon",
+    "contact": "Reception",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Doctor definitely has patience to deal with people like me... I had no reason like literally no reason to cry and i was crying while talking. I should have written all my symptoms beforehand but as i wasn't expecting much i didn't bothered (biggest mistake) and in panic my dyslexic symptoms which are very much visible only gor noticed. Though he has referred me to his psychologist colleague who specialises in learning disability therapy. I'll make sure to write down my symptoms for this session and after my visit will update her contact too."
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Dr. Sateesh Kumar ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kannur",
+    "address": "Dhanalakshmi hospital",
+    "contact": "7592862986",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly, prescribes non stimulants as a first line treatment but prescribes stimulants after. Had decent enough knowledge above t adult ADHD"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Dr. Vivek Benegal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Hosur Road, Near Bangalore Milk Dairy, Bengluru, Karnataka - 5600029",
+    "contact": "8310146544",
+    "fee": 10,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "*****"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Megha Kar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Sahayta clinic, salt lake",
+    "contact": "9903987486",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1600,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very easy to talk to. Understanding. Good listener. They recognise inattentive type ADHD. They are well aware of adult ADHD. No they don't have stigma around stimulant."
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Atul Tyagi ()",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google meet",
+    "city": "Delhi",
+    "address": "Lifestyle Clinic, Market No 1, K1/104 First Floor, beside Oyo, near, Chittaranjan Park, Delhi 110019",
+    "contact": "8368845563",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I just went to get evaluated for adhd, got referred by my psychiatrist from the same clinic (Dr. Varsha Mahadik). He was very nice, I felt very comfortable and not at all judged. Overall experience was really nice and validating. He is also RCI liscenced. Haven't taken regular therapy sessions from him as of yet."
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Mithila Dixit-Uppal (therapist working in Dr. Barve's clinic)",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Zoom, WhatsApp",
+    "city": "Mumbai",
+    "address": "Kasaravadi, Dadar, Mumbai, Maharashtra 400028",
+    "contact": "9930127772",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly and understanding, flexible, no stigma"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Dr. Jigyasa Ipsita",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bhubaneswar",
+    "address": "KIMS Psychiatry Dept, or",
+    "contact": "8658024084",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She's very friendly and listens patiently and understands the situation well. She also gives therapy so it's always a help."
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Ritwick Chatteriji",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp",
+    "city": "Pune",
+    "address": "Aarambah Mental Health Clinic, Pune",
+    "contact": "9082835771",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I contacted him after seeing some good reviews from members at ADHD discord server. Not only he is friendly, but he is also patience . He was all ear listening my problems and took a time to explain with a graph. He also did his master in ADHD so he is well aware of this unlike others boomer docs."
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Dr. Sufiyan ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Zoom",
+    "city": "Navi Mumbai",
+    "address": "Mind Clinic, Khargar",
+    "contact": "9763691395",
+    "fee": 600,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Excellent professional who understands Adult ADHD well. The best in Navi Mumbai and possibly the best in all of Mumbai."
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Dr. Kaustubh Joag",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp Video",
+    "city": "Pune",
+    "address": "Triniti Clinic, Karve Road, Erandwane, Pune.",
+    "contact": "7722044644",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Kaustubh Joag is one of the most patient people I have met. I didn't know about ADHD until I saw myself overwhelmingly agreeing with various comments and memes online. (Yeah, weird, but ADHD wasn't a thing when I was a kid.) I was consulting with Dr. Joag for anxiety issues and asked him about the possibility of ADHD. He was quite open minded despite the fact that I was 39. He administered the test and, sure enough, I did have mild-to-moderate ADHD."
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Dr. Vivek Agarwal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Lucknow",
+    "address": "King George's Medical University | Lucknow, Uttar Pradesh",
+    "contact": "VisitKGMU",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I am being consulted since 2007 by him, things are very well now, he is a very senior doctor, professor in KGMU, He has some serious diagnosis skills. Do visit for any psychiatric related issues. Very too the point and calm explanations well about the problems and how to deal with it, too the point he speaks less but whatever he speaks you should note it down as that can help change your life in a positive manner."
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Dr. Shambhavi Jaiman",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Fortishealthcare.com",
+    "city": "Gurgaon",
+    "address": "Sukoon Health - Plot 4P, Sector 56, Gurugram, Haryana 122011. Also sits in Fortis memorial research institute sec. 44 gurgaon",
+    "contact": "7669416401",
+    "fee": 1000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My friend went to her and she had a positive experience. The doctor was compassionate, understanding and helpful"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Shevantika Nanda",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Gurgaon",
+    "address": "Mindwise clinic - 606 A, Sushant Lok Phase I, Sector 27, Gurugram, Haryana 122009",
+    "contact": "9958983778",
+    "fee": 1800,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "No personal experience"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Dr. Shobit Garg",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Dehradun",
+    "address": "1B/Mahaveer Enclave, Saharanpur Road, Landmark: Near Hotel Sunder Palace, Near Negi Sweets, Dehradun",
+    "contact": "9997810865",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Pretty friendly.\nThey do seem to have a good understanding of ADHD.\nThey do recognise inattentive ADHD and do prescribe stimulants."
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Dr. MS Jagadeesan, ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Lybrate",
+    "city": "Chennai",
+    "address": "RJ Clinic, Kilpauk and AG Hospital, Tambaram",
+    "contact": "9884418241",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is extremely friendly and easy to talk to. He understands and recognises Adult ADHD as well as inattentive type ADHD. He is well aware of comorbid issues with ADHD too. He prescribes stimulants, but only after a course of non-stimulant medication proves ineffective."
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Shivangi Mishra ()",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google Meet",
+    "city": "Delhi",
+    "address": "CBS lajpat nagar",
+    "contact": "8882262761",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 4000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "They're friendly, and understanding. \nThey have a good understanding of Adult ADHD\nThey do recognise inattentive ADHD\nThey don't have stigma."
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Dr. Surya Reroot psychiatry clinic",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Reroot psychiatry clinic",
+    "contact": "9606111380",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly, patient and understanding."
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Dr. Rtiwick Chatterji",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp teleconsultation",
+    "city": "Pune",
+    "address": "Aaramb Mental Health Clinic, Westend Shopping Building, Office number 1, 1st floor, complex, Mahadji Shinde Rd, opposite DMart, Aundh, Pune, Maharashtra 411007",
+    "contact": "9082835771",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He was really friendly and was really open to Prescribing stimulant medication. But if you're in the medical field especially a doctor, please be prepared to get a short study coarse on adhd and related."
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Syyed shabiullah",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "You could talk it out with him, it's not a big deal",
+    "city": "Delhi",
+    "address": "125-C First Floor Basera Apartment Lane Number 3 Noor Nagar Extension, Jamia Nagar New Delhi, Delhi 110025 India",
+    "contact": "9999661706",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I will say, for better or worse, he has triggered my rejection sensitivity at times but he's pretty smart and has a structured way of operating and it works. He knows his work. \nThey're very friendly, but also not excessively so- they see through what you're saying clear as day.\nThey have a very good understanding of adhd and they're diligent.\nThey prescribe stimulants and it's not a hassle to get them to prescribe stimulants, but they are kind of conservative in that they're not extremely pro-stimulants. But I strongly believe they know what they're doing and they act in your best interests, even if he hesitates to do so."
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Dr. Sneha Sharma ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Unsure",
+    "city": "Delhi",
+    "address": "Manasvita, Vasant Vihar",
+    "contact": "9958278127",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very understanding doctor, listens well and counsels on life issues; medications are managed well. Understanding of adult ADHD is VERY GOOD. Stimulants are prescribed carefully but there is no stigma."
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Dr. Krishanu Chakrabarty ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Flat-1, Aparna Apartment, 448, SHKB Sarani, Sahid Hemanta Kumar Bose Sarani, Jawpur, Dum Dum, Kolkata, West Bengal 700074",
+    "contact": "7044084183",
+    "fee": 700,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Neutral",
+        "text": "Good"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Great!"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Dr. Jada Vikram",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "GANGOTHRI HOSPITAL , BTM LAYOUT",
+    "contact": "7406212521",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "good experience , makes u feel comfortable as we might have trouble starting, explains the causes and solutions clearly"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Dr. Philip John -",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "None. Consultation is done by contacting his clinic - Peejay's Policlinic.",
+    "city": "Kochi",
+    "address": "PEEJAYS Policlinic and Child Guidance Clinic @ the Neurocenter, AISHA ROAD, NH Byepass, Next to Gold Souk, VYTTILA, Kochi-19, Kerala",
+    "contact": "7736422777",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 4000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "You are assessed based on your entire psychiatric history by the team of specialists at the clinic to check for any neurodevelopmental disorder and other conditions you might have. (Not just ADHD). This could include language and speech disorders, learning disabilities, OCD, etc.\nThis whole report is then forwarded to the neuropsychiatrist(s) present- Dr Philip John, in my case (Although other psychiatrists are working under him, he seems to be the doc in charge of most of the cases). This consultation is only done online, as far as I'm aware.\nHe then provides you with a whole neuroscientific analysis of your entire brain based on the report and gives you an explanation for behaviours you have exhibited throughout your life.\nHe also prescribes the required medical regimen.\n\nThe entire experience was very professional and friendly. I had doubts on whether they do assessments for adults(most of the advertising was centred around child psychiatry), but it seems they have adult cases very often. Zero stigma.\nPros: They take your case in an all-encompassing lens, without just focusing on your ADHD. The approach roots out all co-morbidities and disorders.\nCons: My total expenditure ended up being a bit high (6.5k for the whole visit + around 3k for the meds).\n\nDetails on how to book a consultation are on their website."
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Dr. Esther suresh",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Rofecha 60/94, Block V, V Block, 600040, Anna Nagar, Chennai, Tamil Nadu 600040",
+    "contact": "9791085933",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "They were friendly and have a broader perspective than just a diagnosis\nThey have a good understanding of adult adhd and recognise the inattentive type\nNo stigma about stimulant medication but only prescribes for 2 months for regular checkups for addiction"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Dr. Jai R Ram",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Apollo G",
+    "contact": "9433811598",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is a very good doctor , very understanding and comfortable to talk to . I believe he has very good knowledge about adult adhd, he recognises inattentive adhd. \nI personally liked the doctor because he is very understanding and it was easy for me to connect to him."
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Anindita Adya ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Usually Google Meet or Zoom for sessions",
+    "city": "Pune",
+    "address": "Online",
+    "contact": "9359450819",
+    "fee": 1800,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I was referred to her by my former therapist to evaluate possible ADHD, and I ended up deciding to continue therapy with Anindita. She was extremely patient, kind, and seemed to understand the \"neurodivergent experience\" in a better way than my previous therapist. For the assessment process, she carefully explained each step and why it is being done, answered questions thoroughly. Once we began discussing treatment, she spoke about CBT-based intervention for ADHD specifically but also emotional issues that had come up as a result of ADHD that needs to be addressed in therapy. She provided a lot of clarity about medication including stimulant-medication without any such stigma or discouragement about it. She was also listening when I said that I didn't want to be on medication, said that it is important that I make an informed decision"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Dr. Jyoti Sangle",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "https://drjyotisangle.com/",
+    "city": "Mumbai",
+    "address": "Private Practice (Online & Offline)/ Holy Spirit Hospital Mumbai/ Dr. LH Hiranandani Hospital",
+    "contact": "7506092712",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Jyoti Sangle is kind and understanding. One of my friend suggested her after getting her own ADHD diagnosis fron Dr. Jyoti. After consulting 3 other psychiatrists in the past, she is the only doctor to prescribe me medications meant exactly for ADHD while constantly checking with me on side effects to see its effectiveness. She also values your opinions and does not have any stigma regarding ADHD. I regret not consulting her earlier. I would suggest you to spend money on doctors like her who actually value your thoughts and understand your condition, rather than wasting money on doctors who dismiss your symptoms. I would highly recommend Dr. Jyoti Sangle for your ADHD diagnosis."
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Dr. Srilakshmi Pingali",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": "WhatsApp",
+    "city": "Hyderabad",
+    "address": "https://goo.gl/maps/MqBri8xYWEpbaGQS9",
+    "contact": "4066661117",
+    "fee": 900,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very professional doctor with good understanding of the symptoms. Very helpful too!"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Dr. Kishore",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mysuru",
+    "address": "Revive Wellness centre, hebbal",
+    "contact": "8212955188",
+    "fee": 400,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Neutral",
+        "text": "Good"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Kriti Jain, Registered",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "https://linktr.ee/thecopingjunction",
+    "city": "Bhopal",
+    "address": "Practices online based in Bhopal",
+    "contact": "8770183590",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She's patient, and empathetic. She told me she is a neurodivergent person herself and I like her way of curious exploration. She uses CBT and mindfulness techniques. Takes her time to understand and listen to your problems (which might not be perceived as good by some, but is effective). She is also connected to a psychiatrist who practices online so you can also get access to medication. She has a broader perspective than just diagnosis and labeling. I had an awesome experience and would totally recommend her."
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Dr. krishna",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mysuru",
+    "address": "Revive hebbal",
+    "contact": "8212955188",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": []
+  },
+  {
+    "id": 76,
+    "name": "Dr. Shantanu Bharti",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Lucknow",
+    "address": "Medanta lucknow",
+    "contact": "6554565655",
+    "fee": 700,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I mean it was good he prescribed me inspiral and after a while prescribed me concerta."
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Akshada Amonkar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp",
+    "city": "Goa",
+    "address": "311, Edcon Mindspace Behind Campal Trade Centre, Campal, Panaji, Goa 403001",
+    "contact": "9158114281",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly and prescribed stimulant meds, no stigma."
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Dr. Jateen Ukrani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "The Lifestyle Clinic, Market no. 1, K1/104, First Floor, Beside OYO, Near Kamla Sweets, Chittaranjan Park-1, Delhi",
+    "contact": "8368845563",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The doctor was really nice and understanding. We explored other options before coming to the ADHD diagnosis as well. He also explained other issues which could be byproduct of ADHD like anxiety and depression. A test was conducted to confirm the ADHD diagnosis. He did not recommend stimulant medication at the start because of some family history. We started with non stimulants and continued for about 2 or 3 months before switching to stimulant medication. He also recommends counseling therapy alongwith the medication to help deal with ADHD better. He's overall very friendly and reassuring."
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Delhi",
+    "address": "N/A",
+    "contact": "9560012354",
+    "fee": 2500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "She is a neurodiverse-affirmative therapist."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "She was thorough with her reports and analysis. Took a couple of sessions. I was referred by my psychiatrist for a standard evaluation before she could start any meds."
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Dr. Debanjan Banerjee",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Apollo App consultation",
+    "city": "Kolkata",
+    "address": "Apollo Multispecialty Hospital, Mukundapur & Resurrection, Mental Healthcare Hospital, Chak Garia",
+    "contact": "9088122592",
+    "fee": 1500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He's young, updated doctor from NIMHANS, knows about adhd, asks very crisp, to the point qs regarding symptoms, might want to corroborate via parents, will try to analyze and cross out other possible diagnoses like ocd, definitely open to stimulant medication, kinda brusque but will listen carefully. Ask for stimulant medication supplier if prescribed. (Did try to confirm if my adhd was from childhood or adulthood) (also probably knows about inattentive adhd since he did gave me the diagnosis on 2nd consultation) \nContact no is of his secretary who'll book the offline visits."
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Dr. NK Tak",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo, but you can call him.",
+    "city": "Jaipur",
+    "address": "168 A, Sector 5, Patrakar colony, New Sanganer, Road, Mansarovar, Jaipur, Rajasthan 302020",
+    "contact": "9971914747",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I found the doctor to be pretty smart, he doesn't judge you or anything. Also he seems to be in the know of research about it and does have a good understanding of adult adhd. I am inattentive myself so he does recognize me for it. Also for stimulants, he will give you if need be. I think he might even prescribe them online if he finds it necessary but you have to talk to him."
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Gajanan kulkarni()",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Apollo 24*7 app, I think",
+    "city": "Bangalore",
+    "address": "Apollo hospital, jayanagar bangalore",
+    "contact": "idon'tknow",
+    "fee": 1300,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He was the person I went to first to get diagnosed for adult adhd and he mentioned having more patients like me. I never to meet him personally since I live too far. There's a nice review about him on reddit and I found him through that post. I think he does give stimulants but follows the set protocol."
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Dr. Sheenam Goyal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "https://the-mindcare.business.site/",
+    "city": "Delhi",
+    "address": "mindcare neuropsychiatry clinic, A4/34 First Floor Paschim Vihar Delhi, 110063 India",
+    "contact": "9810429424",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 3000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "informed and contemporary(!) understanding of particularly female/afab adult adhd with asd traits, with depression and anxiety episode. received atomoxetine and other very helpful psychiatric prescriptions. The psychological approach was not up to date however, the Dr. insisted on accompanying therapy which is fine but that psychologist lacking overview, sensitivity and proper understanding; offering rather utilitarian and counterproductive CBT following textbook rather than actual needs: \"you have to get over your procrastination and answer your emails this week\" was horrible advice while I was in hospital and therefore had to learn to rest, take it easy and prioritise my health over work - the exact opposite.\nI would seek out this Doctor any time again for great remote consultation and diagnosis, and for therapy proceed only if they offer something more reasonable than CBT. which could already be the case, my sessions were at the end of 2022."
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "Sheenam Goyal has been deeply considerate of my circumstances, creating a gentle and non-judgmental space where I’ve been able to express concerns that I often struggle to articulate. She has shown genuine understanding of my condition and has consistently acknowledged the challenges I face when navigating neurotypical environments, as well as the unique hurdles that come with being neurodivergent.\n\nWhile she initially expressed a preference for not relying on stimulant medication long-term out of concern that it could be habit-forming, this was approached thoughtfully rather than dogmatically. I shared my personal experience with stimulants and clarified that this concern has not aligned with my lived reality. She understood my perspective clearly, without dismissiveness, resistance, or opposition, and engaged with it in an open and balanced manner.\n\nShe has an open and informed understanding of both ADHD and autism, based on the neuroscience behind these conditions rather than general assumptions. She recognizes that these conditions affect individuals differently and is attentive to the specific challenges that often come with ADHD, approaching them with openness and care."
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Dr. Krishna Thalagavara",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp/zoom/google meet",
+    "city": "Bangalore",
+    "address": "No 455, MCECHS Layout Main Rd, below Union Bank ATM, Dr.Shivaram Karanth Nagar, RK Hegde Nagar, Bengaluru, Karnataka 560077",
+    "contact": "9113604760",
+    "fee": 3000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 3000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is a great listener and helps us take things step by step, he also advices career options for people with ADHD and will help and educate us on everything ADHD"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Dr. Umar Mushir",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Apollo",
+    "city": "Lucknow",
+    "address": "Apollo Hospital Kanpur Road",
+    "contact": "Apollo",
+    "fee": 700,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They are pretty chill, open to listening to you, and do not hold prejudices against adhd, willing to prescribe stimulants and will consider your barriers if you can't afford expensive tests or medicines, you just need to talk to them about it"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Dr. Rajiv Sharma",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp",
+    "city": "Delhi",
+    "address": "C4C-380 Janakpuri, Behind Bharti College,Near Tihar Jail Gate No.4, Nearest Metro Station Janakpuri East",
+    "contact": "7428101555",
+    "fee": 1800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 3000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Got online consultation over whatsapp, afterwards he referred to me a psychologist who took the test. The process was over within 2 hours. However, he prescribed the med only in person visit. Behaviour of the doctor was great. He also has a youtube channel “ABeautifulMindClinic”."
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Dr. Sagar Chiddarwar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp Video Call",
+    "city": "Nagpur",
+    "address": "Anvay Clinic, Dhantoli, Nagpur",
+    "contact": "9657018165",
+    "fee": 600,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Cheap + good doctor who will help you in every little moment"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Dr. Nipan Deka",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": "Nalbari",
+    "city": "Nalbari",
+    "address": "HEALTH PLANET, Palla Road, Nalbari-781335 (Near Gurdon H.S. School), Contact: 6000751960, 8638843418",
+    "contact": "6000751960",
+    "fee": 400,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Maybe not a specialist, but he's the most bright and compassionate psychiatrist that I have seen.\nHe gives time to his patients and listens to the research one might have done online. He also gives good practical non-medicinal advice. He gives medicines according to one's present symptoms and difficulties and is willing to try different medicines if one doesn't work. If you trust him and have proper rapport, he will most definitely(with time) provide the medications that you require, even if it is methylphenidate.\n\n~filled by Impulse on behalf of an anonymous commenter."
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Dr. Subashini",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Clinic Address: Sculpting Minds, Old No:76, New:No 51/2, 5th Main road, 'U' block, Behind Tower Park, Anna Nagar, Chennai, Tamil Nadu, Pin-600040",
+    "contact": "nil",
+    "fee": null,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Psychiatrist, MBBS,DPM(Psychiatry),MRCPsych, 11yrs Experience"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Dr. Namitha Das",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "www.namithadas.com",
+    "city": "Kochi",
+    "address": "Edappally, Kochi, Kerala",
+    "contact": "7736123339",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Excellent Doctor. Does the assessment first to confirm ADHD and then priceeds with the treatment. Patient listener and knowledgeable too."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Excellent"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Dr. Siddharth Chowdhury",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google Meet",
+    "city": "Noida",
+    "address": "First Floor, D 154, Sector 40, Noida",
+    "contact": "7276622276",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 12000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They have ADHD themselves and mentioned they were diagnosed as a child and were very accommodating to be working with me. Our interaction went on for about two hours, and I had more answers than questions at the end of our consult"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Sahil Shaikh -",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google Meet, Skype, Zoom",
+    "city": "Pune",
+    "address": "Sierra Bungalow, Undri, Pune",
+    "contact": "8097701968",
+    "fee": 1600,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Sahil is an incredibly friendly therapist with a profound understanding of ADHD. He recognizes both hyperactive and inattentive types and approaches stimulant medication without stigma.\n\nHis warmth and expertise create a supportive environment where clients feel understood and empowered, something Sahil takes great pride in fostering."
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Dr. Subhashini -",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Chennai",
+    "address": "Old no. 76, new no. 51/2, 5th Main road, near Tower Park, X Block, Block U, Anna Nagar, Chennai, Tamil Nadu 600040",
+    "contact": "7845845811",
+    "fee": 800,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She understands and listens, but she thinks that ADHD should have imapired us before the age of 12"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Chetna Luthra -",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Delhi",
+    "address": "not sure",
+    "contact": "9810469366",
+    "fee": 1200,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She is amazing. Not just knowledgeable about ADHD but gave me the most helpful resources that cater to me instead of cookie cutter \"make a planner and exercise\" stuff. She is so so knowledgeable, very intuitive about what you need, and I've seen her qualifications and they are crazy good. She's constantly learning as far as I can tell. She is very observant and perceptive. Highly recommended"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I was a bit skeptical of going for solution-focused treatment because it often felt invalidating and hard to keep up with, but therapy with Chetna as always been helpful and she carried it at a pace that was more comfortable with me. She is quite well-informed about ADHD and keeps up with relevant research. There have been no issues so far (it's been 5 months) and it's been immensely productive, and I felt understood no matter what came up."
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Dr. Dawny Mathew",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Trivandrum",
+    "address": "Shishiram, BN - 239, Bapuji Nagar, Pongumoodu, Thiruvananthapuram, Kerala",
+    "contact": "7012992363",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Pretty good. Has a YouTube channel, no stigma"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "s(Nimhans wellbeing)",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Nimhans wellbeing centre bangalore",
+    "contact": "9480829670",
+    "fee": 50,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "stigma free, open to med/non med approach, less wait time, extremely cheap, understanding and very knowledgeable."
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Dr. Savita Gaikwad",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "whatsapp call for",
+    "city": "Pune",
+    "address": "Peace of Mind – Holistic Health Services",
+    "contact": "8830188066",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2100,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "To the point, Dr recognises inattentive ADHD, dont have a stigma against stimulant medication."
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Dr. Vasudeo Paralikar",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Gmeet/Whatsapp",
+    "city": "Pune",
+    "address": "Mehendale Garage square, Office 101, Soba Mansion Opp DTC Reliance Mall Khilare Path, near Mhatre Bridge, Erandwane, Pune, Maharashtra 411004",
+    "contact": "8329178685",
+    "fee": 2500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He's old , he's Consultant Psychiatrist and Head, Psychiatry Unit at KEM Hospital so pretty good at what he does. Whenever I visit him I never feel like I'm a patient he makes me feel like I'm his friend. He hears my rants, sometimes we talk for over half hour about something completely unrelated things. He has been helpful to me. And I owe him a lot for everything that he has done for me. He doesn't like to prescribe stimulant medications, but overall he is a good doc."
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Ankita Deshmukh -.",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Gmeet/whatsapp",
+    "city": "Pune",
+    "address": "Building no. G7 Flat no. 14 Sakal Nagar, Aundh",
+    "contact": "9958446040",
+    "fee": 1800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She is a great therapist no stigma. Thanks to her I'm exposing myself to world and dealing with my anxiety and depression in a good way. Also about ADHD she has a extensive knowledge, and whenever I come up with something new she genuinely researches about it and then guide me through it. She is more than a therapist for me she is someone whom I can text about something that happened in my life and despite her busy schedule she'll make a slot available for me. Due to my ADHD I zone out or get distracted and she let me be myself, when I run late she's like \"take your time just drive safe\". Sometimes my session time exceeds and she let's me vent without charging extra. Overall a great therapist."
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Rahat Sanghvi",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "I don’t know",
+    "city": "Mumbai",
+    "address": "Lokhandwala, Andheri West",
+    "contact": "0",
+    "fee": 4000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I am yet to try, her email is rahatsanghvi.psychologist@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "Aparajita Basu Roy ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "gmeet",
+    "city": "Noida",
+    "address": "Sec-61, Noida, U.P",
+    "contact": "7486096959",
+    "fee": 900,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I myself have ADHD, so i under the impact it can have and understand everyone has a different experience."
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Dr. Swetha Reddy",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Unknown",
+    "address": "Plot No.298,Rd Number 14,Resham Bagh,Banjara Hills,Hyderabad,Telangana 500034.",
+    "contact": "9666655558",
+    "fee": 1100,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Extremely empathetic and understanding of the patient. They completely understand Adult ADHD and the symptoms that come with Adult ADHD. They do not have any stigma related to stimulant medication."
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Dr. Sayantani Mukherjee ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Manipal Hospital, 22/2A, Mundhwa - Kharadi Rd, near Nyati Empire, Santipur, Thite Nagar, Kharadi, Pune, Maharashtra 411014",
+    "contact": "61656666",
+    "fee": 1100,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, smart, understands that not all adult ADHD is the same - so really listens to the patient vs putting them in a box without all the info (as previous doctors did to me). Maam has good understanding of Adult ADHD. She recognizes inattentive ADHD - though I may have been the one to really show her this is a thing & can be a horrible thing. No stigma about stimulant medication - just honest, appropriate caution to ensure which one is needed."
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Dr. Apala Singh",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Delhi",
+    "address": "KPC mind clinic, Pitampura, New Delhi",
+    "contact": "9810047186",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, have provisional ADHD understanding, they recognise inattentive ADHD, no stigmas about stimulants infact she prefers to give stimulant meds instead of non stimulants"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Dr. Nishant vemana",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "care hospital Banjara hills and chetana hospital secunderabad",
+    "contact": "reception",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is a friendly person and he works with psychologists to diagnose"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Dr. Suchita Agarwal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Zoom/any video call platform",
+    "city": "Pune",
+    "address": "Flat no. 1, 2nd floor, Mourya Paradise, above HDFC bank, near Alankar police chowki, Swapnamandir Society, Bharatkunj - 1, Karve Nagar, Pune, Maharashtra 411052",
+    "contact": "9222102762",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Pretty good, she was patient and listened carefully. Was okay to prescribe meds and adjust doses. Felt comfortable discussing stuff with her"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Ms Kavita Purohit.",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "D-502, Jyoti Arch, S.V. Road, Kandivali(West),Mumbai – 400067",
+    "contact": "9892047448",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I've been to her twice via offline consultation. The first time I was nervous and severely anxious and depressed. She talked me through it for 2 whole hours and was very encouraging and nice. I showed her my previous ADHD diagnosis and in the next session she conducted her own test, and concluded that the test I'd already done was correct. She is very positive about living with ADHD as her own kid has ADHD. She quickly understood my depression stems from my untreated ADHD, and guided me to get medication. She does not provide medication herself. She provides therapy, cognitive reframing. She's warm, gentle yet practical. I'm happy to consult with her. The number provided is the reception number. I don't know if she provides online consultation. Her website is - https://www.kavitapurohit.in/"
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "name": "Avani Kane () - works with https://www.fettlecounselling.com/",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Unknown",
+    "address": "Practices online through https://www.fettlecounselling.com/",
+    "contact": "8452859125",
+    "fee": 600,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I found her through Fettle Counseling Services. It was a really good experience because she is very approachable and not just listens but understands you as well. I found her to hold a right balance between friendly/reassuring and yet thorough with her questioning."
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "name": "Sachin Kaushik",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chandigarh",
+    "address": "Mind Peace Hospital",
+    "contact": "9646800960",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 4000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Great"
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "name": "Dr. Parul Mathur",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha",
+    "city": "Bangalore",
+    "address": "Amaha Indiranagar",
+    "contact": "amahasite",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 5000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Mathur is an excellent doctor and very empathetic. She is trained at NIMHANS and is a clear professional when it comes to ADHD diagnosis and treatment."
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "name": "Dr. Zoya Nakhat",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mysuru",
+    "address": "Dr. Zoya Nakhat, 664, Vishwamanava Double Road, above Sri Murugan Medicals, Saraswathipuram, Mysuru, Karnataka 570009",
+    "contact": "8169611341",
+    "fee": 500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Zoya was patient, eager to understand my situation, honored my previous ADHD diagnosis without fuss, and was otherwise quite a positive person to consult with."
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Dr. Shikhar Patanjali",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Delhi",
+    "address": "ADHD and Autism India Patanjali Medical Centre, Pocket 19, Sector 8, Rohini, New Delhi, Delhi, India",
+    "contact": "7558311522",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, good understanding of ADHD issues"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Dr. Gayatri Bhatia",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Amaha Website",
+    "city": "Delhi",
+    "address": "Amaha Mental Health, 3rd Floor, A 2, 35, Block A 2, Safdarjung Enclave, New Delhi, Delhi 110029",
+    "contact": "8879962332",
+    "fee": 1400,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She was super friendly, very understanding of my ADHD symptoms and listened to me very patiently. She even gave me a full explanation of how the medication would help and recognised that i was previously being under treated for my adhd and revised my prescription accordingly"
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "name": "Dr. Hemarshi Chaturvedi",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Not sure (Maybe Zoom)",
+    "city": "Mumbai",
+    "address": "1st floor, Ramgiri, Nursing Home, Amita Building, Rd No. 1, opp. Natraj Cinema, Chembur West, Mumbai-71",
+    "contact": "9930991759",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Pretty good. She didn't rush me. Took her time to understand, asked a lot of questions. Allowed me to ask a lot of questions and replied patiently. Will recommend highly."
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "name": "Dr. Prakhar Jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "EKA CARE",
+    "city": "Mumbai",
+    "address": "Grace Medical Center, Churchgate West",
+    "contact": "9527711155",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Polite and humble doctor, Listens to your problem patiently. He has no stigma about ADHD Stimulants. Also, they deliver medicines to your doorstep via Courier"
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Dr. Kancharla Suresh Reddy",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Hyderabad",
+    "address": "Sri Sri Psychiatric Clinic, Bhavya's srinivasam complex, beside ICICI bank, opp. Vertex Prestige, Nizampet, Hyderabad, Telangana 500072",
+    "contact": "9014385089",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Exceptional, Dr Suresh has been my psych for almost 3 years since I was diagnosed around the age of 30. He's one of the nicest and smartest folks I've come across my journey to get diagnosed. No BS, he will have conversations with you to figure out what is going on, assess severity of the condition etc. Doesn't have stigma around stimulant meds. One of the only mental health professionals I've spoken to who when is not an expert in the area, straight up says so.\nDoesn't work from a financial incentive standpoint. Would highly recommend."
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "name": "Dr. Vaidehee chaudhari",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet/zoo. By referral",
+    "city": "Ahmedabad",
+    "address": "9925439471",
+    "contact": "9925439471",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Md psychiatrist who themselves has a diagnosis of adhd"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Neha Sikerwar",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Pune",
+    "address": "thattraumatherapist@gmail.com",
+    "contact": "7533849394",
+    "fee": 1200,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She is very good listener and do somatic work. She is neurodivergent and queer affirmative. And does trauma work"
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "name": "Dr. Debanjan Pan Psychriatist",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Saltlake mindset",
+    "contact": "1234567890",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Extemely on point! Game changer in helping us"
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Dr. Yogendra Singh()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Noida",
+    "address": "Fortis Hospital, Noida Sec-62",
+    "contact": "0000000000",
+    "fee": 1400,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, understandable, knows about adult ADHD, soft spoken"
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "Doctor recognises INATTENTIVE ADHD (ADD), prescribed another redditor Addwize OD 18mg on the first visit, I am posting this on his behalf"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "name": "Dr. kishore M",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mysuru",
+    "address": "jss hospital agrahara mysuru (mon, wed, fri)",
+    "contact": "7676049855",
+    "fee": 50,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "he was friendly and understanding. he is specialized in it so i would say yeah. i m not sure about others"
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "name": "Karthik",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "call - asha neruromodulation centre",
+    "city": "Hyderabad",
+    "address": "4th Floor, Fantasy Square Building, Biodiversity Circle, Jayabheri Pine Valley, Gachibowli, Hyderabad, Telangana 500032",
+    "contact": "9777731111",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 3500,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "good, cant type much. but it was good and yes to all of the question..."
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "name": "Dr. Vinod Kumar -",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Sync Positive, Jayanagar",
+    "contact": "9980539955",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Great experience, very friendly and specialises in adult ADHD"
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Dr. Manvee Chaudhary (Manas Mind Clinic)",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Ghaziabad",
+    "address": "ground floor 1, Plot no 14, Mayur Vihar, Niti Khand 2, Indirapuram, Ghaziabad, Uttar Pradesh 201014",
+    "contact": "9717175451",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Empathetic and actively listened to what I had to describe about my experiences with executive dysfunction, impulsivity, cognitive functioning, and other impairments. She validated me by suggesting that she too would guess that I have inattentive ADHD. The doctor didn't demonstrate any stigma towards \"adult ADHD\" and at least did not mention anything against stimulant medications. \n\nShe showed a great attitude towards Adult ADHD, at least compared to other psychiatrists I tried in the past who on the other hand were extremely impatient to dismiss and invalidate my lived experiences and who authoritatively claimed that I can't have ADHD as an adult and that I just have common depression. Not Dr. Manvee, though! She understood where I was coming from, and she gave me the space to advocate for myself and let me draw the contrast between depression and executive dysfunction; being very receptive of what the patients tell her."
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Dr. Karthik Valipay",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Asha Neuromodulation Clinic, Gachibowli",
+    "contact": "9121100683",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The best doctor I've found for ADHD in Hyderabad. No other 7 doctors before him understood my problem before him and I am very satisfied with the treatment."
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "name": "Saurav Bardalai",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Guwahati",
+    "address": "Apollo Excelcare Guwahati",
+    "contact": "9101588686",
+    "fee": 1000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "took his time. very patient and friendly. educates the patient about their condition, which gave me confidence in him and kept me in loop about the decisions; felt less preachy or the usual disconnect we feel with our doctors. i have consulted almost 6diff docs until i settled with him."
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "name": "Shivadev M",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google meet",
+    "city": "Bangalore",
+    "address": "Passionfruit clinic, 6th block, Koramangala",
+    "contact": "7349363573",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, takes their time to listen and explain, works with you to create a plan"
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Dr. Shivangi Mehta",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chandigarh",
+    "address": "GMCH-32 Chandigarh",
+    "contact": "OPD.",
+    "fee": 20,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The waiting is quite painful, given that its a pretty big government hospital but the doctor herself is very nice. Hears you out, walks you through the process, takes your concerns seriously, answers all the questions properly. She does have a thorough understanding of adult adhd, she prefers non-stimulants with anti-depressants before stimulant medication, but is open to use of stimulants."
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Aneesh baweja",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Delhi",
+    "address": "West Delhi Psychiatry Centre",
+    "contact": "9810561350",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 5000,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Don't have stigma but hesitant to prescribe stimulant."
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "Sanket Bhailume",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Specklin Superspeciality Clinic, 1195/8, Ghole Rd, near ICICI Bank, Sud Nagar, Shivajinagar, Pune, Maharashtra 411105",
+    "contact": "9822374140",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Doctor is very friendly and patient. He have good understanding of ADHD. He adjusts the meds as per my needs. He preferred stimulant to me which are effective. On a long term, he may not want to rely on stimulants and will rather prefer the behaviour therapy."
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "Saakshi arya",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Delhi",
+    "address": "Online practice",
+    "contact": "9873218275",
+    "fee": 700,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly, has adhd herself,\nHas a decent bit of understanding of adult adhd and is always willing to learn more, does recognise inattentive adhd, and has no stigma towards stimulant medication"
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "Saandra manoj",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Bangalore",
+    "address": "Does online sessions only",
+    "contact": "7676584031",
+    "fee": 800,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very good experience, extremely friendly, has adhd herself and has a good understanding of adult adhd and recognises inattentive adhd, no does not have any stigma about stimulant medication, if she doesn't know something about any topic then she researches it before the next session."
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "Dr. Krishen Ranganath",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp and Apollo App",
+    "city": "Bangalore",
+    "address": "Bindig Mindcare, 119, NHCS Layout, 3rd Stage 4th Block, Basaveshwar Nagar, Bengaluru, Karnataka 560079",
+    "contact": "8023223943",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Krishen Ranganath is very friendly and patient. He is UK based psychiatrist I believe and is very accepting of ADHD diagnosis. He has 20+ years of experience and I have been consulting with him for1+ years. He is very knowledgeable for all types of adult ADHD and recommends meds after factoring in all the parameters."
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "name": "Dr. Abhishek Mansabdar ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "https://web.docterz.in/#/clinics/2632/book_online_appointment",
+    "city": "Hyderabad",
+    "address": "Sthira- Mind & Wellness Clinic, 2-1-450/6, A/1, Street No. 5, opposite to ICICI ATM, New Nallakunta, Hyderabad, Telangana 500044",
+    "contact": "8790999864",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly, have knowledge of ADHD, no stigma about stimulant medication"
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "name": "Dr. Ashim Chatterjee",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Spandan Hospital Near Teghoria-Bus Stop,Baguiati,Deshbandhunagar and at Mon PNH Clinic, Kaikhali  Block O, 26, VIP Rd, Mondal Ganthi, Nazrul Islam Avenue, Kaikhali, Kolkata, West Bengal",
+    "contact": "9051429833",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "good, he is understanding, and good at recognising other comorbid symptoms too"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "name": "Mon clinic and foundation",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": "https://monclinics.in/",
+    "city": "Kolkata",
+    "address": "Mon PNH Clinic, Kaikhali  Block O, 26, VIP Rd, Mondal Ganthi, Nazrul Islam Avenue, Kaikhali, Kolkata, West Bengal 700052",
+    "contact": "9051429833",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I have been treated by various psychiatrists, psychologists and special educators at mon and all of them are nearly equally efficient."
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "name": "Chandana Chandragiri ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet",
+    "city": "Calicut",
+    "address": "They only take online sessions",
+    "contact": "9008602419",
+    "fee": 1200,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I am the therapist in question. I'm a neurodivergent affirming therapist who also has ADHD"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Dr. Sushrut",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google Meet via personal appointment",
+    "city": "Bangalore",
+    "address": "Google 'Beautiful Mind Healthcare'",
+    "contact": "7760420485",
+    "fee": 750,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 3000,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is really good. Does not dimisses you. Friendly. Listens to you."
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "name": "Dhara eep singh",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp",
+    "city": "Jaipur",
+    "address": "AB 91 Shiv Shakti Vihar, Benar Rd, near HP Petrol Pump, opposite Neendar, Railway Station, Jaipur, Rajasthan 302012",
+    "contact": "9694087208",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very polite and friendly"
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "name": "Anoushka Gupta ()",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Google meet/zoom",
+    "city": "Mumbai",
+    "address": "Mindscaping",
+    "contact": "8879997299",
+    "fee": 900,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "They have AuDHD so were pretty nice."
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "name": "Dr. Vaidehee",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Www.nirvanamindcare.com",
+    "city": "Ahmedabad",
+    "address": "Dermasure clinic, visiting consultant, online pan-india",
+    "contact": "7096106460",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 2000,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Super friendly and empathetic, super informed, very outcome oriented and open to neurodiversity"
+      }
+    ]
+  },
+  {
+    "id": 142,
+    "name": "Akash Mohan",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Kochi",
+    "address": "Dr Namitha Das - Consultant Psychiatrist @ De Elite Mindcare",
+    "contact": "7736123339",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is empathetic and created a safe space for me to open up at the beginning itself. He is very open about the fact that he also has ADHD. He was not at all judgemental."
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "name": "Indraneil Chaudhury -",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "www.mayaminds.com and www.cobearcollective.in",
+    "city": "Delhi",
+    "address": "www.mayaminds.com. No physical address",
+    "contact": "8745890393",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 1500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Self recommendation"
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "name": "Dr. Chetan Rathod",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Mumbai",
+    "address": "Irla Nursing Home, Mumbai",
+    "contact": "8879313211",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendliest Bunch around Bombay, most helpful and liable psychiatrist;\nHe answered all my questions no matter how inquisitive or random;\nWas available on text throughout the period of my treatment and beyond;\nThey have excellent understanding of both adult and child adhd;\nYes;\nNo."
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "name": "Dr. Wilona Annunciation (Braganza)",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp, Website: catalyststhane.com, practo",
+    "city": "Mumbai",
+    "address": "Catalysts Clinic G1-G2, Jeevan Apartments, Madanlal Dhingra Road, Panchpakhadi, Thane, West. 400602",
+    "contact": "8356963554",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She charges 2000 for 30 minutes and does 1-2 days a week at IPH Thane at reduced charges\n\nDr Wilona was my very first psychiatrist in IPH Thane. Her initial choice of medication for me was SPOT on! Back then I didn't have any Autism or ADHD diagnosis. Because every time I went off that medication, I got less productive and my life suffered due to emotional dysregulation. Although my own ADHD diagnosis came from another psychiatrist in Pune, their medicines were useless and their advice ended up ruining 1.5 years of my life. I went back to Dr Wilona and we restarted same medication and have recently started on Inspiral too. She accepted my ADHD diagnosis after looking at my reports (soft copy sent on WhatsApp) and my Autism diagnosis came long before that because at that time, I was still with her.\n\nShe is very friendly and very attentive to what I am trying to say. As ADHDers, we always struggle with maintaining focus during the length of the session. So we need the MHP to maintain that focus. She helps maintain that focus and I can also do the rest.\n\nI think she does have a good understanding of Adult ADHD because she at least one other Adult ADHD patient who's my friend and who also has at least one medication that's same to mine. I think that one medication (oxcarbzapine) is extremely helpful to tackle the emotional dysregulation part of ADHD. I think Dr. Wilona has a profound understanding of why that medicine works for ADHD because she told me she uses it for her other neurodivergent patients too.\n\nHaving said that, I only suspected ADHD on my own and only while I was not working with her. I never mentioned the word \"focus\" during any of my psychiatry sessions (not until 2 months after my diagnosis_ and she never picked up on it either while we were working together before that diagnosis. She is probably not as proactive as she should be so the patient has to be proactive on their own. She also didn't order my vitamin deficiency tests until 6 months after we started (back in late 2018 early 2019). And even then I had to proactively request her for that. When asked my psychologist at that time, he said it was assumed that that's what patients get that deficiency tested first. I had massive D3 and B12 deficits, for which she prescribed tests on my request and then medication too.\n\nHaving said that, she has many loyal patients from across many Indian states and her chemist in Thane clinic can also courier certain medications if the patients have trouble collecting it from their local medical shops. And I am one of those loyal patients too.\n\nShe also has 97% on Practo. \n\nShe has no stigma about stimulant medication that I saw, but she only dispenses Inspiral from her own office inside her own clinic (that's why I travel from Pune to Mumbai for a day to get my Inspiral as and when I need). She has kept her sensitive medicines under a double lock inside her office and her chemist has the rest. She even asks patients to return any unused strips back to ensure they're not misused and writes her own prescriptions carefully.\n\nShe is also available on Whatsapp to answer SOME of my questions related to meds but not all the time and within reasonable limits. Her assistants are definitely available on Whatsapp during working hours to set appointments (that number is shared above)"
+      }
+    ]
+  },
+  {
+    "id": 146,
+    "name": "Dr. Vinay Saini",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Gurgaon",
+    "address": "Karuna healing mind, Kamla hospital, sector 37 d, kadipur, Gurgaon",
+    "contact": "8882643097",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": 5500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Standardised reports only",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very good, very knowledgeable,"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "name": "Dr. Antonio D'Costa, Paediatrician(Trauma-Informed), E R Therapist",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "www.drantoniodcosta.com , google meet",
+    "city": "Goa",
+    "address": "Happy Kids Clinic, Vasco/Cansaulim. Also, attached to Daffodils hospital, Vasco. But EMDR teleconsultations are mostly online, international availability.",
+    "contact": "8806965342",
+    "fee": 400,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "😅\nI'll be describing myself.\nI'm pretty friendly and get along with kids well.\nI'm neurodiverse myself.\nI have a good understanding of ADHD having worked with a lot of kids and knowing a lot of adults with it. Executive dysfunction, RSD, time blindness, masking being some important points.\nYes, I can recognise inattentive ADHD\nNo stigma about any medication, therapy, gender, race, culture, sexual orientation.\n\nI'll be clear, I am ONLY an EMDR therapist, so I work on the trauma part of ADHD, both in kids and adults.\n\nI do provide free/50% off/reduced rate sessions. Those can be directly booked from the website. I was granted a 1.5L scholarship by a US organisation for my EMDR training for social welfare work I do in my rural setup and to further the reach of trauma therapy."
+      }
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Dr. Smriti Mahajan",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chandigarh",
+    "address": "Healing Hospital and Institute of Paramedical Sciences, Sector 34A Chandigarh",
+    "contact": "1725088883",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very well researched - she's done research on methylphenidate too. Friendly enough, nothing crazy but I had a positive interaction with her. Listens to issues and does not have stigma around stimulant medication. Recognises inattentive ADHD. Did not shove antidepressants, SSRIs and anti anxiety meds onto me, she identified that those were resultant from my lifelong ADHD. If you know what you're doing and go in with the right evidence, and hopefully someone to vouch for you, then she should be able to get you the help you need. Very fair and gradual titration process."
+      }
+    ]
+  },
+  {
+    "id": 149,
+    "name": "Dr. Ramachandran Kutty",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kochi",
+    "address": "Hospital, Solace Neurobehavioural And Child Guidance Center",
+    "contact": "7561885966",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Great"
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "name": "Armaan Pandey",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "Whatsapp",
+    "city": "Mumbai",
+    "address": "Harmony psychiatric clinic, Chembur",
+    "contact": "9820410614",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very friendly. Understand the ins and outs of ADHD. LGBTQ Friendly. Very warm. No stigma around medicines."
+      }
+    ]
+  },
+  {
+    "id": 151,
+    "name": "Dr. Paramleen Kaur-",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Video call",
+    "city": "Chandigarh",
+    "address": "Tera Hi Tera Mission Hospital",
+    "contact": "978001370",
+    "fee": 600,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She is friendly, makes you feel comfortable tries to recognize subtle patterns as well.\nShe had a decent enough understanding of adhd and also was receptive to my inputs. \nShe was ready to prescribe stimulants but was quite cautious in doing so, seems more on the cautious side."
+      }
+    ]
+  },
+  {
+    "id": 152,
+    "name": "Apoorva Yadav ()",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Centre for Behavioral sciences, lajpat",
+    "city": "Delhi",
+    "address": "Centre for behavioral sciences, amar colony",
+    "contact": "9310599639",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "They seemed to understand the lived experience of adhd. It was a gentle and affirming approach which I needed. The place where they work has a psychiatrist who diagnoses as well. Got the assessment and medication at the same place. She was quite pro medication which was a first for a therapist."
+      }
+    ]
+  },
+  {
+    "id": 153,
+    "name": "Poorva Sahasrabuddhe",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Google Meet",
+    "city": "Pune",
+    "address": "VIVEKA Counseling and Healing, Senapati Bapat Rd, Chaitanya 25/A, Hanuman Nagar, Wadarvadi, Pune, Maharashtra 411016, India",
+    "contact": "9922900605",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She was very friendly and helps we throughout my ADHD and i have ADHD- PI type."
+      }
+    ]
+  },
+  {
+    "id": 154,
+    "name": "Dr. Vaidehee -+ Therapist",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Zoom",
+    "city": "Ahmedabad",
+    "address": "Doc Thakur Clinc, 5th floor bodycare complex, vadaj, Ahemdabad",
+    "contact": "7096106460",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "She is a psychiatrist plus gives therapy. She has a superb understanding of ADHD, Trauma, Autism, OCD, and all other co-morbidities. She takes a lot of data from you to understand and give you the right care. She is patient, empathetic, practical, and non judgemental. Her therapy helped me process real-time distress like I never was able to before. It stopped my panic attacks and actually rewired my brain. I was surprised and thrilled. She will profile you very accurately from your relationships to your psyche and more. She doesn’t have a one size fits all approach, instead she tailors the therapy according to who you are. She takes her time analysing your reactions to medications only then recommending the right tweaks and dosages. And you can air out all your silly concerns as well she will be glad to answer everything. For all my girlies out there, she is especially great! I was able to tell her about my PMDD like symptoms and how meds stop working during some parts of the menstruation cycle. She listened and adapted to that as well, recommending changes in medication for that too. She looked at my past reports and identified something I'd missed that could be causing inflammation in my body. She takes a holistic approach by looking at past diseases/infections/diagnoses you have and recommending exercise, sleep aides, vitamins etc apart from the psychiatric medications. Truly a professional that the world needs more of. A standard apart from all the other professionals I've been with before."
+      }
+    ]
+  },
+  {
+    "id": 155,
+    "name": "Dr. Vaidehee Chaudhary -+ Therapist",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Zoom, https://www.nirvanamindcare.com/",
+    "city": "Ahmedabad",
+    "address": "Doc Thakur Clinc, 5th floor bodycare complex, vadaj, Ahemdabad",
+    "contact": "7096106460",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I've been to many therapists/psychiatrists before but Dr Vaidehee has set the standard apart from everybody. She's really invested in your health from mental to physical aspects as she understands the interplay between them. After beginning her sessions I have found the changes in medications to be exactly what my body needs. She reintroduced stimulants in my stack after I thought they didn’t work for me, and suprisingly at low doses they are actually doing wonders for me! She takes her time and analyses the data given to her to really understand what might be the best fit. Her therapy has addressed the core issues of my psyche, helping me cope with distress in a manner I've never been able to before. She is easy to talk to, empathetic, understanding, and non judgemental. Strict where she needs to be. Truly the world needs more people like her."
+      }
+    ]
+  },
+  {
+    "id": 156,
+    "name": "Dr. Shyam Mithiya",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "No idea! I consulted offline",
+    "city": "Mumbai",
+    "address": "Shreyas Signal, 86 Central, 203, Andheri Ghatkopar Link Rd, Gangawadi, Ghatkopar West, Mumbai, Maharashtra 400086",
+    "contact": "7506131833",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "To the point, questions asked and correct diagnosis."
+      }
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Dr. harikrishan Mamtani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Nagpur",
+    "address": "Office Wing, Dr Harkishan Mamtani MD Psychiatry (NIMHANS)- Manoved, Ramdaspeth, Pushpakunj Complex, Manoved- Centre for Mental Well Being and Research, AGM Multispecialty Clinic, 6A/6B, 1st floor, near Centre Point Hotel, Ramdaspeth, Nagpur, Maharashtra 440010",
+    "contact": "8380022225",
+    "fee": 1500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The doctor is well informed, friendly and flexible. Open to feedbacks and opinions. In my case, he would keep opinions and preferences in mind while working on case. \n\nI'm on stimulants as of now. I was prescribed stimulant online but had to get someone to collect the prescription in person. That said, I'm from same city which might be why this happened. You guys can talk to them and see how they can accommodate your situation."
+      }
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Dr. Tushar kant from Fortis(vaishali nagar)",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Jaipur",
+    "address": "Fortis hospital, has a clinic also in vaishali nagar.",
+    "contact": "9950999980",
+    "fee": 400,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He was very open and understanding for the Adult ADHD."
+      }
+    ]
+  }
+]

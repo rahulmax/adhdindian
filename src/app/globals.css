@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-border: var(--border-color);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #ffffff;
+  --foreground: #0a0b0d;
+  --surface: #f3f4f6;
+  --surface-hover: #e5e7eb;
+  --border-color: #e5e7eb;
+  --muted: #6b7280;
+  --accent: #0052ff;
+  --accent-hover: #003ecb;
+  --positive: #16a34a;
+  --negative: #dc2626;
+  --warning: #f59e0b;
+}
+
+.dark {
+  --background: #0a0b0d;
+  --foreground: #f0f0f0;
+  --surface: #141519;
+  --surface-hover: #1e1f25;
+  --border-color: #2a2b33;
+  --muted: #8b8d97;
+  --accent: #0052ff;
+  --accent-hover: #3377ff;
+  --positive: #22c55e;
+  --negative: #ef4444;
+  --warning: #fbbf24;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

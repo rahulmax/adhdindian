@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ADHD India
 
-## Getting Started
+A community-curated directory of ADHD-friendly psychiatrists and psychologists across India. Find doctors who understand ADHD, prescribe stimulants, do proper diagnoses, and accept prior evaluations.
 
-First, run the development server:
+**Live:** [adhdindia.vercel.app](https://adhdindia.vercel.app)
+
+## What's in here
+
+- **170 doctors** across **37 cities** in India
+- Filter by city, doctor type, consultation mode, stimulant prescriptions, adult ADHD specialists, and more
+- Community reviews with sentiment analysis
+- Locality-level location data (e.g., "Koramangala, Bangalore" not just "Bangalore")
+- Setup wizard to personalize your search on first visit
+- Auto-syncs new submissions from the community Google Form every 3 days
+
+## Community
+
+- [Discord](https://discord.gg/adhdindia) — join the ADHD India community
+- [Reddit](https://www.reddit.com/r/adhdindia/) — r/adhdindia
+- [Contribute a doctor](https://forms.gle/b1VCBMtnddWUMFM87) — know a good ADHD doctor? Add them
+
+## Contributing
+
+PRs welcome. The doctor data lives in `src/data/doctors.json`. If you want to add or fix a doctor entry, edit that file directly.
+
+New submissions from the [Google Form](https://forms.gle/b1VCBMtnddWUMFM87) are automatically picked up by a sync script that runs every 3 days via GitHub Actions. It only appends new entries — never overwrites curated data.
+
+To run the sync manually:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+node scripts/sync-sheet.mjs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Tech
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org) (App Router)
+- Tailwind CSS
+- Single-page app, statically generated
+- Deployed on [Vercel](https://vercel.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+MIT
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by [rahulmax](https://rahulmax.com)

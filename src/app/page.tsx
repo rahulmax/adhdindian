@@ -130,7 +130,9 @@ function emitParticles(button: HTMLElement, level: number) {
   }
 }
 
+let shakeRaf = 0;
 function screenShake(intensity = 4, duration = 400) {
+  cancelAnimationFrame(shakeRaf);
   const el = document.documentElement;
   const start = performance.now();
   function shake(now: number) {
@@ -140,9 +142,9 @@ function screenShake(intensity = 4, duration = 400) {
     const x = (Math.random() - 0.5) * 2 * intensity * decay;
     const y = (Math.random() - 0.5) * 2 * intensity * decay;
     el.style.transform = `translate(${x}px, ${y}px)`;
-    requestAnimationFrame(shake);
+    shakeRaf = requestAnimationFrame(shake);
   }
-  requestAnimationFrame(shake);
+  shakeRaf = requestAnimationFrame(shake);
 }
 
 function emitFireworks() {
@@ -635,11 +637,14 @@ function matchCity(detected: string): string | null {
 
 // --- Filter Options ---
 
-const cities = [...new Set(doctors.map((d) => d.city).filter((c) => c !== "Unknown"))].sort();
-const doctorCountByCity = cities.map((c) => ({
-  city: c,
-  count: doctors.filter((d) => d.city === c).length,
-})).sort((a, b) => b.count - a.count);
+const cityCountMap = doctors.reduce((acc, d) => {
+  if (d.city !== "Unknown") acc[d.city] = (acc[d.city] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+const cities = Object.keys(cityCountMap).sort();
+const doctorCountByCity = Object.entries(cityCountMap)
+  .map(([city, count]) => ({ city, count }))
+  .sort((a, b) => b.count - a.count);
 const consultationModes = ["Online", "Offline", "Both"];
 const stimulantOptions = ["Yes", "In-person only", "No"];
 const sortOptions = [
@@ -1098,18 +1103,21 @@ function DoctorCard({ doctor }: { doctor: Doctor }) {
             <p className="text-sm text-foreground leading-relaxed">{doctor.address}</p>
           </div>
 
-          {doctor.contact && extractBestPhone(doctor.contact) && (
-            <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Contact</p>
-              <a
-                href={`tel:+91${extractBestPhone(doctor.contact)}`}
-                className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/5 rounded-full transition-colors"
-              >
-                <PhoneIcon />
-                {formatPhoneNumber(extractBestPhone(doctor.contact)!)}
-              </a>
-            </div>
-          )}
+          {(() => {
+            const bestPhone = doctor.contact ? extractBestPhone(doctor.contact) : null;
+            return bestPhone ? (
+              <div>
+                <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Contact</p>
+                <a
+                  href={`tel:+91${bestPhone}`}
+                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/5 rounded-full transition-colors"
+                >
+                  <PhoneIcon />
+                  {formatPhoneNumber(bestPhone)}
+                </a>
+              </div>
+            ) : null;
+          })()}
 
           <div className="grid grid-cols-2 gap-3">
             {doctor.onlinePlatform && (
@@ -1198,7 +1206,9 @@ function CommunityLinks() {
 // --- Main Page ---
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() =>
+    typeof document !== "undefined" && document.documentElement.classList.contains("dark")
+  );
   const [wizardStep, setWizardStep] = useState<"welcome" | "location" | "preferences" | "results">("welcome");
   const [initialized, setInitialized] = useState(false);
   const [search, setSearch] = useState("");
@@ -1212,10 +1222,14 @@ export default function Home() {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedPrefs, setSelectedPrefs] = useState<Set<PreferenceKey>>(new Set());
   const [doctorType, setDoctorType] = useState<string | null>(null);
+  const [showLoading, setShowLoading] = useState(true);
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
+    const t = setTimeout(() => setShowLoading(false), 3000);
+    return () => clearTimeout(t);
+  }, []);
 
+  useEffect(() => {
     // Check if user has completed wizard before
     const wizardDone = localStorage.getItem("wizardComplete");
     const savedCity = localStorage.getItem("selectedCity");
@@ -1353,7 +1367,8 @@ export default function Home() {
         case "rating": {
           const scoreA = a.reviews.filter((r) => r.sentiment === "Positive").length / (a.reviews.length || 1);
           const scoreB = b.reviews.filter((r) => r.sentiment === "Positive").length / (b.reviews.length || 1);
-          return scoreB - scoreA;
+          if (scoreB !== scoreA) return scoreB - scoreA;
+          return b.reviews.length - a.reviews.length;
         }
         default:
           return 0;
@@ -1391,13 +1406,6 @@ export default function Home() {
     clearFilters();
     setWizardStep("welcome");
   }
-
-  // Loading screen with interactive fidget spinner
-  const [showLoading, setShowLoading] = useState(true);
-  useEffect(() => {
-    const t = setTimeout(() => setShowLoading(false), 3000);
-    return () => clearTimeout(t);
-  }, []);
 
   if (!initialized || showLoading) {
     return (

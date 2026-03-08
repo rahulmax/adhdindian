@@ -1,8 +1,8 @@
-# ADHD India
+# ADHD Indian
 
 A community-curated directory of ADHD-friendly psychiatrists and psychologists across India. Find doctors who understand ADHD, prescribe stimulants, do proper diagnoses, and accept prior evaluations.
 
-**Live:** [adhdindia.vercel.app](https://adhdindia.vercel.app)
+**Live:** [adhdindian.vercel.app](https://adhdindian.vercel.app)
 
 ## What's in here
 

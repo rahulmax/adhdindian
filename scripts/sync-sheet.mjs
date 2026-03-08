@@ -11,8 +11,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SHEET_ID = "1oHLR1pmGHEADWWhkJCcRHnrpr70gELLYsuQPo2e0xbg";
-const GID = "421541929"; // "Copy of Docs Filter" sheet — has all cities
-const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
+const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=Responses`;
 const OUTPUT_PATH = join(__dirname, "..", "src", "data", "doctors.json");
 
 async function fetchCSV() {
@@ -374,6 +373,35 @@ function cleanReviewText(raw) {
     .trim();
 }
 
+const KNOWN_AREAS = {
+  "Mumbai": ["Bandra","Bandra West","Bandra East","Andheri","Andheri West","Andheri East","Borivali","Chembur","Ghatkopar","Dadar","Lokhandwala","Juhu","Malad","Goregaon","Powai","Vile Parle","Santacruz","Khar","Worli","Lower Parel","Colaba","Fort","Churchgate","Parel","Sion","Kurla","Mulund","Vikhroli","Kandivali"],
+  "Delhi": ["Safdarjung","Lajpat Nagar","CR Park","Pitampura","Dwarka","Vasant Vihar","Rohini","Paschim Vihar","Janakpuri","Greater Kailash","Hauz Khas","Karol Bagh","Defence Colony","Green Park","Saket"],
+  "Bangalore": ["Whitefield","Indiranagar","Koramangala","Jayanagar","Hebbal","Bellandur","HSR Layout","BTM Layout","Marathahalli","Electronic City","Banashankari","Rajajinagar","Malleshwaram","JP Nagar","Yelahanka","KR Puram","Sarjapur","Dommasandra","Kalyan Nagar"],
+  "Chennai": ["Saligramam","Anna Nagar","T Nagar","Tambaram","Kilpauk","Adyar","Mylapore","Nungambakkam","Velachery","Porur"],
+  "Pune": ["Aundh","Kharadi","Karve Nagar","Viman Nagar","Hinjewadi","Baner","Wakad","Kothrud","Deccan","Shivajinagar","Hadapsar","Koregaon Park"],
+  "Hyderabad": ["Banjara Hills","Gachibowli","Secunderabad","Hitec City","Jubilee Hills","Madhapur","Kukatpally","Ameerpet","Begumpet","Kondapur"],
+  "Kolkata": ["Salt Lake","Ballygunge","Park Street","New Town","Gariahat","Behala","Jadavpur","Alipore","Tollygunge"],
+  "Gurgaon": ["Sector 56","Sector 49","Sector 14","DLF Phase","Sohna Road","Golf Course Road"],
+  "Jaipur": ["Vaishali Nagar","Malviya Nagar","C Scheme","Mansarovar"],
+  "Ghaziabad": ["Indirapuram","Vaishali","Kaushambi"],
+  "Chandigarh": ["Panchkula","Sector 34","Sector 22"],
+  "Navi Mumbai": ["Khargar","Vashi","Belapur","Kharghar"],
+  "Kochi": ["Ernakulam","Kadavanthra","Palarivattom","Edappally","Kaloor"],
+  "Noida": ["Sector 18","Sector 62","Sector 50"],
+};
+
+function extractLocality(address, city) {
+  if (!address || address.length < 3) return null;
+  const lower = address.toLowerCase();
+  const junk = ["not sure", "not aware", "idk", "don't know", "google", "contact"];
+  if (junk.some((j) => lower.includes(j))) return null;
+  const areas = KNOWN_AREAS[city] || [];
+  for (const area of areas) {
+    if (lower.includes(area.toLowerCase())) return area;
+  }
+  return null;
+}
+
 function normalizeOnlinePlatform(raw) {
   if (!raw) return null;
   const lower = raw.toLowerCase().trim();
@@ -415,12 +443,57 @@ function deduplicateByName(doctors) {
   return [...map.values()].map((d, i) => ({ ...d, id: i + 1 }));
 }
 
+/** Normalize a name to a fuzzy key for matching */
+function nameKey(name) {
+  return (name || "")
+    .toLowerCase()
+    .replace(/^dr\.?\s*/, "")
+    .replace(/[^a-z]/g, "");
+}
+
+function parseSheetRow(r) {
+  const rawName = r[4] || "";
+  const rawType = (r[19] || "").trim();
+  const type = rawType === "Psychiatrist" || rawType === "Psychologist" ? rawType : inferType(rawName);
+
+  const address = (r[8] || "").trim();
+  const city = normalizeCity(r[18] || r[7]);
+  const locality = extractLocality(address, city);
+
+  const entry = {
+    name: cleanName(rawName),
+    type,
+    consultationMode: normalizeMode(r[20] || r[5]),
+    onlinePlatform: normalizeOnlinePlatform(r[6]),
+    city,
+    address,
+    contact: (r[9] || "").replace(/\s+/g, "").trim(),
+    fee: normalizeFee(r[10]),
+    doesADHDDiagnosis: normalizeDiagnosis(r[11]),
+    adhdTestFee: normalizeFee(r[12]),
+    prescribesStimulants: normalizeStimulants(r[13]),
+    acceptsPreviousDiagnosis: normalizePriorDx(r[14]),
+    adultADHDSpecialist: normalizeAdultSpecialist(r[15]),
+    reviews: r[16] && r[16].trim().length > 2
+      ? [{ sentiment: classifySentiment(r[16]), text: cleanReviewText(r[16]) }]
+      : [],
+  };
+  if (locality) entry.locality = locality;
+  return entry;
+}
+
 async function main() {
-  console.log("Fetching spreadsheet...");
+  // 1. Load existing curated doctors
+  const existing = JSON.parse(readFileSync(OUTPUT_PATH, "utf-8"));
+  console.log(`Existing curated doctors: ${existing.length}`);
+
+  // Build a set of known name keys for matching
+  const knownKeys = new Set(existing.map((d) => nameKey(d.name)));
+
+  // 2. Fetch sheet
+  console.log("Fetching spreadsheet (Responses sheet)...");
   const csv = await fetchCSV();
   const rows = parseCSV(csv);
-
-  console.log(`Parsed ${rows.length} total rows`);
 
   // Find header row
   let headerIdx = -1;
@@ -430,54 +503,68 @@ async function main() {
       break;
     }
   }
-
   if (headerIdx === -1) {
     console.error("Could not find header row!");
     process.exit(1);
   }
 
-  // Data rows: skip header, filter out empties
-  const dataRows = rows.slice(headerIdx + 1).filter((r) => {
-    // Must have a name in column 1
-    return r[1] && r[1].trim().length > 1;
-  });
+  // Responses sheet: doctor name is in column 4
+  const dataRows = rows.slice(headerIdx + 1).filter((r) => r[4] && r[4].trim().length > 1);
+  console.log(`Sheet entries: ${dataRows.length}`);
 
-  console.log(`Found ${dataRows.length} doctor entries`);
+  // 3. Find new entries not in existing data
+  const newEntries = [];
+  const newReviews = []; // additional reviews for existing doctors
 
-  const doctors = dataRows.map((r, i) => ({
-    id: i + 1,
-    name: cleanName(r[1] || ""),
-    type: inferType(r[1] || ""),
-    consultationMode: normalizeMode(r[2]),
-    onlinePlatform: normalizeOnlinePlatform(r[3]),
-    city: normalizeCity(r[4]),
-    address: (r[5] || "").trim(),
-    contact: (r[6] || "").replace(/\s+/g, "").trim(),
-    fee: normalizeFee(r[7]),
-    doesADHDDiagnosis: normalizeDiagnosis(r[8]),
-    adhdTestFee: normalizeFee(r[9]),
-    prescribesStimulants: normalizeStimulants(r[10]),
-    acceptsPreviousDiagnosis: normalizePriorDx(r[11]),
-    adultADHDSpecialist: normalizeAdultSpecialist(r[12]),
-    reviews: r[13] && r[13].trim().length > 2
-      ? [
-          {
-            sentiment: classifySentiment(r[13]),
-            text: cleanReviewText(r[13]),
-          },
-        ]
-      : [],
+  for (const r of dataRows) {
+    const parsed = parseSheetRow(r);
+    const key = nameKey(parsed.name);
+    if (!key) continue;
+
+    if (knownKeys.has(key)) {
+      // Doctor exists — check if this row has a new review we could add
+      // (skip for now, reviews need manual curation)
+      continue;
+    }
+
+    // Check if we already queued this name
+    if (newEntries.some((e) => nameKey(e.name) === key)) {
+      // Merge review into the queued entry
+      const queued = newEntries.find((e) => nameKey(e.name) === key);
+      if (parsed.reviews.length > 0) {
+        queued.reviews.push(...parsed.reviews);
+      }
+      continue;
+    }
+
+    newEntries.push(parsed);
+  }
+
+  if (newEntries.length === 0) {
+    console.log("\nNo new doctors found. Everything is up to date.");
+    return;
+  }
+
+  console.log(`\nFound ${newEntries.length} NEW doctors not in curated list:\n`);
+  for (const entry of newEntries) {
+    console.log(`  + ${entry.name} (${entry.type}) — ${entry.city} — Fee: ${entry.fee ?? "?"}`);
+    if (entry.reviews.length > 0) {
+      console.log(`    Review: "${entry.reviews[0].text.slice(0, 80)}..."`);
+    }
+  }
+
+  // 4. Append new entries with sequential IDs
+  const maxId = Math.max(...existing.map((d) => d.id), 0);
+  const toAppend = newEntries.map((entry, i) => ({
+    id: maxId + i + 1,
+    ...entry,
   }));
 
-  const deduplicated = deduplicateByName(doctors);
+  const updated = [...existing, ...toAppend];
+  writeFileSync(OUTPUT_PATH, JSON.stringify(updated, null, 2) + "\n");
 
-  // Stats
-  const cities = [...new Set(deduplicated.map((d) => d.city))].sort();
-  console.log(`\nAfter deduplication: ${deduplicated.length} doctors`);
-  console.log(`Cities (${cities.length}): ${cities.join(", ")}`);
-
-  writeFileSync(OUTPUT_PATH, JSON.stringify(deduplicated, null, 2) + "\n");
-  console.log(`\nWrote ${deduplicated.length} doctors to ${OUTPUT_PATH}`);
+  console.log(`\nAppended ${toAppend.length} new doctors. Total: ${updated.length}`);
+  console.log("Review the new entries in src/data/doctors.json before committing!");
 }
 
 main().catch((err) => {

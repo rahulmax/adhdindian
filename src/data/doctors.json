@@ -23,7 +23,8 @@
         "sentiment": "Positive",
         "text": "She's absolutely amazing. Listens patiently, very knowledgeable about ADHD meds, extremely sweet. She also tries to listen and give advice, not just prescribe meds."
       }
-    ]
+    ],
+    "locality": "Bandra"
   },
   {
     "id": 2,
@@ -49,7 +50,8 @@
         "sentiment": "Positive",
         "text": "It was good. But they were initially forcing me to do a mental therapy for ADHD in a machine.\n\nBut we finally went off with the stimulants and its working fine. \nI had severe anxiety issues and major depressive disorder so she is helping me with that as well.\nOverall, i am very satisfied.\n\nOne thing is that, she does not explain what each medicine individually does, like how does x stimulant work, what ADHD actually is, and etc."
       }
-    ]
+    ],
+    "locality": "Safdarjung"
   },
   {
     "id": 3,
@@ -75,7 +77,8 @@
         "sentiment": "Positive",
         "text": "Friendly doctor"
       }
-    ]
+    ],
+    "locality": "Whitefield"
   },
   {
     "id": 4,
@@ -101,7 +104,8 @@
         "sentiment": "Positive",
         "text": "I have mixed feelings about Porrselvi. To her credit, she is friendly and easy to talk to, she is affirming of Adult ADHD and has a good understanding of how it manifests, and she has no stigma about stimulants. She is also helpful with comorbities of ADHD, like OCD and anxiety. In all these respects, she is great. Unfortunately, though, I don't think she is very helpful with guiding someone to learn coping techniques for ADHD symptoms. Sure, she suggests for coping techniques for executive dysfunction and anxiety, but for me, the fact that adopting those coping techniques is difficult is why I want to get help. But I hit a wall with her there - she didn't seem to understand that suggestions of \"doing so-and-so will help\" are somewhat pointless if doing that so-and-so is just exceptionally difficult. Intrusive anxious thoughts won't just go away just by willing it."
       }
-    ]
+    ],
+    "locality": "Saligramam"
   },
   {
     "id": 5,
@@ -167,7 +171,8 @@
         "sentiment": "Positive",
         "text": "Dr. Dharmendra is friendly and supportive, though He's quite good at optimising medication, I'd suggest going to a clinical psychologist for CBT"
       }
-    ]
+    ],
+    "locality": "CR Park"
   },
   {
     "id": 8,
@@ -289,7 +294,8 @@
         "sentiment": "Positive",
         "text": "I'm not sure whether they did a standardized assessment for diagnosing, as the clinical psychologist just did the diagnosis in the session by asking questions, and then emailed me the diagnosis that I have adhd and later asked me to take an assessment questionnaire which went into a lot more details.\n\nThey seemed friendly and had good understanding of adult ADHD and medication though."
       }
-    ]
+    ],
+    "locality": "Kalyan Nagar"
   },
   {
     "id": 13,
@@ -399,7 +405,8 @@
         "sentiment": "Mixed",
         "text": "Too short a relationship to comment."
       }
-    ]
+    ],
+    "locality": "Borivali"
   },
   {
     "id": 18,
@@ -421,7 +428,8 @@
         "sentiment": "Positive",
         "text": "Please Google reach psychiatry banglore for the reception number. \nDr Meena is good and knows enough to diagnose you with adhd and prescribe medication and she does it online which is a great advantage and you can get your meds delivered from the pharmacy she recommends but she is expensive and tends to give you little time ie...just 15minutes to 25 minutes. This can be frustrating if it's an online consult. She doesn't give a lot of counseling or support. So it's just your basic psychiatrist prescribing medication."
       }
-    ]
+    ],
+    "locality": "Kalyan Nagar"
   },
   {
     "id": 19,
@@ -539,7 +547,8 @@
         "sentiment": "Positive",
         "text": "Good. prescribes meds according to requirement."
       }
-    ]
+    ],
+    "locality": "Lajpat Nagar"
   },
   {
     "id": 24,
@@ -587,7 +596,8 @@
         "sentiment": "Positive",
         "text": "The doctor is a bit blunt and not diplomatic, but sharp in her observations and quick to get a hold of heart of the issue. The psychologist is the best of the two i have so far visited, patient with me, and focuses on making you have the tools to deal with your own problems, which builds less dependence on the doctor. Therapy is CBT based and has helped me manage my anxiety around my diagnosis. Full disclosure: i went for depression and anxiety. Got a self referred test done for ADHD, but they did not prescribe me medication as they think PTSD and depression are playing a more significant role in my case."
       }
-    ]
+    ],
+    "locality": "Karve Nagar"
   },
   {
     "id": 26,
@@ -675,7 +685,8 @@
         "sentiment": "Neutral",
         "text": "..."
       }
-    ]
+    ],
+    "locality": "Banjara Hills"
   },
   {
     "id": 30,
@@ -767,7 +778,8 @@
         "sentiment": "Positive",
         "text": "Very positive experience.\n\n- Very understanding towards adult adhd\n- I went in for inattentive only reasons, but it turns out I do have both. So I'm not sure, but she most likely does recognise inattentive adhd.\n- Had no stigma about stimulants, however also pointed out (rightfully) that I had more issues that needed to be dealt with, before medication could be properly effective, and would prescribe me my medication then.\n\nGo with clear expectations of what you want, have a clear conversation and preferably have someone to vouch for you. Also very queer/trans friendly. I'm not the easiest patient to deal with, and she was very friendly the whole time"
       }
-    ]
+    ],
+    "locality": "Hebbal"
   },
   {
     "id": 34,
@@ -793,7 +805,8 @@
         "sentiment": "Positive",
         "text": "- super patient\n- listens and chats with patience and interest\n- no stigma about stimulants\n- can be a slight bit gimmicky with his quick analysis of yourself, but that's some party tricks they need to have esp since they also deal in children's mental health\n- overall a very good experience after having had an offline consultation"
       }
-    ]
+    ],
+    "locality": "Aundh"
   },
   {
     "id": 35,
@@ -867,7 +880,8 @@
         "sentiment": "Positive",
         "text": "My experience with him has been great. takes the time to listen."
       }
-    ]
+    ],
+    "locality": "Aundh"
   },
   {
     "id": 38,
@@ -889,7 +903,8 @@
         "sentiment": "Mixed",
         "text": "They recognise inattentive type as well but will first give anti anxiety drugs for some time before starting on stimulants/atomoxetine (standard procedure)"
       }
-    ]
+    ],
+    "locality": "Dwarka"
   },
   {
     "id": 39,
@@ -1005,7 +1020,7 @@
       },
       {
         "sentiment": "Positive",
-        "text": "I was a bit anxious about how to start the conversation, but he made it really easy. He asked a bit about me to break the ice, we had some casual chat, and then gradually moved into discussing my concerns. I shared all my symptoms and told him I suspected it might be ADHD. I had noted everything in my phone and just read them out to him one by one. Within 10 minutes, he was fairly confident that it was ADHD (specifically ADD, without the hyperactivity).\n\nHe was calm, reassuring, and explained that it’s manageable, and quite a few people have it. He gave me options for both stimulant and non-stimulant medications, since I wasn’t fully comfortable jumping into meds right away. He also gave me some advice on managing without medication.\n\nTime was a bit limited, I think he had about 20–30 minutes per session due to other patients, but overall, it was a solid experience. He clearly understood ADHD well and even pointed out how some doctors often misdiagnose it as just anxiety or depression. I was prepared to go to 3–4 clinics if needed to get a proper diagnosis, but he got it right on the first try. Hope this info helps someone."
+        "text": "I was a bit anxious about how to start the conversation, but he made it really easy. He asked a bit about me to break the ice, we had some casual chat, and then gradually moved into discussing my concerns. I shared all my symptoms and told him I suspected it might be ADHD. I had noted everything in my phone and just read them out to him one by one. Within 10 minutes, he was fairly confident that it was ADHD (specifically ADD, without the hyperactivity).\n\nHe was calm, reassuring, and explained that it\u2019s manageable, and quite a few people have it. He gave me options for both stimulant and non-stimulant medications, since I wasn\u2019t fully comfortable jumping into meds right away. He also gave me some advice on managing without medication.\n\nTime was a bit limited, I think he had about 20\u201330 minutes per session due to other patients, but overall, it was a solid experience. He clearly understood ADHD well and even pointed out how some doctors often misdiagnose it as just anxiety or depression. I was prepared to go to 3\u20134 clinics if needed to get a proper diagnosis, but he got it right on the first try. Hope this info helps someone."
       },
       {
         "sentiment": "Positive",
@@ -1041,7 +1056,8 @@
         "sentiment": "Positive",
         "text": "Good experience so far. A bit on the expensive side, but an empathetic doctor and therapist who seem to know what they're doing and are serious about treatment."
       }
-    ]
+    ],
+    "locality": "Dadar"
   },
   {
     "id": 45,
@@ -1063,7 +1079,8 @@
         "sentiment": "Mixed",
         "text": "Doctor definitely has patience to deal with people like me... I had no reason like literally no reason to cry and i was crying while talking. I should have written all my symptoms beforehand but as i wasn't expecting much i didn't bothered (biggest mistake) and in panic my dyslexic symptoms which are very much visible only gor noticed. Though he has referred me to his psychologist colleague who specialises in learning disability therapy. I'll make sure to write down my symptoms for this session and after my visit will update her contact too."
       }
-    ]
+    ],
+    "locality": "Sector 49"
   },
   {
     "id": 46,
@@ -1129,7 +1146,8 @@
         "sentiment": "Positive",
         "text": "Very easy to talk to. Understanding. Good listener. They recognise inattentive type ADHD. They are well aware of adult ADHD. No they don't have stigma around stimulant."
       }
-    ]
+    ],
+    "locality": "Salt Lake"
   },
   {
     "id": 49,
@@ -1173,7 +1191,8 @@
         "sentiment": "Positive",
         "text": "Friendly and understanding, flexible, no stigma"
       }
-    ]
+    ],
+    "locality": "Dadar"
   },
   {
     "id": 51,
@@ -1239,7 +1258,8 @@
         "sentiment": "Positive",
         "text": "Excellent professional who understands Adult ADHD well. The best in Navi Mumbai and possibly the best in all of Mumbai."
       }
-    ]
+    ],
+    "locality": "Khargar"
   },
   {
     "id": 54,
@@ -1305,7 +1325,8 @@
         "sentiment": "Positive",
         "text": "My friend went to her and she had a positive experience. The doctor was compassionate, understanding and helpful"
       }
-    ]
+    ],
+    "locality": "Sector 56"
   },
   {
     "id": 57,
@@ -1371,7 +1392,8 @@
         "sentiment": "Positive",
         "text": "He is extremely friendly and easy to talk to. He understands and recognises Adult ADHD as well as inattentive type ADHD. He is well aware of comorbid issues with ADHD too. He prescribes stimulants, but only after a course of non-stimulant medication proves ineffective."
       }
-    ]
+    ],
+    "locality": "Tambaram"
   },
   {
     "id": 60,
@@ -1393,7 +1415,8 @@
         "sentiment": "Positive",
         "text": "They're friendly, and understanding. \nThey have a good understanding of Adult ADHD\nThey do recognise inattentive ADHD\nThey don't have stigma."
       }
-    ]
+    ],
+    "locality": "Lajpat Nagar"
   },
   {
     "id": 61,
@@ -1437,7 +1460,8 @@
         "sentiment": "Positive",
         "text": "He was really friendly and was really open to Prescribing stimulant medication. But if you're in the medical field especially a doctor, please be prepared to get a short study coarse on adhd and related."
       }
-    ]
+    ],
+    "locality": "Aundh"
   },
   {
     "id": 63,
@@ -1481,7 +1505,8 @@
         "sentiment": "Positive",
         "text": "Very understanding doctor, listens well and counsels on life issues; medications are managed well. Understanding of adult ADHD is VERY GOOD. Stimulants are prescribed carefully but there is no stigma."
       }
-    ]
+    ],
+    "locality": "Vasant Vihar"
   },
   {
     "id": 65,
@@ -1529,7 +1554,8 @@
         "sentiment": "Positive",
         "text": "good experience , makes u feel comfortable as we might have trouble starting, explains the causes and solutions clearly"
       }
-    ]
+    ],
+    "locality": "BTM Layout"
   },
   {
     "id": 67,
@@ -1573,7 +1599,8 @@
         "sentiment": "Positive",
         "text": "They were friendly and have a broader perspective than just a diagnosis\nThey have a good understanding of adult adhd and recognise the inattentive type\nNo stigma about stimulant medication but only prescribes for 2 months for regular checkups for addiction"
       }
-    ]
+    ],
+    "locality": "Anna Nagar"
   },
   {
     "id": 69,
@@ -1858,7 +1885,8 @@
         "sentiment": "Positive",
         "text": "I found the doctor to be pretty smart, he doesn't judge you or anything. Also he seems to be in the know of research about it and does have a good understanding of adult adhd. I am inattentive myself so he does recognize me for it. Also for stimulants, he will give you if need be. I think he might even prescribe them online if he finds it necessary but you have to talk to him."
       }
-    ]
+    ],
+    "locality": "Mansarovar"
   },
   {
     "id": 82,
@@ -1880,7 +1908,8 @@
         "sentiment": "Positive",
         "text": "He was the person I went to first to get diagnosed for adult adhd and he mentioned having more patients like me. I never to meet him personally since I live too far. There's a nice review about him on reddit and I found him through that post. I think he does give stimulants but follows the set protocol."
       }
-    ]
+    ],
+    "locality": "Jayanagar"
   },
   {
     "id": 83,
@@ -1904,9 +1933,10 @@
       },
       {
         "sentiment": "Mixed",
-        "text": "Sheenam Goyal has been deeply considerate of my circumstances, creating a gentle and non-judgmental space where I’ve been able to express concerns that I often struggle to articulate. She has shown genuine understanding of my condition and has consistently acknowledged the challenges I face when navigating neurotypical environments, as well as the unique hurdles that come with being neurodivergent.\n\nWhile she initially expressed a preference for not relying on stimulant medication long-term out of concern that it could be habit-forming, this was approached thoughtfully rather than dogmatically. I shared my personal experience with stimulants and clarified that this concern has not aligned with my lived reality. She understood my perspective clearly, without dismissiveness, resistance, or opposition, and engaged with it in an open and balanced manner.\n\nShe has an open and informed understanding of both ADHD and autism, based on the neuroscience behind these conditions rather than general assumptions. She recognizes that these conditions affect individuals differently and is attentive to the specific challenges that often come with ADHD, approaching them with openness and care."
+        "text": "Sheenam Goyal has been deeply considerate of my circumstances, creating a gentle and non-judgmental space where I\u2019ve been able to express concerns that I often struggle to articulate. She has shown genuine understanding of my condition and has consistently acknowledged the challenges I face when navigating neurotypical environments, as well as the unique hurdles that come with being neurodivergent.\n\nWhile she initially expressed a preference for not relying on stimulant medication long-term out of concern that it could be habit-forming, this was approached thoughtfully rather than dogmatically. I shared my personal experience with stimulants and clarified that this concern has not aligned with my lived reality. She understood my perspective clearly, without dismissiveness, resistance, or opposition, and engaged with it in an open and balanced manner.\n\nShe has an open and informed understanding of both ADHD and autism, based on the neuroscience behind these conditions rather than general assumptions. She recognizes that these conditions affect individuals differently and is attentive to the specific challenges that often come with ADHD, approaching them with openness and care."
       }
-    ]
+    ],
+    "locality": "Paschim Vihar"
   },
   {
     "id": 84,
@@ -1970,9 +2000,10 @@
     "reviews": [
       {
         "sentiment": "Positive",
-        "text": "Got online consultation over whatsapp, afterwards he referred to me a psychologist who took the test. The process was over within 2 hours. However, he prescribed the med only in person visit. Behaviour of the doctor was great. He also has a youtube channel “ABeautifulMindClinic”."
+        "text": "Got online consultation over whatsapp, afterwards he referred to me a psychologist who took the test. The process was over within 2 hours. However, he prescribed the med only in person visit. Behaviour of the doctor was great. He also has a youtube channel \u201cABeautifulMindClinic\u201d."
       }
-    ]
+    ],
+    "locality": "Janakpuri"
   },
   {
     "id": 87,
@@ -2038,7 +2069,8 @@
         "sentiment": "Mixed",
         "text": "Psychiatrist, MBBS,DPM(Psychiatry),MRCPsych, 11yrs Experience"
       }
-    ]
+    ],
+    "locality": "Anna Nagar"
   },
   {
     "id": 90,
@@ -2064,7 +2096,8 @@
         "sentiment": "Positive",
         "text": "Excellent"
       }
-    ]
+    ],
+    "locality": "Edappally"
   },
   {
     "id": 91,
@@ -2130,7 +2163,8 @@
         "sentiment": "Positive",
         "text": "She understands and listens, but she thinks that ADHD should have imapired us before the age of 12"
       }
-    ]
+    ],
+    "locality": "Anna Nagar"
   },
   {
     "id": 94,
@@ -2209,7 +2243,7 @@
     "consultationMode": "Both",
     "onlinePlatform": "whatsapp call for",
     "city": "Pune",
-    "address": "Peace of Mind – Holistic Health Services",
+    "address": "Peace of Mind \u2013 Holistic Health Services",
     "contact": "8830188066",
     "fee": 1200,
     "doesADHDDiagnosis": "Yes (Standardised Tests)",
@@ -2266,14 +2300,15 @@
         "sentiment": "Positive",
         "text": "She is a great therapist no stigma. Thanks to her I'm exposing myself to world and dealing with my anxiety and depression in a good way. Also about ADHD she has a extensive knowledge, and whenever I come up with something new she genuinely researches about it and then guide me through it. She is more than a therapist for me she is someone whom I can text about something that happened in my life and despite her busy schedule she'll make a slot available for me. Due to my ADHD I zone out or get distracted and she let me be myself, when I run late she's like \"take your time just drive safe\". Sometimes my session time exceeds and she let's me vent without charging extra. Overall a great therapist."
       }
-    ]
+    ],
+    "locality": "Aundh"
   },
   {
     "id": 100,
     "name": "Rahat Sanghvi",
     "type": "Psychiatrist",
     "consultationMode": "Both",
-    "onlinePlatform": "I don’t know",
+    "onlinePlatform": "I don\u2019t know",
     "city": "Mumbai",
     "address": "Lokhandwala, Andheri West",
     "contact": "0",
@@ -2288,7 +2323,8 @@
         "sentiment": "Mixed",
         "text": "I am yet to try, her email is rahatsanghvi.psychologist@gmail.com"
       }
-    ]
+    ],
+    "locality": "Andheri"
   },
   {
     "id": 101,
@@ -2332,7 +2368,8 @@
         "sentiment": "Positive",
         "text": "Extremely empathetic and understanding of the patient. They completely understand Adult ADHD and the symptoms that come with Adult ADHD. They do not have any stigma related to stimulant medication."
       }
-    ]
+    ],
+    "locality": "Banjara Hills"
   },
   {
     "id": 103,
@@ -2354,7 +2391,8 @@
         "sentiment": "Positive",
         "text": "Friendly, smart, understands that not all adult ADHD is the same - so really listens to the patient vs putting them in a box without all the info (as previous doctors did to me). Maam has good understanding of Adult ADHD. She recognizes inattentive ADHD - though I may have been the one to really show her this is a thing & can be a horrible thing. No stigma about stimulant medication - just honest, appropriate caution to ensure which one is needed."
       }
-    ]
+    ],
+    "locality": "Kharadi"
   },
   {
     "id": 104,
@@ -2376,7 +2414,8 @@
         "sentiment": "Positive",
         "text": "Friendly, have provisional ADHD understanding, they recognise inattentive ADHD, no stigmas about stimulants infact she prefers to give stimulant meds instead of non stimulants"
       }
-    ]
+    ],
+    "locality": "Pitampura"
   },
   {
     "id": 105,
@@ -2398,7 +2437,8 @@
         "sentiment": "Positive",
         "text": "He is a friendly person and he works with psychologists to diagnose"
       }
-    ]
+    ],
+    "locality": "Banjara Hills"
   },
   {
     "id": 106,
@@ -2420,7 +2460,8 @@
         "sentiment": "Positive",
         "text": "Pretty good, she was patient and listened carefully. Was okay to prescribe meds and adjust doses. Felt comfortable discussing stuff with her"
       }
-    ]
+    ],
+    "locality": "Karve Nagar"
   },
   {
     "id": 107,
@@ -2429,7 +2470,7 @@
     "consultationMode": "Offline",
     "onlinePlatform": null,
     "city": "Mumbai",
-    "address": "D-502, Jyoti Arch, S.V. Road, Kandivali(West),Mumbai – 400067",
+    "address": "D-502, Jyoti Arch, S.V. Road, Kandivali(West),Mumbai \u2013 400067",
     "contact": "9892047448",
     "fee": 1000,
     "doesADHDDiagnosis": "Yes (Standardised Tests)",
@@ -2442,7 +2483,8 @@
         "sentiment": "Positive",
         "text": "I've been to her twice via offline consultation. The first time I was nervous and severely anxious and depressed. She talked me through it for 2 whole hours and was very encouraging and nice. I showed her my previous ADHD diagnosis and in the next session she conducted her own test, and concluded that the test I'd already done was correct. She is very positive about living with ADHD as her own kid has ADHD. She quickly understood my depression stems from my untreated ADHD, and guided me to get medication. She does not provide medication herself. She provides therapy, cognitive reframing. She's warm, gentle yet practical. I'm happy to consult with her. The number provided is the reception number. I don't know if she provides online consultation. Her website is - https://www.kavitapurohit.in/"
       }
-    ]
+    ],
+    "locality": "Kandivali"
   },
   {
     "id": 108,
@@ -2508,7 +2550,8 @@
         "sentiment": "Positive",
         "text": "Dr. Mathur is an excellent doctor and very empathetic. She is trained at NIMHANS and is a clear professional when it comes to ADHD diagnosis and treatment."
       }
-    ]
+    ],
+    "locality": "Indiranagar"
   },
   {
     "id": 111,
@@ -2552,7 +2595,8 @@
         "sentiment": "Positive",
         "text": "Friendly, good understanding of ADHD issues"
       }
-    ]
+    ],
+    "locality": "Rohini"
   },
   {
     "id": 113,
@@ -2574,7 +2618,8 @@
         "sentiment": "Positive",
         "text": "She was super friendly, very understanding of my ADHD symptoms and listened to me very patiently. She even gave me a full explanation of how the medication would help and recognised that i was previously being under treated for my adhd and revised my prescription accordingly"
       }
-    ]
+    ],
+    "locality": "Safdarjung"
   },
   {
     "id": 114,
@@ -2596,7 +2641,8 @@
         "sentiment": "Positive",
         "text": "Pretty good. She didn't rush me. Took her time to understand, asked a lot of questions. Allowed me to ask a lot of questions and replied patiently. Will recommend highly."
       }
-    ]
+    ],
+    "locality": "Chembur"
   },
   {
     "id": 115,
@@ -2618,7 +2664,8 @@
         "sentiment": "Positive",
         "text": "Polite and humble doctor, Listens to your problem patiently. He has no stigma about ADHD Stimulants. Also, they deliver medicines to your doorstep via Courier"
       }
-    ]
+    ],
+    "locality": "Churchgate"
   },
   {
     "id": 116,
@@ -2776,7 +2823,8 @@
         "sentiment": "Positive",
         "text": "good, cant type much. but it was good and yes to all of the question..."
       }
-    ]
+    ],
+    "locality": "Gachibowli"
   },
   {
     "id": 123,
@@ -2798,7 +2846,8 @@
         "sentiment": "Positive",
         "text": "Great experience, very friendly and specialises in adult ADHD"
       }
-    ]
+    ],
+    "locality": "Jayanagar"
   },
   {
     "id": 124,
@@ -2820,7 +2869,8 @@
         "sentiment": "Positive",
         "text": "Empathetic and actively listened to what I had to describe about my experiences with executive dysfunction, impulsivity, cognitive functioning, and other impairments. She validated me by suggesting that she too would guess that I have inattentive ADHD. The doctor didn't demonstrate any stigma towards \"adult ADHD\" and at least did not mention anything against stimulant medications. \n\nShe showed a great attitude towards Adult ADHD, at least compared to other psychiatrists I tried in the past who on the other hand were extremely impatient to dismiss and invalidate my lived experiences and who authoritatively claimed that I can't have ADHD as an adult and that I just have common depression. Not Dr. Manvee, though! She understood where I was coming from, and she gave me the space to advocate for myself and let me draw the contrast between depression and executive dysfunction; being very receptive of what the patients tell her."
       }
-    ]
+    ],
+    "locality": "Indirapuram"
   },
   {
     "id": 125,
@@ -2842,7 +2892,8 @@
         "sentiment": "Positive",
         "text": "The best doctor I've found for ADHD in Hyderabad. No other 7 doctors before him understood my problem before him and I am very satisfied with the treatment."
       }
-    ]
+    ],
+    "locality": "Gachibowli"
   },
   {
     "id": 126,
@@ -2886,7 +2937,8 @@
         "sentiment": "Positive",
         "text": "Friendly, takes their time to listen and explain, works with you to create a plan"
       }
-    ]
+    ],
+    "locality": "Koramangala"
   },
   {
     "id": 128,
@@ -2952,7 +3004,8 @@
         "sentiment": "Positive",
         "text": "Doctor is very friendly and patient. He have good understanding of ADHD. He adjusts the meds as per my needs. He preferred stimulant to me which are effective. On a long term, he may not want to rely on stimulants and will rather prefer the behaviour therapy."
       }
-    ]
+    ],
+    "locality": "Shivajinagar"
   },
   {
     "id": 131,
@@ -3282,7 +3335,8 @@
         "sentiment": "Positive",
         "text": "She charges 2000 for 30 minutes and does 1-2 days a week at IPH Thane at reduced charges\n\nDr Wilona was my very first psychiatrist in IPH Thane. Her initial choice of medication for me was SPOT on! Back then I didn't have any Autism or ADHD diagnosis. Because every time I went off that medication, I got less productive and my life suffered due to emotional dysregulation. Although my own ADHD diagnosis came from another psychiatrist in Pune, their medicines were useless and their advice ended up ruining 1.5 years of my life. I went back to Dr Wilona and we restarted same medication and have recently started on Inspiral too. She accepted my ADHD diagnosis after looking at my reports (soft copy sent on WhatsApp) and my Autism diagnosis came long before that because at that time, I was still with her.\n\nShe is very friendly and very attentive to what I am trying to say. As ADHDers, we always struggle with maintaining focus during the length of the session. So we need the MHP to maintain that focus. She helps maintain that focus and I can also do the rest.\n\nI think she does have a good understanding of Adult ADHD because she at least one other Adult ADHD patient who's my friend and who also has at least one medication that's same to mine. I think that one medication (oxcarbzapine) is extremely helpful to tackle the emotional dysregulation part of ADHD. I think Dr. Wilona has a profound understanding of why that medicine works for ADHD because she told me she uses it for her other neurodivergent patients too.\n\nHaving said that, I only suspected ADHD on my own and only while I was not working with her. I never mentioned the word \"focus\" during any of my psychiatry sessions (not until 2 months after my diagnosis_ and she never picked up on it either while we were working together before that diagnosis. She is probably not as proactive as she should be so the patient has to be proactive on their own. She also didn't order my vitamin deficiency tests until 6 months after we started (back in late 2018 early 2019). And even then I had to proactively request her for that. When asked my psychologist at that time, he said it was assumed that that's what patients get that deficiency tested first. I had massive D3 and B12 deficits, for which she prescribed tests on my request and then medication too.\n\nHaving said that, she has many loyal patients from across many Indian states and her chemist in Thane clinic can also courier certain medications if the patients have trouble collecting it from their local medical shops. And I am one of those loyal patients too.\n\nShe also has 97% on Practo. \n\nShe has no stigma about stimulant medication that I saw, but she only dispenses Inspiral from her own office inside her own clinic (that's why I travel from Pune to Mumbai for a day to get my Inspiral as and when I need). She has kept her sensitive medicines under a double lock inside her office and her chemist has the rest. She even asks patients to return any unused strips back to ensure they're not misused and writes her own prescriptions carefully.\n\nShe is also available on Whatsapp to answer SOME of my questions related to meds but not all the time and within reasonable limits. Her assistants are definitely available on Whatsapp during working hours to set appointments (that number is shared above)"
       }
-    ]
+    ],
+    "locality": "Thane"
   },
   {
     "id": 146,
@@ -3324,7 +3378,7 @@
     "reviews": [
       {
         "sentiment": "Positive",
-        "text": "😅\nI'll be describing myself.\nI'm pretty friendly and get along with kids well.\nI'm neurodiverse myself.\nI have a good understanding of ADHD having worked with a lot of kids and knowing a lot of adults with it. Executive dysfunction, RSD, time blindness, masking being some important points.\nYes, I can recognise inattentive ADHD\nNo stigma about any medication, therapy, gender, race, culture, sexual orientation.\n\nI'll be clear, I am ONLY an EMDR therapist, so I work on the trauma part of ADHD, both in kids and adults.\n\nI do provide free/50% off/reduced rate sessions. Those can be directly booked from the website. I was granted a 1.5L scholarship by a US organisation for my EMDR training for social welfare work I do in my rural setup and to further the reach of trauma therapy."
+        "text": "\ud83d\ude05\nI'll be describing myself.\nI'm pretty friendly and get along with kids well.\nI'm neurodiverse myself.\nI have a good understanding of ADHD having worked with a lot of kids and knowing a lot of adults with it. Executive dysfunction, RSD, time blindness, masking being some important points.\nYes, I can recognise inattentive ADHD\nNo stigma about any medication, therapy, gender, race, culture, sexual orientation.\n\nI'll be clear, I am ONLY an EMDR therapist, so I work on the trauma part of ADHD, both in kids and adults.\n\nI do provide free/50% off/reduced rate sessions. Those can be directly booked from the website. I was granted a 1.5L scholarship by a US organisation for my EMDR training for social welfare work I do in my rural setup and to further the reach of trauma therapy."
       }
     ]
   },
@@ -3348,7 +3402,8 @@
         "sentiment": "Positive",
         "text": "Very well researched - she's done research on methylphenidate too. Friendly enough, nothing crazy but I had a positive interaction with her. Listens to issues and does not have stigma around stimulant medication. Recognises inattentive ADHD. Did not shove antidepressants, SSRIs and anti anxiety meds onto me, she identified that those were resultant from my lifelong ADHD. If you know what you're doing and go in with the right evidence, and hopefully someone to vouch for you, then she should be able to get you the help you need. Very fair and gradual titration process."
       }
-    ]
+    ],
+    "locality": "Sector 34"
   },
   {
     "id": 149,
@@ -3392,7 +3447,8 @@
         "sentiment": "Positive",
         "text": "Very friendly. Understand the ins and outs of ADHD. LGBTQ Friendly. Very warm. No stigma around medicines."
       }
-    ]
+    ],
+    "locality": "Chembur"
   },
   {
     "id": 151,
@@ -3478,7 +3534,7 @@
     "reviews": [
       {
         "sentiment": "Positive",
-        "text": "She is a psychiatrist plus gives therapy. She has a superb understanding of ADHD, Trauma, Autism, OCD, and all other co-morbidities. She takes a lot of data from you to understand and give you the right care. She is patient, empathetic, practical, and non judgemental. Her therapy helped me process real-time distress like I never was able to before. It stopped my panic attacks and actually rewired my brain. I was surprised and thrilled. She will profile you very accurately from your relationships to your psyche and more. She doesn’t have a one size fits all approach, instead she tailors the therapy according to who you are. She takes her time analysing your reactions to medications only then recommending the right tweaks and dosages. And you can air out all your silly concerns as well she will be glad to answer everything. For all my girlies out there, she is especially great! I was able to tell her about my PMDD like symptoms and how meds stop working during some parts of the menstruation cycle. She listened and adapted to that as well, recommending changes in medication for that too. She looked at my past reports and identified something I'd missed that could be causing inflammation in my body. She takes a holistic approach by looking at past diseases/infections/diagnoses you have and recommending exercise, sleep aides, vitamins etc apart from the psychiatric medications. Truly a professional that the world needs more of. A standard apart from all the other professionals I've been with before."
+        "text": "She is a psychiatrist plus gives therapy. She has a superb understanding of ADHD, Trauma, Autism, OCD, and all other co-morbidities. She takes a lot of data from you to understand and give you the right care. She is patient, empathetic, practical, and non judgemental. Her therapy helped me process real-time distress like I never was able to before. It stopped my panic attacks and actually rewired my brain. I was surprised and thrilled. She will profile you very accurately from your relationships to your psyche and more. She doesn\u2019t have a one size fits all approach, instead she tailors the therapy according to who you are. She takes her time analysing your reactions to medications only then recommending the right tweaks and dosages. And you can air out all your silly concerns as well she will be glad to answer everything. For all my girlies out there, she is especially great! I was able to tell her about my PMDD like symptoms and how meds stop working during some parts of the menstruation cycle. She listened and adapted to that as well, recommending changes in medication for that too. She looked at my past reports and identified something I'd missed that could be causing inflammation in my body. She takes a holistic approach by looking at past diseases/infections/diagnoses you have and recommending exercise, sleep aides, vitamins etc apart from the psychiatric medications. Truly a professional that the world needs more of. A standard apart from all the other professionals I've been with before."
       }
     ]
   },
@@ -3500,7 +3556,7 @@
     "reviews": [
       {
         "sentiment": "Positive",
-        "text": "I've been to many therapists/psychiatrists before but Dr Vaidehee has set the standard apart from everybody. She's really invested in your health from mental to physical aspects as she understands the interplay between them. After beginning her sessions I have found the changes in medications to be exactly what my body needs. She reintroduced stimulants in my stack after I thought they didn’t work for me, and suprisingly at low doses they are actually doing wonders for me! She takes her time and analyses the data given to her to really understand what might be the best fit. Her therapy has addressed the core issues of my psyche, helping me cope with distress in a manner I've never been able to before. She is easy to talk to, empathetic, understanding, and non judgemental. Strict where she needs to be. Truly the world needs more people like her."
+        "text": "I've been to many therapists/psychiatrists before but Dr Vaidehee has set the standard apart from everybody. She's really invested in your health from mental to physical aspects as she understands the interplay between them. After beginning her sessions I have found the changes in medications to be exactly what my body needs. She reintroduced stimulants in my stack after I thought they didn\u2019t work for me, and suprisingly at low doses they are actually doing wonders for me! She takes her time and analyses the data given to her to really understand what might be the best fit. Her therapy has addressed the core issues of my psyche, helping me cope with distress in a manner I've never been able to before. She is easy to talk to, empathetic, understanding, and non judgemental. Strict where she needs to be. Truly the world needs more people like her."
       }
     ]
   },
@@ -3524,7 +3580,8 @@
         "sentiment": "Mixed",
         "text": "To the point, questions asked and correct diagnosis."
       }
-    ]
+    ],
+    "locality": "Andheri"
   },
   {
     "id": 157,
@@ -3567,6 +3624,279 @@
       {
         "sentiment": "Positive",
         "text": "He was very open and understanding for the Adult ADHD."
+      }
+    ],
+    "locality": "Vaishali Nagar"
+  },
+  {
+    "id": 159,
+    "name": "Dr. Ume Hani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Bangalore",
+    "address": "Altor Hospital, KR Puram, Bangalore",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Friend went there, she sent him to a psychologist to get diagnosed, then she prescribed stimulants"
+      }
+    ],
+    "locality": "KR Puram"
+  },
+  {
+    "id": 160,
+    "name": "Dr. Neena Vijayvargiya",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Kota",
+    "address": "4-B-6, near Maabharti School, Sector - 4, Talwandi, Kota, Rajasthan 324005",
+    "contact": "",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Friend did online consultation, she gave him atomoxetine basically"
+      }
+    ]
+  },
+  {
+    "id": 161,
+    "name": "Dr. Srinivas Singisetti",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp, apollo",
+    "city": "Visakhapatnam",
+    "address": "Apollo, Arilova",
+    "contact": "8008047357",
+    "fee": 1500,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Super friendly \nVery open to hearing you out \nGood understanding on ADHD, Autism, Neurodivergence\nNo stigma\nLot of empathy"
+      }
+    ]
+  },
+  {
+    "id": 162,
+    "name": "Dr. Varsha Dawani",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Ulhasnagar",
+    "address": "Opp Pappu garden, near pappu Society, behind Town Hall, Ulhasnagar, Maharashtra 421002",
+    "contact": "9822506751",
+    "fee": 800,
+    "doesADHDDiagnosis": "No",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Friendly, Good Listener, Supportive."
+      }
+    ]
+  },
+  {
+    "id": 163,
+    "name": "Dr. Bhavneet Kaur",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "Holistic Health and Healing, B 49, Block B, Amar Colony, Lajpat Nagar, Delhi",
+    "contact": "9560012511",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 1500,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My experience with Dr Bhavneet was/is amazing. She listens for as long as one wants to speak, is approachable, has a good understanding of ADHD and adult ADHD (although I do not know if she's an adult ADHD specialist), recognises inattentive ADHD (I myself am diagnosed with ADHD-PI), and prescribes stimulant medication after trying out non-stimulants first. She is very thorough and does not jump to assumptions or conclusions. She is also mindful of comorbidities and recognised my mood disorder early enough to prevent a major episode. I am under treatment for both ADHD and a mood disorder (that looks similar to Bipolar-II), and Dr Bhavneet is a relief in this journey."
+      }
+    ],
+    "locality": "Lajpat Nagar"
+  },
+  {
+    "id": 164,
+    "name": "Dr. Sudha Rani",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mysore",
+    "address": "Healthyminds clinic, 8th cross, Kalidasa Rd, Vani Vilas Mohalla, Mysuru, Karnataka 570002",
+    "contact": "9742337975",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Helped my friend hop on atomoxetine, she doesn't prescribe stims and not much knowledge about ADHD, but does recognise ADHD at least, my friend is doing fine"
+      }
+    ]
+  },
+  {
+    "id": 165,
+    "name": "Dr. Subrata Naskar",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Psynapse Clinic, Annapurna Building, 224A, Acharya Jagdish Chandra Bose Rd, Beck Bagan, Ballygunge, Kolkata, West Bengal 700017",
+    "contact": "9163815795",
+    "fee": 700,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Diagnosed my friend and prescribed her stimulants in Kolkata"
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "IDK if the doctor prescribes stimulants online, but he provisionally diagnosed my friend from Kolkata and prescribed stims on first visit"
+      }
+    ],
+    "locality": "Ballygunge"
+  },
+  {
+    "id": 166,
+    "name": "Dr. Likhith S",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo, whatsapp",
+    "city": "Bangalore",
+    "address": "Manju mind and bone care clinic",
+    "contact": "9844067406",
+    "fee": 500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He is really accessible and compassionate, gives you proper time. Will also courier medicine if you schedule a delivery (only inspiral)"
+      }
+    ]
+  },
+  {
+    "id": 167,
+    "name": "Dr. Harkishan Mamtani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Gmeet",
+    "city": "Nagpur",
+    "address": "Manoved - Centre for Mental Welbeing & Research AGM Multispecialty Clinic,  6A/6B 1st Floor, Pushpakunj Complex, Central Bazar Road, Ramdaspeth, Nagpur - 440012",
+    "contact": "8380022225",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "He was able to catch my ADHD quickly. very friendly, non judgmental and open to feedbacks and opinions"
+      }
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Dr. Vaidehee Choudhary",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Ahmedabad",
+    "address": "Ahmedabad (contact via WhatsApp)",
+    "contact": "9925439471",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Provisional Diagnosis of my friend and mailed her inspiral too :))) first visit prescribed inspiral and diagnosed ADULT ADHD"
+      }
+    ]
+  },
+  {
+    "id": 169,
+    "name": "Dr. Prerana Maheswari",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "WhatsApp",
+    "city": "Bangalore",
+    "address": "Manipal Clinic, Sarjapur - Marathahalli Rd, opposite The Prestige City, Dommasandra, Yamare, Bengaluru, Karnataka 562125",
+    "contact": "7306078277",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "Provisional diagnosis of friend, gave her Stimulants on first visit, and also prescribes online and also the Manipal hospital where she works will mail you the stimulants you need :)"
+      }
+    ],
+    "locality": "Marathahalli"
+  },
+  {
+    "id": 170,
+    "name": "Dr. Ishat Kalra",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Website is under construction.u can check my youtube profile under the same name",
+    "city": "Ludhiana",
+    "address": "Dr. Raj Kalra Memorial Neuropsychiatry Centre, Brindraban Road, Neem Chowk, New Kundanpuri, Civil Lines, Ludhiana, Punjab 141001",
+    "contact": "9463661166",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I had adhd which led me to becoming a psychiatrist\nU can check my explanations and details on my youtube channel"
       }
     ]
   }

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="10" fill="#4A7C6F" />
+  <circle cx="50" cy="50" r="7" fill="#fff" />
+  <circle cx="50" cy="50" r="4" fill="#4A7C6F" />
+  <!-- Top lobe -->
+  <ellipse cx="50" cy="24" rx="12" ry="14" fill="#4A7C6F" opacity="0.85" />
+  <circle cx="50" cy="20" r="6" fill="#fff" />
+  <circle cx="50" cy="20" r="3" fill="#4A7C6F" />
+  <rect x="46" y="24" width="8" height="18" rx="4" fill="#4A7C6F" opacity="0.7" />
+  <!-- Bottom-left lobe -->
+  <ellipse cx="27.5" cy="63" rx="12" ry="14" fill="#4A7C6F" opacity="0.85" transform="rotate(-30 27.5 63)" />
+  <circle cx="25" cy="66" r="6" fill="#fff" />
+  <circle cx="25" cy="66" r="3" fill="#4A7C6F" />
+  <rect x="30" y="52" width="8" height="18" rx="4" fill="#4A7C6F" opacity="0.7" transform="rotate(60 34 61)" />
+  <!-- Bottom-right lobe -->
+  <ellipse cx="72.5" cy="63" rx="12" ry="14" fill="#4A7C6F" opacity="0.85" transform="rotate(30 72.5 63)" />
+  <circle cx="75" cy="66" r="6" fill="#fff" />
+  <circle cx="75" cy="66" r="3" fill="#4A7C6F" />
+  <rect x="62" y="52" width="8" height="18" rx="4" fill="#4A7C6F" opacity="0.7" transform="rotate(-60 66 61)" />
+</svg>

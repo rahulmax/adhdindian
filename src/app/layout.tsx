@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ADHD India — Find Your Doctor",
+  title: "ADHD Indian — Find Your Doctor",
   description:
     "Find ADHD-friendly psychiatrists and psychologists across India. Filter by city, pricing, consultation mode, and more.",
 };

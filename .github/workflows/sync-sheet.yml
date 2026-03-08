@@ -1,0 +1,49 @@
+name: Sync Google Sheet
+
+on:
+  schedule:
+    # Every 3 days at 6am UTC
+    - cron: '0 6 */3 * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync doctors from Google Sheet
+        run: node scripts/sync-sheet.mjs
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/data/doctors.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Create PR with new doctors
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          BRANCH="sync/sheet-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add src/data/doctors.json
+          git commit -m "chore: add new doctors from Google Sheet"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "New doctors from Google Sheet" \
+            --body "$(cat <<'EOF'
+          Automated sync found new doctor entries in the Google Sheet Responses.
+
+          **Please review each new entry before merging** — check names, cities, and formatting.
+          EOF
+          )"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

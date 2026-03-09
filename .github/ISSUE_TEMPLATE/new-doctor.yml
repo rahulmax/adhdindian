@@ -1,0 +1,87 @@
+name: "New Doctor Submission"
+description: Suggest a new ADHD doctor to be listed
+labels: ["new-doctor"]
+body:
+  - type: input
+    id: doctor-name
+    attributes:
+      label: Doctor Name
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Psychiatrist
+        - Psychologist
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City
+      placeholder: "e.g. Bangalore, Mumbai, Delhi"
+    validations:
+      required: true
+  - type: input
+    id: address
+    attributes:
+      label: Address / Clinic Name
+      placeholder: "e.g. Apollo Clinic, Koramangala, Bangalore"
+    validations:
+      required: false
+  - type: input
+    id: fee
+    attributes:
+      label: Consultation Fee (₹)
+      placeholder: "e.g. 1500"
+    validations:
+      required: false
+  - type: dropdown
+    id: consultation-mode
+    attributes:
+      label: Consultation Mode
+      options:
+        - Online
+        - Offline
+        - Both
+        - Not sure
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact / Phone
+      placeholder: "e.g. 9876543210"
+    validations:
+      required: false
+  - type: dropdown
+    id: stimulants
+    attributes:
+      label: Prescribes Stimulants?
+      options:
+        - "Yes"
+        - "No"
+        - In-person only
+        - Not sure
+    validations:
+      required: false
+  - type: dropdown
+    id: adult-adhd
+    attributes:
+      label: Adult ADHD Specialist?
+      options:
+        - "Yes"
+        - "No"
+        - Not sure
+    validations:
+      required: false
+  - type: textarea
+    id: other-details
+    attributes:
+      label: Anything else?
+      description: Online platform, ADHD testing, your experience, etc.
+      placeholder: "e.g. They use Practo for online consultations. Very thorough with diagnosis."
+    validations:
+      required: false

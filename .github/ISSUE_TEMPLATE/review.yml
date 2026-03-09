@@ -1,0 +1,36 @@
+name: "Doctor Review"
+description: Share your experience with a listed doctor
+labels: ["review"]
+body:
+  - type: input
+    id: doctor-name
+    attributes:
+      label: Doctor Name
+      description: Name of the doctor (pre-filled if you came from the app)
+    validations:
+      required: true
+  - type: input
+    id: doctor-id
+    attributes:
+      label: Doctor ID
+      description: Internal ID (pre-filled from app, do not edit)
+    validations:
+      required: false
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Overall Experience
+      options:
+        - Positive
+        - Negative
+        - Neutral
+    validations:
+      required: true
+  - type: textarea
+    id: review
+    attributes:
+      label: Your Review
+      description: Share your experience — this helps others find the right doctor
+      placeholder: "e.g. Very patient and thorough. Took time to explain the diagnosis and treatment options."
+    validations:
+      required: true

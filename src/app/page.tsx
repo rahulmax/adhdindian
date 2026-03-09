@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useCallback, useRef } from "react";
+import { Stethoscope, Brain, Video, Hospital, Pill, UserCheck, ClipboardCheck, FileCheck } from "lucide-react";
 import doctors from "@/data/doctors.json";
 
 type Doctor = (typeof doctors)[number];
@@ -8,32 +9,46 @@ type Review = Doctor["reviews"][number];
 
 // --- Icons (inline SVG, no external library) ---
 
-// Fidget spinner - default orientation: 1 lobe top, 2 lobes bottom (triangle pointing up)
-function FidgetSpinnerIcon({ size = 24, className = "" }: { size?: number; className?: string }) {
+// Fidget spinner - supports 2 or 3 spokes
+function FidgetSpinnerIcon({ size = 24, className = "", spokes = 3 }: { size?: number; className?: string; spokes?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" fill="none" className={className}>
       {/* Center circle */}
       <circle cx="50" cy="50" r="10" fill="currentColor" />
       <circle cx="50" cy="50" r="7" fill="var(--background, #fff)" />
       <circle cx="50" cy="50" r="4" fill="currentColor" />
-      {/* Top lobe (pointing up) */}
-      <ellipse cx="50" cy="24" rx="12" ry="14" fill="currentColor" opacity="0.85" />
-      <circle cx="50" cy="20" r="6" fill="var(--background, #fff)" />
-      <circle cx="50" cy="20" r="3" fill="currentColor" />
-      {/* Arm to top */}
-      <rect x="46" y="24" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" />
-      {/* Bottom-left lobe */}
-      <ellipse cx="27.5" cy="63" rx="12" ry="14" fill="currentColor" opacity="0.85" transform="rotate(-30 27.5 63)" />
-      <circle cx="25" cy="66" r="6" fill="var(--background, #fff)" />
-      <circle cx="25" cy="66" r="3" fill="currentColor" />
-      {/* Arm to bottom-left */}
-      <rect x="30" y="52" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" transform="rotate(60 34 61)" />
-      {/* Bottom-right lobe */}
-      <ellipse cx="72.5" cy="63" rx="12" ry="14" fill="currentColor" opacity="0.85" transform="rotate(30 72.5 63)" />
-      <circle cx="75" cy="66" r="6" fill="var(--background, #fff)" />
-      <circle cx="75" cy="66" r="3" fill="currentColor" />
-      {/* Arm to bottom-right */}
-      <rect x="62" y="52" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" transform="rotate(-60 66 61)" />
+      {spokes === 3 ? (
+        <>
+          {/* Top lobe (pointing up) */}
+          <ellipse cx="50" cy="24" rx="12" ry="14" fill="currentColor" opacity="0.85" />
+          <circle cx="50" cy="20" r="6" fill="var(--background, #fff)" />
+          <circle cx="50" cy="20" r="3" fill="currentColor" />
+          <rect x="46" y="24" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" />
+          {/* Bottom-left lobe */}
+          <ellipse cx="27.5" cy="63" rx="12" ry="14" fill="currentColor" opacity="0.85" transform="rotate(-30 27.5 63)" />
+          <circle cx="25" cy="66" r="6" fill="var(--background, #fff)" />
+          <circle cx="25" cy="66" r="3" fill="currentColor" />
+          <rect x="30" y="52" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" transform="rotate(60 34 61)" />
+          {/* Bottom-right lobe */}
+          <ellipse cx="72.5" cy="63" rx="12" ry="14" fill="currentColor" opacity="0.85" transform="rotate(30 72.5 63)" />
+          <circle cx="75" cy="66" r="6" fill="var(--background, #fff)" />
+          <circle cx="75" cy="66" r="3" fill="currentColor" />
+          <rect x="62" y="52" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" transform="rotate(-60 66 61)" />
+        </>
+      ) : (
+        <>
+          {/* Top lobe */}
+          <ellipse cx="50" cy="24" rx="12" ry="14" fill="currentColor" opacity="0.85" />
+          <circle cx="50" cy="20" r="6" fill="var(--background, #fff)" />
+          <circle cx="50" cy="20" r="3" fill="currentColor" />
+          <rect x="46" y="24" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" />
+          {/* Bottom lobe */}
+          <ellipse cx="50" cy="76" rx="12" ry="14" fill="currentColor" opacity="0.85" />
+          <circle cx="50" cy="80" r="6" fill="var(--background, #fff)" />
+          <circle cx="50" cy="80" r="3" fill="currentColor" />
+          <rect x="46" y="58" width="8" height="18" rx="4" fill="currentColor" opacity="0.7" />
+        </>
+      )}
     </svg>
   );
 }
@@ -44,7 +59,31 @@ function emitParticles(button: HTMLElement, level: number) {
   const cy = rect.top + rect.height / 2;
 
   if (level === 1) {
-    // Sparks: orange/amber dots
+    // Subtle: few monochrome amber sparks
+    const count = 5;
+    for (let i = 0; i < count; i++) {
+      const el = document.createElement("div");
+      const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.5;
+      const dist = 25 + Math.random() * 30;
+      const s = 2 + Math.random() * 2;
+      Object.assign(el.style, {
+        position: "fixed", left: `${cx}px`, top: `${cy}px`,
+        width: `${s}px`, height: `${s}px`, borderRadius: "50%",
+        background: `hsl(35, 80%, 60%)`,
+        pointerEvents: "none", zIndex: "9999", transition: "none",
+      });
+      document.body.appendChild(el);
+      requestAnimationFrame(() => {
+        Object.assign(el.style, {
+          transition: "all 0.5s cubic-bezier(0.2, 0.8, 0.3, 1)",
+          transform: `translate(${Math.cos(angle) * dist}px, ${Math.sin(angle) * dist}px) scale(0)`,
+          opacity: "0",
+        });
+      });
+      setTimeout(() => el.remove(), 600);
+    }
+  } else if (level === 2) {
+    // Warm sparks: orange/amber, more of them
     const count = 10;
     for (let i = 0; i < count; i++) {
       const el = document.createElement("div");
@@ -54,8 +93,8 @@ function emitParticles(button: HTMLElement, level: number) {
       Object.assign(el.style, {
         position: "fixed", left: `${cx}px`, top: `${cy}px`,
         width: `${s}px`, height: `${s}px`, borderRadius: "50%",
-        background: `hsl(${25 + Math.random() * 30}, 100%, ${55 + Math.random() * 20}%)`,
-        boxShadow: "0 0 4px rgba(255,180,50,0.8)",
+        background: `hsl(${25 + Math.random() * 20}, 100%, ${55 + Math.random() * 15}%)`,
+        boxShadow: "0 0 4px rgba(255,180,50,0.6)",
         pointerEvents: "none", zIndex: "9999", transition: "none",
       });
       document.body.appendChild(el);
@@ -68,21 +107,21 @@ function emitParticles(button: HTMLElement, level: number) {
       });
       setTimeout(() => el.remove(), 700);
     }
-  } else if (level === 2) {
-    // Colorful sparks: rainbow dots, more of them
-    const count = 18;
-    const hues = [0, 30, 60, 120, 200, 270, 330];
+  } else if (level === 3) {
+    // Colorful sparks: a few rainbow colors
+    const count = 16;
+    const hues = [0, 45, 60, 200, 280];
     for (let i = 0; i < count; i++) {
       const el = document.createElement("div");
       const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.4;
-      const dist = 40 + Math.random() * 70;
-      const s = 3 + Math.random() * 4;
+      const dist = 40 + Math.random() * 60;
+      const s = 3 + Math.random() * 3;
       const hue = hues[Math.floor(Math.random() * hues.length)];
       Object.assign(el.style, {
         position: "fixed", left: `${cx}px`, top: `${cy}px`,
         width: `${s}px`, height: `${s}px`, borderRadius: "50%",
         background: `hsl(${hue}, 90%, 60%)`,
-        boxShadow: `0 0 6px hsla(${hue}, 90%, 60%, 0.7)`,
+        boxShadow: `0 0 6px hsla(${hue}, 90%, 60%, 0.5)`,
         pointerEvents: "none", zIndex: "9999", transition: "none",
       });
       document.body.appendChild(el);
@@ -96,15 +135,15 @@ function emitParticles(button: HTMLElement, level: number) {
       setTimeout(() => el.remove(), 900);
     }
   } else {
-    // Confetti: rectangles that tumble and fall
-    const count = level >= 4 ? 40 : 22;
+    // Full confetti: max color, lots of particles
+    const count = level >= 5 ? 40 : 26;
     const hues = [0, 30, 50, 120, 200, 270, 310, 45, 170];
     for (let i = 0; i < count; i++) {
       const el = document.createElement("div");
       const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.6;
-      const dist = 50 + Math.random() * (level >= 4 ? 140 : 90);
+      const dist = 50 + Math.random() * (level >= 5 ? 140 : 90);
       const tx = Math.cos(angle) * dist;
-      const ty = Math.sin(angle) * dist + 30 + Math.random() * 40; // gravity bias
+      const ty = Math.sin(angle) * dist + 30 + Math.random() * 40;
       const w = 4 + Math.random() * 6;
       const h = 6 + Math.random() * 10;
       const hue = hues[Math.floor(Math.random() * hues.length)];
@@ -127,6 +166,40 @@ function emitParticles(button: HTMLElement, level: number) {
       });
       setTimeout(() => el.remove(), (dur + 0.1) * 1000);
     }
+  }
+}
+
+function emitSmoke(button: HTMLElement, thickness: number) {
+  const rect = button.getBoundingClientRect();
+  const cx = rect.left + rect.width / 2;
+  const cy = rect.top + rect.height / 2;
+  const count = 3 + Math.floor(thickness * 3);
+  const baseSize = 15 + thickness * 12;
+  const baseOpacity = 0.15 + thickness * 0.08;
+
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement("div");
+    const s = baseSize + Math.random() * baseSize;
+    const drift = (Math.random() - 0.5) * 40;
+    Object.assign(el.style, {
+      position: "fixed",
+      left: `${cx - s / 2 + (Math.random() - 0.5) * 20}px`,
+      top: `${cy - s / 2}px`,
+      width: `${s}px`, height: `${s}px`, borderRadius: "50%",
+      background: `rgba(120, 120, 120, ${baseOpacity})`,
+      filter: `blur(${6 + thickness * 4}px)`,
+      pointerEvents: "none", zIndex: "9998", transition: "none",
+    });
+    document.body.appendChild(el);
+    const dur = 1 + Math.random() * 0.8;
+    requestAnimationFrame(() => {
+      Object.assign(el.style, {
+        transition: `all ${dur}s cubic-bezier(0.1, 0.4, 0.2, 1)`,
+        transform: `translate(${drift}px, ${-40 - Math.random() * 60}px) scale(${1.5 + thickness * 0.5})`,
+        opacity: "0",
+      });
+    });
+    setTimeout(() => el.remove(), (dur + 0.1) * 1000);
   }
 }
 
@@ -192,6 +265,13 @@ function emitFireworks() {
 }
 
 function showAdhdNudge(onDismiss?: () => void) {
+  const headings = [
+    "Dopamine unlocked!",
+    "Achievement unlocked!",
+    "Hyperfocus detected!",
+    "Stim complete!",
+    "Brain go brrr!",
+  ];
   const messages = [
     "Okay you've had your fun... now back to what you were doing!",
     "Your brain enjoyed that. Now channel that energy into your task!",
@@ -199,27 +279,40 @@ function showAdhdNudge(onDismiss?: () => void) {
     "That was a solid break. Your task is missing you.",
     "Dopamine topped up. Now go crush whatever you were working on!",
   ];
+  const heading = headings[Math.floor(Math.random() * headings.length)];
   const msg = messages[Math.floor(Math.random() * messages.length)];
 
   const overlay = document.createElement("div");
   Object.assign(overlay.style, {
     position: "fixed", inset: "0", display: "flex",
     alignItems: "center", justifyContent: "center",
-    zIndex: "10000", pointerEvents: "none",
+    zIndex: "10000", pointerEvents: "auto",
+    background: "rgba(0,0,0,0.4)",
   });
 
   const box = document.createElement("div");
   Object.assign(box.style, {
-    padding: "20px 32px", borderRadius: "16px",
+    padding: "24px 32px", borderRadius: "16px",
     background: "rgba(0,0,0,0.85)", color: "#fff",
-    fontSize: "16px", fontWeight: "500", textAlign: "center",
-    maxWidth: "340px", lineHeight: "1.5",
+    textAlign: "center", maxWidth: "340px",
     opacity: "0", transform: "translateY(20px) scale(0.95)",
     transition: "all 0.4s cubic-bezier(0.2, 0.8, 0.3, 1)",
-    display: "flex", flexDirection: "column", gap: "12px",
+    display: "flex", flexDirection: "column", gap: "16px",
+    userSelect: "none", WebkitUserSelect: "none",
   });
 
+  const title = document.createElement("p");
+  Object.assign(title.style, {
+    fontSize: "20px", fontWeight: "700", lineHeight: "1.2", margin: "0",
+  });
+  title.textContent = heading;
+  box.appendChild(title);
+
   const text = document.createElement("p");
+  Object.assign(text.style, {
+    fontSize: "15px", fontWeight: "400", lineHeight: "1.5", margin: "0",
+    opacity: "0.8",
+  });
   text.textContent = msg;
   box.appendChild(text);
 
@@ -229,9 +322,9 @@ function showAdhdNudge(onDismiss?: () => void) {
     background: "rgba(255,255,255,0.15)", color: "#fff",
     fontSize: "14px", fontWeight: "600", cursor: "pointer",
     border: "1px solid rgba(255,255,255,0.2)",
-    transition: "background 0.2s", pointerEvents: "auto",
+    transition: "background 0.2s",
   });
-  btn.textContent = "Got it";
+  btn.textContent = "Lol, OK";
   btn.onmouseenter = () => { btn.style.background = "rgba(255,255,255,0.25)"; };
   btn.onmouseleave = () => { btn.style.background = "rgba(255,255,255,0.15)"; };
   box.appendChild(btn);
@@ -255,7 +348,7 @@ function showAdhdNudge(onDismiss?: () => void) {
     box.style.transform = "translateY(0) scale(1)";
   });
 
-  setTimeout(dismiss, 4000);
+  // No auto-dismiss — user must click the button
 }
 
 function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: number; onClick?: () => void; initialVelocity?: number }) {
@@ -268,6 +361,7 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
   const lastTime = useRef(0);
   const clicks = useRef(0);
   const idleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const [spokes, setSpokes] = useState(3);
 
   function resetSpinner() {
     cancelAnimationFrame(raf.current);
@@ -275,6 +369,7 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
     angle.current = 0;
     animating.current = false;
     clicks.current = 0;
+    setSpokes(3);
     if (divRef.current) {
       divRef.current.style.transform = `rotate(0deg)`;
       divRef.current.style.filter = "";
@@ -334,18 +429,26 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
     const n = clicks.current;
     const btn = buttonRef.current;
 
-    if (n >= 5 && btn) emitParticles(btn, 1);
-    if (n >= 9 && btn) emitParticles(btn, 2);
-    if (n >= 14 && btn) emitParticles(btn, 3);
-    if (n >= 20 && btn) { emitParticles(btn, 4); screenShake(n >= 30 ? 8 : 4); }
-    if (n >= 25) emitFireworks();
-    if (n >= 30 && divRef.current) {
-      divRef.current.style.filter = "drop-shadow(0 0 12px gold) drop-shadow(0 0 24px orange)";
-      const d = divRef.current;
-      setTimeout(() => { d.style.filter = ""; }, 3000);
+    // Stage 1 (5-8): subtle amber sparks
+    if (n >= 5 && n < 9 && btn) emitParticles(btn, 1);
+    // Stage 2 (9-13): warmer, more sparks
+    if (n >= 9 && n < 14 && btn) emitParticles(btn, 2);
+    // Stage 3 (14-19): colorful sparks
+    if (n >= 14 && n < 20 && btn) emitParticles(btn, 3);
+    // Stage 4 (20): full confetti burst
+    if (n === 20 && btn) { emitParticles(btn, 4); emitFireworks(); screenShake(4); }
+    // Stage 5 (21-30): smoke phase — switch to 2 spokes, smoke gets thicker
+    if (n >= 21 && btn) {
+      if (n === 21) setSpokes(2);
+      const thickness = (n - 20) / 10; // 0.1 to 1.0
+      emitSmoke(btn, thickness);
+      if (n >= 25) screenShake(2 + thickness * 6);
     }
     if (n === 30) {
       clearTimeout(idleTimer.current);
+      if (divRef.current) {
+        divRef.current.style.filter = "drop-shadow(0 0 12px gold) drop-shadow(0 0 24px orange)";
+      }
       showAdhdNudge(resetSpinner);
     }
 
@@ -360,7 +463,7 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
       aria-label="Logo"
     >
       <div ref={divRefCallback}>
-        <FidgetSpinnerIcon size={size} />
+        <FidgetSpinnerIcon size={size} spokes={spokes} />
       </div>
     </button>
   );
@@ -480,79 +583,7 @@ function UsersLargeIcon() {
 }
 
 // Step 2 card icons
-function PsychiatristIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M3 21h18M9 8h1M14 8h1M9 12h1M14 12h1M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
-      <path d="M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4" />
-    </svg>
-  );
-}
 
-function PsychologistIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 2a5 5 0 0 1 5 5c0 2-1 3.5-2.5 4.5" />
-      <path d="M12 2a5 5 0 0 0-5 5c0 2 1 3.5 2.5 4.5" />
-      <path d="M12 22v-9" />
-      <path d="M8 16l4-4.5L16 16" />
-    </svg>
-  );
-}
-
-function OnlineIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
-    </svg>
-  );
-}
-
-function InPersonIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
-    </svg>
-  );
-}
-
-function StimulantIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-      <line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
-    </svg>
-  );
-}
-
-function AdultIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="7" r="4" />
-      <path d="M5 21v-2a7 7 0 0 1 14 0v2" />
-    </svg>
-  );
-}
-
-function DiagnosisIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-      <polyline points="14 2 14 8 20 8" />
-      <line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" />
-      <polyline points="10 9 9 9 8 9" />
-    </svg>
-  );
-}
-
-function AcceptsPriorIcon() {
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-      <polyline points="22 4 12 14.01 9 11.01" />
-    </svg>
-  );
-}
 
 function DiscordIcon() {
   return (
@@ -709,14 +740,14 @@ type SortValue = (typeof sortOptions)[number]["value"];
 type PreferenceKey = "psychiatrist" | "psychologist" | "online" | "inPerson" | "stimulants" | "adultADHD" | "acceptsPrior" | "doesDiagnosis";
 
 const preferenceCards: { key: PreferenceKey; label: string; description: string; icon: React.ReactNode }[] = [
-  { key: "psychiatrist", label: "Psychiatrist", description: "Can prescribe medication", icon: <PsychiatristIcon /> },
-  { key: "psychologist", label: "Psychologist", description: "Therapy & testing", icon: <PsychologistIcon /> },
-  { key: "online", label: "Online", description: "Video consultations", icon: <OnlineIcon /> },
-  { key: "inPerson", label: "In-person", description: "Visit the clinic", icon: <InPersonIcon /> },
-  { key: "stimulants", label: "Prescribes Stimulants", description: "Ritalin, Concerta, etc.", icon: <StimulantIcon /> },
-  { key: "adultADHD", label: "Adult ADHD Specialist", description: "Specializes in adult ADHD", icon: <AdultIcon /> },
-  { key: "acceptsPrior", label: "Accepts Prior Diagnosis", description: "Honors existing diagnoses", icon: <AcceptsPriorIcon /> },
-  { key: "doesDiagnosis", label: "Does ADHD Testing", description: "Can diagnose ADHD", icon: <DiagnosisIcon /> },
+  { key: "psychiatrist", label: "Psychiatrist", description: "Can prescribe medication", icon: <Stethoscope size={24} strokeWidth={1.5} /> },
+  { key: "psychologist", label: "Psychologist", description: "Therapy & testing", icon: <Brain size={24} strokeWidth={1.5} /> },
+  { key: "online", label: "Online", description: "Video consultations", icon: <Video size={24} strokeWidth={1.5} /> },
+  { key: "inPerson", label: "In-person", description: "Visit the clinic", icon: <Hospital size={24} strokeWidth={1.5} /> },
+  { key: "stimulants", label: "Prescribes Stimulants", description: "Ritalin, Concerta, etc.", icon: <Pill size={24} strokeWidth={1.5} /> },
+  { key: "adultADHD", label: "Adult ADHD Specialist", description: "Specializes in adult ADHD", icon: <UserCheck size={24} strokeWidth={1.5} /> },
+  { key: "acceptsPrior", label: "Accepts Prior Diagnosis", description: "Honors existing diagnoses", icon: <FileCheck size={24} strokeWidth={1.5} /> },
+  { key: "doesDiagnosis", label: "Does ADHD Testing", description: "Can diagnose ADHD", icon: <ClipboardCheck size={24} strokeWidth={1.5} /> },
 ];
 
 // --- Components ---
@@ -1277,6 +1308,8 @@ export default function Home() {
   const [selectedPrefs, setSelectedPrefs] = useState<Set<PreferenceKey>>(new Set());
   const [doctorType, setDoctorType] = useState<string | null>(null);
   const [showLoading, setShowLoading] = useState(true);
+  const [priceRange, setPriceRange] = useState<string | null>(null);
+  const filterDrawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const t = setTimeout(() => setShowLoading(false), 3000);
@@ -1409,6 +1442,18 @@ export default function Home() {
           d.doesADHDDiagnosis === "Yes (Provisional)"
       );
     }
+    if (priceRange) {
+      result = result.filter((d) => {
+        if (d.fee === null) return false;
+        switch (priceRange) {
+          case "under500": return d.fee < 500;
+          case "500-1000": return d.fee >= 500 && d.fee <= 1000;
+          case "1000-2000": return d.fee >= 1000 && d.fee <= 2000;
+          case "over2000": return d.fee > 2000;
+          default: return true;
+        }
+      });
+    }
 
     result.sort((a, b) => {
       switch (sort) {
@@ -1430,11 +1475,12 @@ export default function Home() {
     });
 
     return result;
-  }, [search, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, sort]);
+  }, [search, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, priceRange, sort]);
 
   const activeFilterCount =
     (doctorType ? 1 : 0) + (mode ? 1 : 0) + (stimulants ? 1 : 0) +
-    (adultADHD ? 1 : 0) + (acceptsPrior ? 1 : 0) + (doesDiagnosis ? 1 : 0);
+    (adultADHD ? 1 : 0) + (acceptsPrior ? 1 : 0) + (doesDiagnosis ? 1 : 0) +
+    (priceRange ? 1 : 0);
 
   function clearFilters() {
     setDoctorType(null);
@@ -1443,6 +1489,7 @@ export default function Home() {
     setAdultADHD(false);
     setAcceptsPrior(false);
     setDoesDiagnosis(false);
+    setPriceRange(null);
     setSearch("");
   }
 
@@ -1514,10 +1561,11 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <button
                 onClick={changeCity}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface hover:bg-surface-hover transition-colors text-sm"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10 hover:bg-accent/20 transition-colors text-sm"
               >
-                <MapPinIcon />
-                <span className="text-foreground font-medium">{city || "All cities"}</span>
+                <span className="text-accent"><MapPinIcon /></span>
+                <span className="text-accent font-semibold">{city || "All cities"}</span>
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-accent/60"><polyline points="6 9 12 15 18 9" /></svg>
               </button>
               <button
                 onClick={toggleTheme}
@@ -1566,7 +1614,13 @@ export default function Home() {
           {/* Filter + Sort row */}
           <div className="flex items-center justify-between mt-2 gap-2">
             <button
-              onClick={() => setShowFilters(!showFilters)}
+              onClick={() => {
+                const next = !showFilters;
+                setShowFilters(next);
+                if (next) {
+                  setTimeout(() => filterDrawerRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }), 50);
+                }
+              }}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                 showFilters || activeFilterCount > 0
                   ? "bg-accent text-white"
@@ -1601,8 +1655,9 @@ export default function Home() {
       </header>
 
       {/* Filter Panel */}
-      {showFilters && (
-        <div className="bg-surface border-b border-border">
+      <div ref={filterDrawerRef} className="grid transition-[grid-template-rows] duration-200 ease-out" style={{ gridTemplateRows: showFilters ? "1fr" : "0fr" }}>
+        <div className="overflow-hidden">
+          <div className="bg-surface border-b border-border">
           <div className="max-w-lg mx-auto px-4 py-4 space-y-4">
             {/* Doctor Type */}
             <div>
@@ -1636,6 +1691,18 @@ export default function Home() {
               </SegmentedControl>
             </div>
 
+            {/* Price Range */}
+            <div>
+              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">Consultation Fee</p>
+              <SegmentedControl>
+                <SegmentChip label="Any" active={priceRange === null} onClick={() => setPriceRange(null)} />
+                <SegmentChip label="Under ₹500" active={priceRange === "under500"} onClick={() => setPriceRange(priceRange === "under500" ? null : "under500")} />
+                <SegmentChip label="₹500-1K" active={priceRange === "500-1000"} onClick={() => setPriceRange(priceRange === "500-1000" ? null : "500-1000")} />
+                <SegmentChip label="₹1K-2K" active={priceRange === "1000-2000"} onClick={() => setPriceRange(priceRange === "1000-2000" ? null : "1000-2000")} />
+                <SegmentChip label="Over ₹2K" active={priceRange === "over2000"} onClick={() => setPriceRange(priceRange === "over2000" ? null : "over2000")} />
+              </SegmentedControl>
+            </div>
+
             {/* Toggle filters */}
             <div className="flex flex-wrap gap-1.5">
               <FilterChip label="Adult ADHD Specialist" active={adultADHD} onClick={() => setAdultADHD(!adultADHD)} />
@@ -1643,14 +1710,20 @@ export default function Home() {
               <FilterChip label="Does ADHD Testing" active={doesDiagnosis} onClick={() => setDoesDiagnosis(!doesDiagnosis)} />
             </div>
 
-            {activeFilterCount > 0 && (
-              <button onClick={clearFilters} className="text-sm text-accent hover:text-accent-hover font-medium">
-                Clear all filters
+            <div className="flex items-center justify-between">
+              {activeFilterCount > 0 ? (
+                <button onClick={clearFilters} className="text-sm text-accent hover:text-accent-hover font-medium">
+                  Clear all filters
+                </button>
+              ) : <span />}
+              <button onClick={() => setShowFilters(false)} className="text-sm font-medium px-4 py-1.5 rounded-full bg-accent text-white hover:bg-accent-hover">
+                Done
               </button>
-            )}
+            </div>
           </div>
         </div>
-      )}
+        </div>
+      </div>
 
       {/* Results */}
       <main className="max-w-lg mx-auto px-4 py-4">

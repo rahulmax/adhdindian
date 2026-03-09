@@ -191,7 +191,7 @@ function emitFireworks() {
   });
 }
 
-function showAdhdNudge() {
+function showAdhdNudge(onDismiss?: () => void) {
   const messages = [
     "Okay you've had your fun... now back to what you were doing!",
     "Your brain enjoyed that. Now channel that energy into your task!",
@@ -216,21 +216,46 @@ function showAdhdNudge() {
     maxWidth: "340px", lineHeight: "1.5",
     opacity: "0", transform: "translateY(20px) scale(0.95)",
     transition: "all 0.4s cubic-bezier(0.2, 0.8, 0.3, 1)",
+    display: "flex", flexDirection: "column", gap: "12px",
   });
-  box.textContent = msg;
+
+  const text = document.createElement("p");
+  text.textContent = msg;
+  box.appendChild(text);
+
+  const btn = document.createElement("button");
+  Object.assign(btn.style, {
+    padding: "8px 20px", borderRadius: "999px",
+    background: "rgba(255,255,255,0.15)", color: "#fff",
+    fontSize: "14px", fontWeight: "600", cursor: "pointer",
+    border: "1px solid rgba(255,255,255,0.2)",
+    transition: "background 0.2s", pointerEvents: "auto",
+  });
+  btn.textContent = "Got it";
+  btn.onmouseenter = () => { btn.style.background = "rgba(255,255,255,0.25)"; };
+  btn.onmouseleave = () => { btn.style.background = "rgba(255,255,255,0.15)"; };
+  box.appendChild(btn);
+
   overlay.appendChild(box);
   document.body.appendChild(overlay);
+
+  let dismissed = false;
+  function dismiss() {
+    if (dismissed) return;
+    dismissed = true;
+    box.style.opacity = "0";
+    box.style.transform = "translateY(-10px) scale(0.95)";
+    setTimeout(() => { overlay.remove(); onDismiss?.(); }, 500);
+  }
+
+  btn.onclick = dismiss;
 
   requestAnimationFrame(() => {
     box.style.opacity = "1";
     box.style.transform = "translateY(0) scale(1)";
   });
 
-  setTimeout(() => {
-    box.style.opacity = "0";
-    box.style.transform = "translateY(-10px) scale(0.95)";
-    setTimeout(() => overlay.remove(), 500);
-  }, 3500);
+  setTimeout(dismiss, 4000);
 }
 
 function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: number; onClick?: () => void; initialVelocity?: number }) {
@@ -242,6 +267,19 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
   const raf = useRef(0);
   const lastTime = useRef(0);
   const clicks = useRef(0);
+  const idleTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+
+  function resetSpinner() {
+    cancelAnimationFrame(raf.current);
+    velocity.current = 0;
+    angle.current = 0;
+    animating.current = false;
+    clicks.current = 0;
+    if (divRef.current) {
+      divRef.current.style.transform = `rotate(0deg)`;
+      divRef.current.style.filter = "";
+    }
+  }
 
   function tick(now: number) {
     const dt = Math.min((now - lastTime.current) / 1000, 0.05);
@@ -278,10 +316,17 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
   }, [initialVelocity]);
 
   useEffect(() => {
-    return () => cancelAnimationFrame(raf.current);
+    return () => {
+      cancelAnimationFrame(raf.current);
+      clearTimeout(idleTimer.current);
+    };
   }, []);
 
   function handleClick() {
+    // Reset idle timer on every click
+    clearTimeout(idleTimer.current);
+    idleTimer.current = setTimeout(resetSpinner, 2000);
+
     velocity.current = Math.min(velocity.current + 1800, 18000);
     startLoop();
 
@@ -299,7 +344,10 @@ function SpinningLogo({ size = 24, onClick, initialVelocity = 0 }: { size?: numb
       const d = divRef.current;
       setTimeout(() => { d.style.filter = ""; }, 3000);
     }
-    if (n === 30) showAdhdNudge();
+    if (n === 30) {
+      clearTimeout(idleTimer.current);
+      showAdhdNudge(resetSpinner);
+    }
 
     onClick?.();
   }
@@ -580,7 +628,7 @@ async function reverseGeocode(lat: number, lon: number): Promise<string | null> 
     );
     const data = await res.json();
     const addr = data.address;
-    return addr?.city || addr?.town || addr?.state_district || addr?.state || null;
+    return addr?.city || addr?.town || addr?.county || addr?.suburb || addr?.village || addr?.state_district || addr?.state || null;
   } catch {
     return null;
   }
@@ -744,7 +792,7 @@ function ProgressBar({ step, totalSteps }: { step: number; totalSteps: number })
 
 function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
   return (
-    <div className="flex flex-col h-[100dvh] bg-background">
+    <div className="flex flex-col h-screen-safe bg-background">
       <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full px-6 py-12 overflow-y-auto">
         {/* Logo / Title */}
         <div className="mb-12">
@@ -853,16 +901,22 @@ function LocationStep({
         }
         setDetecting(false);
       },
-      () => {
-        setError("Location access denied. Pick a city below.");
+      (err) => {
+        if (err.code === 1) {
+          setError("Location access denied. Pick a city below.");
+        } else if (err.code === 3) {
+          setError("Location request timed out. Pick a city below.");
+        } else {
+          setError("Could not determine location. Pick a city below.");
+        }
         setDetecting(false);
       },
-      { timeout: 10000 }
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 300000 }
     );
   }
 
   return (
-    <div className="flex flex-col h-[100dvh] bg-background">
+    <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={1} totalSteps={3} />
 
       <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
@@ -972,7 +1026,7 @@ function PreferencesStep({
   onNext: () => void;
 }) {
   return (
-    <div className="flex flex-col h-[100dvh] bg-background">
+    <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={2} totalSteps={3} />
 
       <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
@@ -1446,7 +1500,7 @@ export default function Home() {
   // --- Step 3: Results ---
 
   return (
-    <div className="min-h-[100dvh] bg-background">
+    <div className="min-h-screen-safe bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
         <div className="max-w-lg mx-auto px-4 py-3">
@@ -1491,15 +1545,7 @@ export default function Home() {
 
           {/* Active city + Quick filters row */}
           <div className="flex items-center gap-2 mt-3 overflow-x-auto no-scrollbar">
-            {city && (
-              <button
-                onClick={() => { setCity(null); localStorage.setItem("selectedCity", "all"); }}
-                className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-medium bg-accent text-white whitespace-nowrap shrink-0"
-              >
-                {city}
-                <CrossIcon />
-              </button>
-            )}
+
             <FilterChip
               label={stimulants ? "Stimulants" : "Stimulants"}
               active={stimulants !== null}

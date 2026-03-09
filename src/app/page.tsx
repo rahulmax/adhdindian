@@ -650,26 +650,6 @@ function formatPhoneNumber(phone: string): string {
   return phone;
 }
 
-function githubIssueUrl(
-  template: "correction" | "new-doctor" | "review",
-  params?: { doctorName?: string; doctorId?: number; city?: string }
-): string {
-  const base = "https://github.com/rahulmax/adhdindia/issues/new";
-  const query = new URLSearchParams();
-  query.set("template", `${template}.yml`);
-
-  if (params?.doctorName && params?.city) {
-    if (template === "correction") {
-      query.set("title", `Correction: ${params.doctorName} (${params.city})`);
-    } else if (template === "review") {
-      query.set("title", `Review: ${params.doctorName} (${params.city})`);
-    }
-  }
-  if (params?.doctorName) query.set("doctor-name", params.doctorName);
-  if (params?.doctorId) query.set("doctor-id", String(params.doctorId));
-
-  return `${base}?${query.toString()}`;
-}
 
 // Reverse geocode coordinates to city
 async function reverseGeocode(lat: number, lon: number): Promise<string | null> {
@@ -1158,7 +1138,7 @@ function PreferencesStep({
 
 // --- Doctor Card ---
 
-function DoctorCard({ doctor }: { doctor: Doctor }) {
+function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: DrawerType) => void }) {
   const [expanded, setExpanded] = useState(false);
   const overallSentiment = getOverallSentiment(doctor.reviews);
   const sentimentVariant =
@@ -1274,23 +1254,19 @@ function DoctorCard({ doctor }: { doctor: Doctor }) {
           )}
 
           <div className="flex items-center gap-4 pt-2 border-t border-border">
-            <a
-              href={githubIssueUrl("correction", { doctorName: doctor.name, doctorId: doctor.id, city: doctor.city })}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => onAction("correction")}
               className="text-xs text-muted hover:text-accent transition-colors"
             >
               Incorrect info? Submit correction
-            </a>
+            </button>
             <span className="text-border">|</span>
-            <a
-              href={githubIssueUrl("review", { doctorName: doctor.name, doctorId: doctor.id, city: doctor.city })}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => onAction("review")}
               className="text-xs text-muted hover:text-accent transition-colors"
             >
               Add a review
-            </a>
+            </button>
           </div>
         </div>
       )}
@@ -1300,7 +1276,7 @@ function DoctorCard({ doctor }: { doctor: Doctor }) {
 
 // --- Community Links ---
 
-function CommunityLinks() {
+function CommunityLinks({ onSubmitDoctor }: { onSubmitDoctor: () => void }) {
   return (
     <div className="flex items-center justify-center gap-4 flex-wrap">
       <a
@@ -1333,15 +1309,13 @@ function CommunityLinks() {
         Contribute
       </a>
       <span className="text-border">|</span>
-      <a
-        href={githubIssueUrl("new-doctor")}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        onClick={onSubmitDoctor}
         className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors"
       >
         <ExternalLinkIcon />
         Submit a Doctor
-      </a>
+      </button>
     </div>
   );
 }
@@ -1793,6 +1767,7 @@ export default function Home() {
   const [doctorType, setDoctorType] = useState<string | null>(null);
   const [showLoading, setShowLoading] = useState(true);
   const [priceRange, setPriceRange] = useState<string | null>(null);
+  const [drawerContext, setDrawerContext] = useState<DrawerContext | null>(null);
   const filterDrawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -2226,13 +2201,22 @@ export default function Home() {
         ) : (
           <div className="space-y-3">
             {filtered.map((doctor) => (
-              <DoctorCard key={doctor.id} doctor={doctor} />
+              <DoctorCard
+                key={doctor.id}
+                doctor={doctor}
+                onAction={(type) => setDrawerContext({
+                  type,
+                  doctorName: doctor.name,
+                  doctorId: doctor.id,
+                  city: doctor.city,
+                })}
+              />
             ))}
           </div>
         )}
 
         <footer className="mt-12 pb-8 space-y-4">
-          <CommunityLinks />
+          <CommunityLinks onSubmitDoctor={() => setDrawerContext({ type: "new-doctor" })} />
           <div className="text-center space-y-2">
             <p className="text-xs text-muted">
               Data sourced from community contributions.
@@ -2258,6 +2242,12 @@ export default function Home() {
         </footer>
       </main>
 
+      {drawerContext && (
+        <SubmissionDrawer
+          context={drawerContext}
+          onClose={() => setDrawerContext(null)}
+        />
+      )}
     </div>
   );
 }

@@ -650,6 +650,27 @@ function formatPhoneNumber(phone: string): string {
   return phone;
 }
 
+function githubIssueUrl(
+  template: "correction" | "new-doctor" | "review",
+  params?: { doctorName?: string; doctorId?: number; city?: string }
+): string {
+  const base = "https://github.com/rahulmax/adhdindia/issues/new";
+  const query = new URLSearchParams();
+  query.set("template", `${template}.yml`);
+
+  if (params?.doctorName && params?.city) {
+    if (template === "correction") {
+      query.set("title", `Correction: ${params.doctorName} (${params.city})`);
+    } else if (template === "review") {
+      query.set("title", `Review: ${params.doctorName} (${params.city})`);
+    }
+  }
+  if (params?.doctorName) query.set("doctor-name", params.doctorName);
+  if (params?.doctorId) query.set("doctor-id", String(params.doctorId));
+
+  return `${base}?${query.toString()}`;
+}
+
 // Reverse geocode coordinates to city
 async function reverseGeocode(lat: number, lon: number): Promise<string | null> {
   try {
@@ -1244,6 +1265,26 @@ function DoctorCard({ doctor }: { doctor: Doctor }) {
               </div>
             </div>
           )}
+
+          <div className="flex items-center gap-4 pt-2 border-t border-border">
+            <a
+              href={githubIssueUrl("correction", { doctorName: doctor.name, doctorId: doctor.id, city: doctor.city })}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted hover:text-accent transition-colors"
+            >
+              Incorrect info? Submit correction
+            </a>
+            <span className="text-border">|</span>
+            <a
+              href={githubIssueUrl("review", { doctorName: doctor.name, doctorId: doctor.id, city: doctor.city })}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-muted hover:text-accent transition-colors"
+            >
+              Add a review
+            </a>
+          </div>
         </div>
       )}
     </div>
@@ -1283,6 +1324,16 @@ function CommunityLinks() {
       >
         <ExternalLinkIcon />
         Contribute
+      </a>
+      <span className="text-border">|</span>
+      <a
+        href={githubIssueUrl("new-doctor")}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors"
+      >
+        <ExternalLinkIcon />
+        Submit a Doctor
       </a>
     </div>
   );

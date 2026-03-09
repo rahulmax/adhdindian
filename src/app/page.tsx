@@ -759,6 +759,13 @@ type SortValue = (typeof sortOptions)[number]["value"];
 // --- Wizard preference options ---
 
 type PreferenceKey = "psychiatrist" | "psychologist" | "online" | "inPerson" | "stimulants" | "adultADHD" | "acceptsPrior" | "doesDiagnosis";
+type DrawerType = "correction" | "review" | "new-doctor";
+type DrawerContext = {
+  type: DrawerType;
+  doctorName?: string;
+  doctorId?: number;
+  city?: string;
+};
 
 const preferenceCards: { key: PreferenceKey; label: string; description: string; icon: React.ReactNode }[] = [
   { key: "psychiatrist", label: "Psychiatrist", description: "Can prescribe medication", icon: <Stethoscope size={24} strokeWidth={1.5} /> },
@@ -1335,6 +1342,432 @@ function CommunityLinks() {
         <ExternalLinkIcon />
         Submit a Doctor
       </a>
+    </div>
+  );
+}
+
+const CORRECTION_OPTIONS = [
+  "Fee / pricing",
+  "Address / location",
+  "Contact / phone number",
+  "Consultation mode (online/offline)",
+  "Stimulants information",
+  "Specialist information",
+  "Doctor no longer practicing / clinic closed",
+  "Other",
+];
+
+function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClose: () => void }) {
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
+
+  // Correction state
+  const [incorrect, setIncorrect] = useState<string[]>([]);
+  const [correctInfo, setCorrectInfo] = useState("");
+  const [source, setSource] = useState("");
+
+  // Review state
+  const [experience, setExperience] = useState<string | null>(null);
+  const [reviewText, setReviewText] = useState("");
+
+  // New doctor state
+  const [newName, setNewName] = useState("");
+  const [newType, setNewType] = useState<string | null>(null);
+  const [newCity, setNewCity] = useState("");
+  const [newAddress, setNewAddress] = useState("");
+  const [newFee, setNewFee] = useState("");
+  const [newMode, setNewMode] = useState<string | null>(null);
+  const [newContact, setNewContact] = useState("");
+  const [newStimulants, setNewStimulants] = useState<string | null>(null);
+  const [newAdultADHD, setNewAdultADHD] = useState<string | null>(null);
+  const [newOther, setNewOther] = useState("");
+
+  // Prevent body scroll when drawer is open
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = ""; };
+  }, []);
+
+  function toggleIncorrect(item: string) {
+    setIncorrect((prev) =>
+      prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item]
+    );
+  }
+
+  function canSubmit(): boolean {
+    if (submitting) return false;
+    switch (context.type) {
+      case "correction":
+        return correctInfo.trim().length > 0;
+      case "review":
+        return experience !== null && reviewText.trim().length > 0;
+      case "new-doctor":
+        return newName.trim().length > 0 && newType !== null && newCity.trim().length > 0;
+    }
+  }
+
+  async function handleSubmit() {
+    if (!canSubmit()) return;
+    setSubmitting(true);
+    setError(null);
+
+    let fields: Record<string, unknown> = {};
+
+    switch (context.type) {
+      case "correction":
+        fields = {
+          doctorName: context.doctorName,
+          doctorId: context.doctorId,
+          city: context.city,
+          incorrect,
+          correctInfo,
+          source: source || undefined,
+        };
+        break;
+      case "review":
+        fields = {
+          doctorName: context.doctorName,
+          doctorId: context.doctorId,
+          city: context.city,
+          experience,
+          review: reviewText,
+        };
+        break;
+      case "new-doctor":
+        fields = {
+          doctorName: newName,
+          type: newType,
+          city: newCity,
+          address: newAddress || undefined,
+          fee: newFee || undefined,
+          consultationMode: newMode || undefined,
+          contact: newContact || undefined,
+          stimulants: newStimulants || undefined,
+          adultADHD: newAdultADHD || undefined,
+          otherDetails: newOther || undefined,
+        };
+        break;
+    }
+
+    try {
+      const res = await fetch("/api/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ type: context.type, fields }),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        setError(data.error || "Something went wrong. Please try again.");
+        setSubmitting(false);
+        return;
+      }
+
+      setSuccess(true);
+      setTimeout(onClose, 1500);
+    } catch {
+      setError("Network error. Please try again.");
+      setSubmitting(false);
+    }
+  }
+
+  const title =
+    context.type === "correction" ? "Submit Correction" :
+    context.type === "review" ? "Add a Review" :
+    "Submit a Doctor";
+
+  return (
+    <div
+      ref={overlayRef}
+      className="fixed inset-0 z-[300] flex items-end justify-center bg-black/40"
+      onClick={(e) => { if (e.target === overlayRef.current) onClose(); }}
+    >
+      <div
+        className="w-full max-w-lg bg-background rounded-t-2xl max-h-[85vh] flex flex-col animate-[slideUp_0.3s_ease-out]"
+      >
+        {/* Header */}
+        <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border shrink-0">
+          <h3 className="text-lg font-bold text-foreground">{title}</h3>
+          <button onClick={onClose} className="p-1 text-muted hover:text-foreground transition-colors">
+            <CrossIcon />
+          </button>
+        </div>
+
+        {/* Success state */}
+        {success ? (
+          <div className="flex flex-col items-center justify-center py-12 gap-3">
+            <div className="w-12 h-12 rounded-full bg-positive/10 flex items-center justify-center text-positive">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <p className="text-foreground font-semibold">Thanks for your submission!</p>
+            <p className="text-muted text-sm">We&apos;ll review it shortly.</p>
+          </div>
+        ) : (
+          <>
+            {/* Scrollable form content */}
+            <div className="flex-1 overflow-y-auto px-5 py-4 space-y-4">
+              {/* Doctor name header for correction/review */}
+              {(context.type === "correction" || context.type === "review") && context.doctorName && (
+                <div className="bg-surface rounded-xl px-4 py-3">
+                  <p className="text-xs text-muted uppercase tracking-wider">Doctor</p>
+                  <p className="text-foreground font-semibold">{context.doctorName}</p>
+                  {context.city && <p className="text-sm text-muted">{context.city}</p>}
+                </div>
+              )}
+
+              {/* --- Correction Form --- */}
+              {context.type === "correction" && (
+                <>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">What&apos;s incorrect?</p>
+                    <div className="flex flex-wrap gap-2">
+                      {CORRECTION_OPTIONS.map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => toggleIncorrect(opt)}
+                          className={`px-3 py-1.5 rounded-full text-sm transition-all ${
+                            incorrect.includes(opt)
+                              ? "bg-accent text-white"
+                              : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">
+                      Correct information <span className="text-negative">*</span>
+                    </label>
+                    <textarea
+                      value={correctInfo}
+                      onChange={(e) => setCorrectInfo(e.target.value)}
+                      placeholder="e.g. The consultation fee is actually ₹1500, not ₹1000"
+                      rows={3}
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">
+                      How do you know? <span className="text-muted text-xs">(optional)</span>
+                    </label>
+                    <textarea
+                      value={source}
+                      onChange={(e) => setSource(e.target.value)}
+                      placeholder="e.g. I visited them last week"
+                      rows={2}
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                    />
+                  </div>
+                </>
+              )}
+
+              {/* --- Review Form --- */}
+              {context.type === "review" && (
+                <>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">
+                      Overall experience <span className="text-negative">*</span>
+                    </p>
+                    <div className="flex gap-2">
+                      {["Positive", "Negative", "Neutral"].map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => setExperience(opt)}
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                            experience === opt
+                              ? opt === "Positive" ? "bg-positive text-white"
+                              : opt === "Negative" ? "bg-negative text-white"
+                              : "bg-warning text-white"
+                              : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">
+                      Your review <span className="text-negative">*</span>
+                    </label>
+                    <textarea
+                      value={reviewText}
+                      onChange={(e) => setReviewText(e.target.value)}
+                      placeholder="Share your experience — this helps others find the right doctor"
+                      rows={4}
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                    />
+                  </div>
+                </>
+              )}
+
+              {/* --- New Doctor Form --- */}
+              {context.type === "new-doctor" && (
+                <>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">
+                      Doctor Name <span className="text-negative">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      value={newName}
+                      onChange={(e) => setNewName(e.target.value)}
+                      placeholder="e.g. Dr. Sharma"
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">
+                      Type <span className="text-negative">*</span>
+                    </p>
+                    <div className="flex gap-2">
+                      {["Psychiatrist", "Psychologist"].map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => setNewType(opt)}
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                            newType === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">
+                      City <span className="text-negative">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      value={newCity}
+                      onChange={(e) => setNewCity(e.target.value)}
+                      placeholder="e.g. Bangalore, Mumbai, Delhi"
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">Address / Clinic Name</label>
+                    <input
+                      type="text"
+                      value={newAddress}
+                      onChange={(e) => setNewAddress(e.target.value)}
+                      placeholder="e.g. Apollo Clinic, Koramangala"
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="text-sm font-medium text-foreground block mb-1">Fee (&#8377;)</label>
+                      <input
+                        type="text"
+                        inputMode="numeric"
+                        value={newFee}
+                        onChange={(e) => setNewFee(e.target.value)}
+                        placeholder="e.g. 1500"
+                        className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-foreground block mb-1">Contact</label>
+                      <input
+                        type="tel"
+                        value={newContact}
+                        onChange={(e) => setNewContact(e.target.value)}
+                        placeholder="e.g. 9876543210"
+                        className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">Consultation Mode</p>
+                    <div className="flex gap-2">
+                      {["Online", "Offline", "Both"].map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => setNewMode(newMode === opt ? null : opt)}
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                            newMode === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">Prescribes Stimulants?</p>
+                    <div className="flex gap-2">
+                      {["Yes", "No", "In-person only"].map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => setNewStimulants(newStimulants === opt ? null : opt)}
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                            newStimulants === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground mb-2">Adult ADHD Specialist?</p>
+                    <div className="flex gap-2">
+                      {["Yes", "No"].map((opt) => (
+                        <button
+                          key={opt}
+                          onClick={() => setNewAdultADHD(newAdultADHD === opt ? null : opt)}
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                            newAdultADHD === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground block mb-1">Anything else?</label>
+                    <textarea
+                      value={newOther}
+                      onChange={(e) => setNewOther(e.target.value)}
+                      placeholder="Online platform, ADHD testing, your experience, etc."
+                      rows={3}
+                      className="w-full px-4 py-3 bg-surface border border-border rounded-xl text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"
+                    />
+                  </div>
+                </>
+              )}
+
+              {error && (
+                <p className="text-sm text-negative text-center">{error}</p>
+              )}
+            </div>
+
+            {/* Submit button */}
+            <div className="shrink-0 px-5 pb-5 pt-3 border-t border-border">
+              <button
+                onClick={handleSubmit}
+                disabled={!canSubmit()}
+                className="w-full py-3.5 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {submitting ? (
+                  <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                ) : (
+                  "Submit"
+                )}
+              </button>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 }

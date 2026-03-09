@@ -91,3 +91,8 @@ body {
   transform: translateX(-20px);
   transition: opacity 200ms ease, transform 200ms ease;
 }
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}

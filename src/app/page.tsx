@@ -744,8 +744,8 @@ function ProgressBar({ step, totalSteps }: { step: number; totalSteps: number })
 
 function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full px-6 py-12">
+    <div className="flex flex-col h-[100dvh] bg-background">
+      <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full px-6 py-12 overflow-y-auto">
         {/* Logo / Title */}
         <div className="mb-12">
           <div className="mb-6">
@@ -792,7 +792,7 @@ function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
       </div>
 
       {/* Bottom button */}
-      <div className="max-w-lg mx-auto w-full px-6 pb-8">
+      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
         <button
           onClick={onGetStarted}
           className="w-full py-4 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-base transition-colors"
@@ -862,10 +862,10 @@ function LocationStep({
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col h-[100dvh] bg-background">
       <ProgressBar step={1} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6">
+      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
         {/* Header */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
@@ -937,7 +937,7 @@ function LocationStep({
       </div>
 
       {/* Bottom navigation */}
-      <div className="max-w-lg mx-auto w-full px-6 pb-8">
+      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
         <button
           onClick={onSkip}
           className="w-full text-sm text-muted hover:text-foreground font-medium text-center py-2 mb-3"
@@ -972,10 +972,10 @@ function PreferencesStep({
   onNext: () => void;
 }) {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col h-[100dvh] bg-background">
       <ProgressBar step={2} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6">
+      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
             What are you looking for?
@@ -1016,7 +1016,7 @@ function PreferencesStep({
       </div>
 
       {/* Bottom navigation */}
-      <div className="max-w-lg mx-auto w-full px-6 pb-8">
+      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
         <div className="flex gap-3">
           <button
             onClick={onBack}
@@ -1446,7 +1446,7 @@ export default function Home() {
   // --- Step 3: Results ---
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-[100dvh] bg-background">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
         <div className="max-w-lg mx-auto px-4 py-3">

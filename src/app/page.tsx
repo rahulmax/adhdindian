@@ -1455,7 +1455,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[300] flex items-end justify-center bg-black/40"
+      className="fixed inset-0 z-[300] flex items-end justify-center bg-black/40 backdrop-blur-[4px]"
       onClick={(e) => { if (e.target === overlayRef.current) onClose(); }}
     >
       <div

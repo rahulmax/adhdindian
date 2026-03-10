@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useCallback, useRef } from "react";
-import { Stethoscope, Brain, Video, Hospital, Pill, UserCheck, ClipboardCheck, FileCheck } from "lucide-react";
+import { Stethoscope, Brain, Video, Hospital, Pill, UserCheck, ClipboardCheck, FileCheck, ArrowUpAZ, ArrowUpNarrowWide, ArrowDownNarrowWide } from "lucide-react";
 import doctors from "@/data/doctors.json";
 
 type Doctor = (typeof doctors)[number];
@@ -728,10 +728,11 @@ const doctorCountByCity = Object.entries(cityCountMap)
 const consultationModes = ["Online", "Offline", "Both"];
 const stimulantOptions = ["Yes", "In-person only", "No"];
 const sortOptions = [
-  { label: "Name", value: "name" },
+  { label: "Rating: High", value: "rating-desc" },
+  { label: "Rating: Low", value: "rating-asc" },
   { label: "Price: Low", value: "fee-asc" },
   { label: "Price: High", value: "fee-desc" },
-  { label: "Rating", value: "rating" },
+  { label: "Name", value: "name" },
 ] as const;
 
 type SortValue = (typeof sortOptions)[number]["value"];
@@ -752,10 +753,10 @@ const preferenceCards: { key: PreferenceKey; label: string; description: string;
   { key: "psychologist", label: "Psychologist", description: "Therapy & testing", icon: <Brain size={24} strokeWidth={1.5} /> },
   { key: "online", label: "Online", description: "Video consultations", icon: <Video size={24} strokeWidth={1.5} /> },
   { key: "inPerson", label: "In-person", description: "Visit the clinic", icon: <Hospital size={24} strokeWidth={1.5} /> },
-  { key: "stimulants", label: "Prescribes Stimulants", description: "Ritalin, Concerta, etc.", icon: <Pill size={24} strokeWidth={1.5} /> },
-  { key: "adultADHD", label: "Adult ADHD Specialist", description: "Specializes in adult ADHD", icon: <UserCheck size={24} strokeWidth={1.5} /> },
-  { key: "acceptsPrior", label: "Accepts Prior Diagnosis", description: "Honors existing diagnoses", icon: <FileCheck size={24} strokeWidth={1.5} /> },
-  { key: "doesDiagnosis", label: "Does ADHD Testing", description: "Can diagnose ADHD", icon: <ClipboardCheck size={24} strokeWidth={1.5} /> },
+  { key: "stimulants", label: "Stimulants", description: "Prescribes Ritalin, etc.", icon: <Pill size={24} strokeWidth={1.5} /> },
+  { key: "adultADHD", label: "Adult ADHD", description: "Specializes in adults", icon: <UserCheck size={24} strokeWidth={1.5} /> },
+  { key: "acceptsPrior", label: "Prior Dx", description: "Honors past diagnoses", icon: <FileCheck size={24} strokeWidth={1.5} /> },
+  { key: "doesDiagnosis", label: "ADHD Testing", description: "Can diagnose ADHD", icon: <ClipboardCheck size={24} strokeWidth={1.5} /> },
 ];
 
 // --- Components ---
@@ -769,12 +770,12 @@ function Badge({
 }) {
   const base = "inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium whitespace-nowrap";
   const variants = {
-    default: "bg-surface text-muted",
-    accent: "bg-accent/10 text-accent",
-    positive: "bg-positive/10 text-positive",
-    negative: "bg-negative/10 text-negative",
-    warning: "bg-warning/10 text-warning",
-    purple: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-300",
+    default: "bg-gray-100 text-gray-600 dark:bg-surface dark:text-muted",
+    accent: "bg-accent/15 text-accent dark:bg-accent/15 dark:text-accent",
+    positive: "bg-green-100 text-green-700 dark:bg-green-900/25 dark:text-green-400",
+    negative: "bg-red-100 text-red-700 dark:bg-red-900/25 dark:text-red-400",
+    warning: "bg-amber-100 text-amber-700 dark:bg-amber-900/25 dark:text-amber-400",
+    purple: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
   };
   return <span className={`${base} ${variants[variant]}`}>{children}</span>;
 }
@@ -958,9 +959,9 @@ function LocationStep({
     <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={1} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
+      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
         {/* Header */}
-        <div className="mb-6">
+        <div className="mb-4">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
             Where are you located?
           </h2>
@@ -973,7 +974,7 @@ function LocationStep({
         <button
           onClick={detectLocation}
           disabled={detecting}
-          className="w-full flex items-center justify-center gap-2.5 py-3.5 bg-accent hover:bg-accent-hover text-white rounded-full font-medium text-base transition-colors disabled:opacity-60"
+          className="w-full flex items-center justify-center gap-2.5 py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-medium text-base transition-colors disabled:opacity-60"
         >
           {detecting ? (
             <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -984,17 +985,17 @@ function LocationStep({
         </button>
 
         {error && (
-          <p className="text-sm text-negative mt-3 text-center">{error}</p>
+          <p className="text-sm text-negative mt-2 text-center">{error}</p>
         )}
 
-        <div className="flex items-center gap-3 my-5">
+        <div className="flex items-center gap-3 my-3">
           <div className="flex-1 h-px bg-border" />
           <span className="text-xs text-muted uppercase tracking-wider">or pick a city</span>
           <div className="flex-1 h-px bg-border" />
         </div>
 
         {/* City search */}
-        <div className="relative mb-4">
+        <div className="relative mb-3">
           <div className="absolute left-3 top-1/2 -translate-y-1/2 text-muted">
             <SearchIcon />
           </div>
@@ -1003,18 +1004,18 @@ function LocationStep({
             placeholder="Search cities..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 bg-surface border border-border rounded-full text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
+            className="w-full pl-10 pr-4 py-2 bg-surface border border-border rounded-full text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
           />
         </div>
 
         {/* City grid */}
         <div className="flex-1 overflow-y-auto -mx-1">
-          <div className="grid grid-cols-2 gap-2 px-1">
+          <div className="grid grid-cols-2 gap-1.5 px-1">
             {filteredCities.map(({ city, count }) => (
               <button
                 key={city}
                 onClick={() => onSelect(city)}
-                className="flex items-center justify-between px-4 py-3 bg-surface hover:bg-surface-hover border border-border rounded-2xl transition-colors text-left"
+                className="flex items-center justify-between px-3.5 py-2.5 bg-surface hover:bg-surface-hover border border-border rounded-xl transition-colors text-left"
               >
                 <span className="text-sm font-medium text-foreground">{city}</span>
                 <span className="text-xs text-muted">{count}</span>
@@ -1022,7 +1023,7 @@ function LocationStep({
             ))}
           </div>
           {filteredCities.length === 0 && (
-            <p className="text-center text-muted text-sm py-8">
+            <p className="text-center text-muted text-sm py-6">
               No cities match &quot;{searchQuery}&quot;
             </p>
           )}
@@ -1030,17 +1031,17 @@ function LocationStep({
       </div>
 
       {/* Bottom navigation */}
-      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
+      <div className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
         <button
           onClick={onSkip}
-          className="w-full text-sm text-muted hover:text-foreground font-medium text-center py-2 mb-3"
+          className="w-full text-sm text-muted hover:text-foreground font-medium text-center py-1.5 mb-2"
         >
           Show all cities
         </button>
         <div className="flex gap-3">
           <button
             onClick={onBack}
-            className="flex-1 py-3.5 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
+            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
           >
             <ArrowLeftIcon />
             Back
@@ -1068,8 +1069,8 @@ function PreferencesStep({
     <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={2} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-6 pt-8 pb-6 overflow-y-auto">
-        <div className="mb-6">
+      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
+        <div className="mb-4">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
             What are you looking for?
           </h2>
@@ -1078,59 +1079,61 @@ function PreferencesStep({
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 flex-1 content-start">
+        <div className="grid grid-cols-2 gap-2.5 flex-1 content-start">
           {preferenceCards.map(({ key, label, description, icon }) => {
             const isSelected = selectedPrefs.has(key);
             return (
               <button
                 key={key}
                 onClick={() => onToggle(key)}
-                className={`flex flex-col items-start p-4 rounded-2xl border-2 transition-all text-left ${
+                className={`flex flex-col items-start p-3.5 rounded-2xl border-2 transition-all text-left ${
                   isSelected
-                    ? "border-accent bg-accent/5"
+                    ? "border-accent bg-accent/15"
                     : "border-border bg-surface hover:border-accent/30 hover:bg-surface-hover"
                 }`}
               >
-                <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-3 ${
-                  isSelected ? "bg-accent/15 text-accent" : "bg-background text-muted"
+                <div className={`w-9 h-9 rounded-lg flex items-center justify-center mb-2 ${
+                  isSelected ? "bg-accent/25 text-accent" : "bg-background text-muted"
                 }`}>
                   {icon}
                 </div>
                 <p className={`font-semibold text-sm ${isSelected ? "text-accent" : "text-foreground"}`}>
                   {label}
                 </p>
-                <p className="text-xs text-muted mt-0.5 leading-relaxed">
+                <p className="text-xs text-muted mt-0.5 leading-snug">
                   {description}
                 </p>
               </button>
             );
           })}
         </div>
+
+        <button
+          onClick={onNext}
+          className="text-sm text-accent hover:underline font-medium text-center mt-4 mb-1"
+        >
+          See all doctors &rarr;
+        </button>
       </div>
 
       {/* Bottom navigation */}
-      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
+      <div className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
         <div className="flex gap-3">
           <button
             onClick={onBack}
-            className="flex-1 py-3.5 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
+            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
           >
             <ArrowLeftIcon />
             Back
           </button>
           <button
             onClick={onNext}
-            className="flex-[2] py-3.5 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+            className="flex-[2] py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors flex items-center justify-center gap-2"
           >
             See Results
             <ArrowRightIcon />
           </button>
         </div>
-        {selectedPrefs.size === 0 && (
-          <p className="text-center text-xs text-muted mt-3">
-            Skip to see all doctors
-          </p>
-        )}
       </div>
     </div>
   );
@@ -1203,7 +1206,7 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
                 <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Contact</p>
                 <a
                   href={`tel:+91${bestPhone}`}
-                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/5 rounded-full transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/10 rounded-full transition-colors"
                 >
                   <PhoneIcon />
                   {formatPhoneNumber(bestPhone)}
@@ -1761,12 +1764,18 @@ export default function Home() {
   const [adultADHD, setAdultADHD] = useState(false);
   const [acceptsPrior, setAcceptsPrior] = useState(false);
   const [doesDiagnosis, setDoesDiagnosis] = useState(false);
-  const [sort, setSort] = useState<SortValue>("rating");
+  const [sort, setSort] = useState<SortValue>("rating-desc");
+  const [showSort, setShowSort] = useState(false);
+  const sortRef = useRef<HTMLDivElement>(null);
   const [showFilters, setShowFilters] = useState(false);
   const [selectedPrefs, setSelectedPrefs] = useState<Set<PreferenceKey>>(new Set());
   const [doctorType, setDoctorType] = useState<string | null>(null);
   const [showLoading, setShowLoading] = useState(true);
-  const [priceRange, setPriceRange] = useState<string | null>(null);
+  const [feeMin, setFeeMin] = useState(0);
+  const [feeMax, setFeeMax] = useState(3000);
+  const FEE_FLOOR = 0;
+  const FEE_CEIL = 3000;
+  const FEE_STEP = 500;
   const [drawerContext, setDrawerContext] = useState<DrawerContext | null>(null);
   const filterDrawerRef = useRef<HTMLDivElement>(null);
 
@@ -1870,7 +1879,7 @@ export default function Home() {
         (d) =>
           d.name.toLowerCase().includes(q) ||
           d.city.toLowerCase().includes(q) ||
-          d.address.toLowerCase().includes(q) ||
+          (d.address && d.address.toLowerCase().includes(q)) ||
           d.type.toLowerCase().includes(q)
       );
     }
@@ -1901,32 +1910,35 @@ export default function Home() {
           d.doesADHDDiagnosis === "Yes (Provisional)"
       );
     }
-    if (priceRange) {
+    if (feeMin > FEE_FLOOR || feeMax < FEE_CEIL) {
       result = result.filter((d) => {
-        if (d.fee === null) return false;
-        switch (priceRange) {
-          case "under500": return d.fee < 500;
-          case "500-1000": return d.fee >= 500 && d.fee <= 1000;
-          case "1000-2000": return d.fee >= 1000 && d.fee <= 2000;
-          case "over2000": return d.fee > 2000;
-          default: return true;
-        }
+        if (d.fee === null) return feeMax === FEE_CEIL;
+        return d.fee >= feeMin && (feeMax === FEE_CEIL ? true : d.fee <= feeMax);
       });
     }
 
     result.sort((a, b) => {
       switch (sort) {
-        case "name":
-          return a.name.localeCompare(b.name);
+        case "name": {
+          const nameA = a.name.replace(/^Dr\.?\s*/i, "");
+          const nameB = b.name.replace(/^Dr\.?\s*/i, "");
+          return nameA.localeCompare(nameB);
+        }
         case "fee-asc":
           return (a.fee ?? Infinity) - (b.fee ?? Infinity);
         case "fee-desc":
           return (b.fee ?? 0) - (a.fee ?? 0);
-        case "rating": {
+        case "rating-desc": {
           const scoreA = a.reviews.filter((r) => r.sentiment === "Positive").length / (a.reviews.length || 1);
           const scoreB = b.reviews.filter((r) => r.sentiment === "Positive").length / (b.reviews.length || 1);
           if (scoreB !== scoreA) return scoreB - scoreA;
           return b.reviews.length - a.reviews.length;
+        }
+        case "rating-asc": {
+          const sA = a.reviews.filter((r) => r.sentiment === "Positive").length / (a.reviews.length || 1);
+          const sB = b.reviews.filter((r) => r.sentiment === "Positive").length / (b.reviews.length || 1);
+          if (sA !== sB) return sA - sB;
+          return a.reviews.length - b.reviews.length;
         }
         default:
           return 0;
@@ -1934,12 +1946,12 @@ export default function Home() {
     });
 
     return result;
-  }, [search, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, priceRange, sort]);
+  }, [search, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, feeMin, feeMax, sort]);
 
   const activeFilterCount =
     (doctorType ? 1 : 0) + (mode ? 1 : 0) + (stimulants ? 1 : 0) +
     (adultADHD ? 1 : 0) + (acceptsPrior ? 1 : 0) + (doesDiagnosis ? 1 : 0) +
-    (priceRange ? 1 : 0);
+    (feeMin > FEE_FLOOR || feeMax < FEE_CEIL ? 1 : 0);
 
   function clearFilters() {
     setDoctorType(null);
@@ -1948,7 +1960,8 @@ export default function Home() {
     setAdultADHD(false);
     setAcceptsPrior(false);
     setDoesDiagnosis(false);
-    setPriceRange(null);
+    setFeeMin(FEE_FLOOR);
+    setFeeMax(FEE_CEIL);
     setSearch("");
   }
 
@@ -2028,7 +2041,7 @@ export default function Home() {
               </button>
               <button
                 onClick={toggleTheme}
-                className="p-2 rounded-full bg-surface hover:bg-surface-hover transition-colors text-foreground"
+                className="p-2 rounded-full bg-surface hover:bg-surface-hover transition-colors text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 aria-label="Toggle theme"
               >
                 {isDark ? <SunIcon /> : <MoonIcon />}
@@ -2050,28 +2063,8 @@ export default function Home() {
             />
           </div>
 
-          {/* Active city + Quick filters row */}
-          <div className="flex items-center gap-2 mt-3 overflow-x-auto no-scrollbar">
-
-            <FilterChip
-              label={stimulants ? "Stimulants" : "Stimulants"}
-              active={stimulants !== null}
-              onClick={() => setStimulants(stimulants ? null : "Yes")}
-            />
-            <FilterChip
-              label="Adult ADHD"
-              active={adultADHD}
-              onClick={() => setAdultADHD(!adultADHD)}
-            />
-            <FilterChip
-              label="Online"
-              active={mode === "Online"}
-              onClick={() => setMode(mode === "Online" ? null : "Online")}
-            />
-          </div>
-
           {/* Filter + Sort row */}
-          <div className="flex items-center justify-between mt-2 gap-2">
+          <div className="flex items-center justify-between mt-3">
             <button
               onClick={() => {
                 const next = !showFilters;
@@ -2089,7 +2082,7 @@ export default function Home() {
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="4" y1="6" x2="20" y2="6" /><line x1="8" y1="12" x2="20" y2="12" /><line x1="12" y1="18" x2="20" y2="18" />
               </svg>
-              All Filters
+              Filter
               {activeFilterCount > 0 && (
                 <span className="bg-white/20 text-white text-xs px-1.5 py-0.5 rounded-full">
                   {activeFilterCount}
@@ -2097,17 +2090,49 @@ export default function Home() {
               )}
             </button>
 
-            <div className="flex items-center gap-1.5">
-              <span className="text-xs text-muted">Sort:</span>
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value as SortValue)}
-                className="bg-surface border border-border rounded-full text-sm text-foreground px-3 py-1 focus:outline-none focus:border-accent appearance-none cursor-pointer"
+            <div className="relative" ref={sortRef}>
+              <button
+                onClick={() => setShowSort(!showSort)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  showSort ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
+                }`}
               >
-                {sortOptions.map((opt) => (
-                  <option key={opt.value} value={opt.value}>{opt.label}</option>
-                ))}
-              </select>
+                {sort === "name" ? (
+                  <ArrowUpAZ size={14} />
+                ) : sort === "rating-desc" || sort === "fee-desc" ? (
+                  <ArrowDownNarrowWide size={14} />
+                ) : (
+                  <ArrowUpNarrowWide size={14} />
+                )}
+                {sortOptions.find((o) => o.value === sort)?.label ?? "Sort"}
+              </button>
+              {showSort && (
+                <>
+                  <div className="fixed inset-0 z-40" onClick={() => setShowSort(false)} />
+                  <div className="absolute right-0 top-full mt-1.5 z-50 min-w-[180px] bg-surface border border-border rounded-xl shadow-lg overflow-hidden py-1">
+                    {sortOptions.map((opt) => (
+                      <button
+                        key={opt.value}
+                        onClick={() => { setSort(opt.value); setShowSort(false); }}
+                        className={`w-full flex items-center gap-2.5 px-3.5 py-2.5 text-sm text-left transition-colors ${
+                          sort === opt.value
+                            ? "bg-accent/10 text-accent font-semibold"
+                            : "text-foreground hover:bg-surface-hover"
+                        }`}
+                      >
+                        {opt.value === "name" ? (
+                          <ArrowUpAZ size={15} className="shrink-0" />
+                        ) : opt.value === "rating-desc" || opt.value === "fee-desc" ? (
+                          <ArrowDownNarrowWide size={15} className="shrink-0" />
+                        ) : (
+                          <ArrowUpNarrowWide size={15} className="shrink-0" />
+                        )}
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -2150,16 +2175,81 @@ export default function Home() {
               </SegmentedControl>
             </div>
 
-            {/* Price Range */}
+            {/* Price Range Slider */}
             <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">Consultation Fee</p>
-              <SegmentedControl>
-                <SegmentChip label="Any" active={priceRange === null} onClick={() => setPriceRange(null)} />
-                <SegmentChip label="Under ₹500" active={priceRange === "under500"} onClick={() => setPriceRange(priceRange === "under500" ? null : "under500")} />
-                <SegmentChip label="₹500-1K" active={priceRange === "500-1000"} onClick={() => setPriceRange(priceRange === "500-1000" ? null : "500-1000")} />
-                <SegmentChip label="₹1K-2K" active={priceRange === "1000-2000"} onClick={() => setPriceRange(priceRange === "1000-2000" ? null : "1000-2000")} />
-                <SegmentChip label="Over ₹2K" active={priceRange === "over2000"} onClick={() => setPriceRange(priceRange === "over2000" ? null : "over2000")} />
-              </SegmentedControl>
+              <div className="flex items-center gap-2 mb-2">
+                <p className="text-xs font-medium text-muted uppercase tracking-wider">Consultation Fee</p>
+                {(feeMin > FEE_FLOOR || feeMax < FEE_CEIL) && (
+                  <button
+                    onClick={() => { setFeeMin(FEE_FLOOR); setFeeMax(FEE_CEIL); }}
+                    className="ml-auto text-muted hover:text-foreground transition-colors"
+                    aria-label="Reset fee range"
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M3 12a9 9 0 1 1 3 6.7" /><path d="M3 22v-6h6" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-medium text-foreground tabular-nums shrink-0 w-10 text-center">₹{feeMin.toLocaleString("en-IN")}</span>
+                <div
+                  className="relative flex-1 h-9 flex items-center border border-border rounded-full bg-background p-1 cursor-pointer"
+                  onClick={(e) => {
+                    const rect = e.currentTarget.getBoundingClientRect();
+                    const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+                    const raw = pct * FEE_CEIL;
+                    const snapped = Math.round(raw / FEE_STEP) * FEE_STEP;
+                    const distToMin = Math.abs(snapped - feeMin);
+                    const distToMax = Math.abs(snapped - feeMax);
+                    if (distToMin <= distToMax) {
+                      setFeeMin(Math.min(snapped, feeMax - FEE_STEP));
+                    } else {
+                      setFeeMax(Math.max(snapped, feeMin + FEE_STEP));
+                    }
+                  }}
+                >
+                  {/* Track background */}
+                  <div className="absolute left-1 right-1 h-full rounded-full bg-background" />
+                  {/* Active range fill */}
+                  <div
+                    className="absolute top-1 bottom-1 rounded-full bg-accent/30 dark:bg-accent/25"
+                    style={{
+                      left: `calc(${(feeMin / FEE_CEIL) * 100}% + 4px)`,
+                      right: `calc(${100 - (feeMax / FEE_CEIL) * 100}% + 4px)`,
+                    }}
+                  />
+                  {/* Min thumb */}
+                  <input
+                    type="range"
+                    min={FEE_FLOOR}
+                    max={FEE_CEIL}
+                    step={FEE_STEP}
+                    value={feeMin}
+                    onChange={(e) => {
+                      const v = Math.min(Number(e.target.value), feeMax - FEE_STEP);
+                      setFeeMin(v);
+                    }}
+                    className="absolute left-0 right-0 w-full h-full appearance-none bg-transparent pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-8 [&::-webkit-slider-thumb]:h-8 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-accent [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:border-[3px] [&::-webkit-slider-thumb]:border-background [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:w-8 [&::-moz-range-thumb]:h-8 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-accent [&::-moz-range-thumb]:shadow-md [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:border-[3px] [&::-moz-range-thumb]:border-background"
+                    style={{ zIndex: feeMin > FEE_CEIL - FEE_STEP ? 5 : 3 }}
+                  />
+                  {/* Max thumb */}
+                  <input
+                    type="range"
+                    min={FEE_FLOOR}
+                    max={FEE_CEIL}
+                    step={FEE_STEP}
+                    value={feeMax}
+                    onChange={(e) => {
+                      const v = Math.max(Number(e.target.value), feeMin + FEE_STEP);
+                      setFeeMax(v);
+                    }}
+                    className="absolute left-0 right-0 w-full h-full appearance-none bg-transparent pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-8 [&::-webkit-slider-thumb]:h-8 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-accent [&::-webkit-slider-thumb]:shadow-md [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:border-[3px] [&::-webkit-slider-thumb]:border-background [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:w-8 [&::-moz-range-thumb]:h-8 [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:bg-accent [&::-moz-range-thumb]:shadow-md [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:border-[3px] [&::-moz-range-thumb]:border-background"
+                    style={{ zIndex: 4 }}
+                  />
+                </div>
+                <span className="text-sm font-medium text-foreground tabular-nums shrink-0 w-14 text-center">{feeMax === FEE_CEIL ? "₹3K+" : `₹${feeMax >= 1000 ? `${(feeMax / 1000).toFixed(1).replace(".0", "")}K` : feeMax.toLocaleString("en-IN")}`}</span>
+              </div>
             </div>
 
             {/* Toggle filters */}

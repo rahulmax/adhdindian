@@ -8,10 +8,29 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://adhdindian.com";
+
 export const metadata: Metadata = {
   title: "ADHD Indian — Find Your Doctor",
   description:
     "Find ADHD-friendly psychiatrists and psychologists across India. Filter by city, pricing, consultation mode, and more.",
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "ADHD Indian — Find Your Doctor",
+    description:
+      "Find ADHD-friendly psychiatrists and psychologists across India. Filter by city, pricing, consultation mode, and more.",
+    url: siteUrl,
+    siteName: "ADHD Indian",
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ADHD Indian — Find Your Doctor",
+    description:
+      "Find ADHD-friendly psychiatrists and psychologists across India. Filter by city, pricing, consultation mode, and more.",
+  },
 };
 
 export const viewport: Viewport = {

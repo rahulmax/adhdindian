@@ -770,12 +770,12 @@ function Badge({
 }) {
   const base = "inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium whitespace-nowrap";
   const variants = {
-    default: "bg-gray-100 text-gray-600 dark:bg-surface dark:text-muted",
-    accent: "bg-accent/15 text-accent dark:bg-accent/15 dark:text-accent",
-    positive: "bg-green-100 text-green-700 dark:bg-green-900/25 dark:text-green-400",
-    negative: "bg-red-100 text-red-700 dark:bg-red-900/25 dark:text-red-400",
-    warning: "bg-amber-100 text-amber-700 dark:bg-amber-900/25 dark:text-amber-400",
-    purple: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
+    default: "bg-gray-100 text-gray-500 dark:bg-surface dark:text-muted",
+    accent: "bg-accent/10 text-accent/80 dark:bg-accent/10 dark:text-accent/70",
+    positive: "bg-green-50 text-green-600/80 dark:bg-green-900/15 dark:text-green-400/60",
+    negative: "bg-red-50 text-red-600/80 dark:bg-red-900/15 dark:text-red-400/60",
+    warning: "bg-amber-50 text-amber-600/80 dark:bg-amber-900/15 dark:text-amber-400/60",
+    purple: "bg-blue-50 text-blue-700/80 dark:bg-blue-900/15 dark:text-blue-300/60",
   };
   return <span className={`${base} ${variants[variant]}`}>{children}</span>;
 }

@@ -4069,5 +4069,94 @@
         "text": "I had adhd which led me to becoming a psychiatrist\nU can check my explanations and details on my youtube channel"
       }
     ]
+  },
+  {
+    "id": 171,
+    "name": "Dr. Meena ()/Dr. Hijab ()",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "reachpsych.com",
+    "city": "Bangalore",
+    "address": "ReACH Psychiatry & Counselling Center #319, 7th main, 2nd block, HRBR layout, CMR Road, Kalyan Nagar, Bengaluru, Karnataka 560043",
+    "contact": "7760218282",
+    "fee": 2500,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I'm not sure whether they did a standardized assessment for diagnosing, as the clinical psychologist just did the diagnosis in the session by asking questions, and then emailed me the diagnosis that I have adhd and later asked me to take an assessment questionnaire which went into a lot more details.\n\nThey seemed friendly and had good understanding of adult ADHD and medication though."
+      }
+    ],
+    "locality": "Kalyan Nagar"
+  },
+  {
+    "id": 172,
+    "name": "s(Nimhans wellbeing)",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Nimhans wellbeing centre bangalore",
+    "contact": "9480829670",
+    "fee": 50,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "stigma free, open to med/non med approach, less wait time, extremely cheap, understanding and very knowledgeable."
+      }
+    ]
+  },
+  {
+    "id": 173,
+    "name": "Dhara eep singh",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Whatsapp",
+    "city": "Jaipur",
+    "address": "AB 91 Shiv Shakti Vihar, Benar Rd, near HP Petrol Pump, opposite Neendar, Railway Station, Jaipur, Rajasthan 302012",
+    "contact": "9694087208",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Very polite and friendly"
+      }
+    ]
+  },
+  {
+    "id": 174,
+    "name": "Dr. Ishat kalra (and psychotherapist)",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Website is under construction.u can check my youtube profile under the same name",
+    "city": "Ludhiana",
+    "address": "Dr. Raj Kalra Memorial Neuropsychiatry Centre, Brindraban Road, Neem Chowk, New Kundanpuri, Civil Lines, Ludhiana, Punjab 141001",
+    "contact": "9463661166",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "In-person only",
+    "acceptsPreviousDiagnosis": "No",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I had adhd which led me to becoming a psychiatrist\nU can check my explanations and details on my youtube channel"
+      }
+    ]
   }
 ]

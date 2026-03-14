@@ -623,8 +623,11 @@ function getOverallSentiment(reviews: Review[]): string {
   if (reviews.length === 0) return "Unknown";
   const positiveCount = reviews.filter((r) => r.sentiment === "Positive").length;
   const negativeCount = reviews.filter((r) => r.sentiment === "Negative").length;
+  const mixedCount = reviews.filter((r) => r.sentiment === "Mixed").length;
   if (positiveCount > negativeCount) return "Positive";
   if (negativeCount > positiveCount) return "Negative";
+  if (mixedCount > 0) return "Mixed";
+  if (positiveCount === 0 && negativeCount === 0) return "Neutral";
   return "Mixed";
 }
 
@@ -1177,7 +1180,7 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
         </div>
 
         <div className="flex flex-wrap gap-1.5 mt-3">
-          {overallSentiment !== "Unknown" && (
+          {overallSentiment !== "Unknown" && overallSentiment !== "Neutral" && (
             <Badge variant={sentimentVariant}>
               {overallSentiment === "Positive" ? "Positive" : overallSentiment === "Negative" ? "Negative" : "Mixed"}
             </Badge>
@@ -1246,9 +1249,11 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
               <div className="space-y-3">
                 {doctor.reviews.map((review, i) => (
                   <div key={i} className="bg-background rounded-xl p-3 border border-border">
-                    <span className={`text-xs font-semibold ${getSentimentColor(review.sentiment)}`}>
-                      {review.sentiment}
-                    </span>
+                    {review.sentiment !== "Neutral" && (
+                      <span className={`text-xs font-semibold ${getSentimentColor(review.sentiment)}`}>
+                        {review.sentiment}
+                      </span>
+                    )}
                     <p className="text-sm text-foreground mt-1 leading-relaxed">{review.text}</p>
                   </div>
                 ))}
@@ -2269,10 +2274,19 @@ export default function Home() {
 
       {/* Results */}
       <main className="max-w-lg mx-auto px-4 py-4">
-        <p className="text-sm text-muted mb-3">
-          {filtered.length} doctor{filtered.length !== 1 ? "s" : ""} found
-          {city ? ` in ${city}` : ""}
-        </p>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-sm text-muted">
+            {filtered.length} doctor{filtered.length !== 1 ? "s" : ""} found
+            {city ? ` in ${city}` : ""}
+          </p>
+          <button
+            onClick={() => setDrawerContext({ type: "new-doctor" })}
+            className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
+            Add Doctor
+          </button>
+        </div>
 
         {filtered.length === 0 ? (
           <div className="text-center py-16">

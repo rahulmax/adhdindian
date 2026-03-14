@@ -1770,7 +1770,6 @@ export default function Home() {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedPrefs, setSelectedPrefs] = useState<Set<PreferenceKey>>(new Set());
   const [doctorType, setDoctorType] = useState<string | null>(null);
-  const [showLoading, setShowLoading] = useState(true);
   const [feeMin, setFeeMin] = useState(0);
   const [feeMax, setFeeMax] = useState(3000);
   const FEE_FLOOR = 0;
@@ -1778,11 +1777,6 @@ export default function Home() {
   const FEE_STEP = 500;
   const [drawerContext, setDrawerContext] = useState<DrawerContext | null>(null);
   const filterDrawerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const t = setTimeout(() => setShowLoading(false), 3000);
-    return () => clearTimeout(t);
-  }, []);
 
   useEffect(() => {
     // Check if user has completed wizard before
@@ -1980,11 +1974,10 @@ export default function Home() {
     setWizardStep("welcome");
   }
 
-  if (!initialized || showLoading) {
+  if (!initialized) {
     return (
       <div className="fixed inset-0 bg-background flex flex-col items-center justify-center gap-4 z-50">
         <SpinningLogo size={64} initialVelocity={600} />
-        <p className="text-xs text-muted animate-pulse">Loading...</p>
       </div>
     );
   }

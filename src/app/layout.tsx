@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const plexSans = IBM_Plex_Sans({
+  variable: "--font-plex-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const siteUrl = "https://adhdindian.com";
@@ -66,7 +67,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${dmSans.variable} font-sans antialiased`}>
+      <body className={`${plexSans.variable} font-sans antialiased`}>
         {children}
         <Analytics />
         <SpeedInsights />

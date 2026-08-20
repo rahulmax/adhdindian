@@ -5,7 +5,6 @@ import { Stethoscope, Brain, Video, Hospital, Pill, UserCheck, ClipboardCheck, F
 import doctors from "@/data/doctors.json";
 
 type Doctor = (typeof doctors)[number];
-type Review = Doctor["reviews"][number];
 
 function prefersReducedMotion() {
   return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -541,14 +540,6 @@ function CrossIcon() {
   );
 }
 
-function CheckIcon() {
-  return (
-    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12" />
-    </svg>
-  );
-}
-
 function ArrowLeftIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -625,18 +616,6 @@ function getSentimentColor(sentiment: string) {
     case "Negative": return "text-negative";
     default: return "text-warning";
   }
-}
-
-function getOverallSentiment(reviews: Review[]): string {
-  if (reviews.length === 0) return "Unknown";
-  const positiveCount = reviews.filter((r) => r.sentiment === "Positive").length;
-  const negativeCount = reviews.filter((r) => r.sentiment === "Negative").length;
-  const mixedCount = reviews.filter((r) => r.sentiment === "Mixed").length;
-  if (positiveCount > negativeCount) return "Positive";
-  if (negativeCount > positiveCount) return "Negative";
-  if (mixedCount > 0) return "Mixed";
-  if (positiveCount === 0 && negativeCount === 0) return "Neutral";
-  return "Mixed";
 }
 
 function extractBestPhone(raw: string): string | null {
@@ -1167,19 +1146,134 @@ function PreferencesStep({
   );
 }
 
+// --- Doctor Detail (shared by mobile expansion + desktop panel) ---
+
+function DoctorDetail({ doctor, onAction }: { doctor: Doctor; onAction: (type: DrawerType) => void }) {
+  const bestPhone = doctor.contact ? extractBestPhone(doctor.contact) : null;
+  return (
+    <div className="space-y-4">
+      <div>
+        <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Address</p>
+        <p className="text-sm text-foreground leading-relaxed">{doctor.address}</p>
+      </div>
+
+      {bestPhone && (
+        <div>
+          <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Contact</p>
+          <a
+            href={`tel:+91${bestPhone}`}
+            className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/10 rounded-full transition-colors"
+          >
+            <PhoneIcon />
+            {formatPhoneNumber(bestPhone)}
+          </a>
+        </div>
+      )}
+
+      <div className="grid grid-cols-2 gap-3">
+        {doctor.onlinePlatform && (
+          <div>
+            <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Online Platform</p>
+            <p className="text-sm text-foreground">{doctor.onlinePlatform}</p>
+          </div>
+        )}
+        {doctor.adhdTestFee && (
+          <div>
+            <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">ADHD Test Fee</p>
+            <p className="text-sm text-foreground tabular-nums">₹{doctor.adhdTestFee.toLocaleString("en-IN")}</p>
+          </div>
+        )}
+        <div>
+          <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Stimulants</p>
+          <p className="text-sm text-foreground">{doctor.prescribesStimulants}</p>
+        </div>
+        <div>
+          <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Prior Diagnosis</p>
+          <p className="text-sm text-foreground">{doctor.acceptsPreviousDiagnosis}</p>
+        </div>
+      </div>
+
+      {doctor.reviews.length > 0 && (
+        <div>
+          <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">
+            Reviews ({doctor.reviews.length})
+          </p>
+          <div className="divide-y divide-border">
+            {doctor.reviews.map((review, i) => (
+              <div key={i} className="py-3 first:pt-0 last:pb-0">
+                {review.sentiment !== "Neutral" && (
+                  <span className={`text-xs font-semibold ${getSentimentColor(review.sentiment)}`}>
+                    {review.sentiment}
+                  </span>
+                )}
+                <p className="text-sm text-foreground mt-1 leading-relaxed">{review.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div className="flex items-center gap-4 pt-2 border-t border-border">
+        <button
+          onClick={() => onAction("correction")}
+          className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
+        >
+          Incorrect info? Submit correction
+        </button>
+        <span className="text-border" aria-hidden="true">|</span>
+        <button
+          onClick={() => onAction("review")}
+          className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
+        >
+          Add a review
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function DoctorBadges({ doctor }: { doctor: Doctor }) {
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {doctor.prescribesStimulants === "Yes" && <Badge variant="purple">Stimulants</Badge>}
+      {doctor.prescribesStimulants === "In-person only" && <Badge variant="purple">Stimulants (In-person)</Badge>}
+      {doctor.adultADHDSpecialist === "Yes" && <Badge variant="positive">Adult ADHD</Badge>}
+      {doctor.acceptsPreviousDiagnosis === "Yes" && <Badge variant="default">Accepts Prior Dx</Badge>}
+      {(doctor.doesADHDDiagnosis === "Yes" || doctor.doesADHDDiagnosis === "Yes (Standardised Tests)" || doctor.doesADHDDiagnosis === "Yes (Provisional)") && (
+        <Badge variant="default">ADHD Testing</Badge>
+      )}
+    </div>
+  );
+}
+
+function formatMode(mode: string) {
+  return mode === "Both" ? "Online & In-person" : mode === "Offline" ? "In-person" : mode;
+}
+
 // --- Doctor Card ---
 
-const DoctorCard = memo(function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: DrawerType) => void }) {
-  const [expanded, setExpanded] = useState(false);
-  const overallSentiment = getOverallSentiment(doctor.reviews);
-  const sentimentVariant =
-    overallSentiment === "Positive" ? "positive"
-    : overallSentiment === "Negative" ? "negative"
-    : "warning";
-
+const DoctorCard = memo(function DoctorCard({
+  doctor,
+  selected,
+  onSelect,
+  onAction,
+}: {
+  doctor: Doctor;
+  selected: boolean;
+  onSelect: () => void;
+  onAction: (type: DrawerType) => void;
+}) {
   return (
-    <div className="bg-surface rounded-2xl border border-border overflow-hidden transition-all duration-200 hover:border-accent/30">
-      <button onClick={() => setExpanded(!expanded)} className="w-full p-4 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset rounded-2xl">
+    <div
+      className={`bg-surface rounded-2xl border overflow-hidden transition-all duration-200 ${
+        selected ? "border-accent/50 lg:shadow-sm" : "border-border hover:border-accent/30"
+      }`}
+    >
+      <button
+        onClick={onSelect}
+        aria-expanded={selected}
+        className="w-full p-4 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset rounded-2xl"
+      >
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0 flex-1">
             <h3 className="font-semibold text-foreground text-base leading-tight truncate">
@@ -1189,11 +1283,11 @@ const DoctorCard = memo(function DoctorCard({ doctor, onAction }: { doctor: Doct
           </div>
           <div className="flex items-center gap-2 shrink-0">
             {doctor.fee && (
-              <span className="text-foreground font-semibold text-lg">
+              <span className="text-foreground font-semibold text-lg tabular-nums">
                 ₹{doctor.fee.toLocaleString("en-IN")}
               </span>
             )}
-            <ChevronIcon open={expanded} />
+            <span className="lg:hidden"><ChevronIcon open={selected} /></span>
           </div>
         </div>
 
@@ -1201,106 +1295,75 @@ const DoctorCard = memo(function DoctorCard({ doctor, onAction }: { doctor: Doct
           <MapPinIcon />
           <span className="truncate">{doctor.locality ? `${doctor.locality}, ${doctor.city}` : doctor.city}</span>
           <span className="mx-1 text-muted" aria-hidden="true">·</span>
-          <span>{doctor.consultationMode === 'Both' ? 'Online & In-person' : doctor.consultationMode === 'Offline' ? 'In-person' : doctor.consultationMode}</span>
+          <span>{formatMode(doctor.consultationMode)}</span>
         </div>
 
-        <div className="flex flex-wrap gap-1.5 mt-3">
-          {doctor.prescribesStimulants === "Yes" && <Badge variant="purple">Stimulants</Badge>}
-          {doctor.prescribesStimulants === "In-person only" && <Badge variant="purple">Stimulants (In-person)</Badge>}
-          {doctor.adultADHDSpecialist === "Yes" && <Badge variant="positive">Adult ADHD</Badge>}
-          {doctor.acceptsPreviousDiagnosis === "Yes" && <Badge variant="default">Accepts Prior Dx</Badge>}
-          {(doctor.doesADHDDiagnosis === "Yes" || doctor.doesADHDDiagnosis === "Yes (Standardised Tests)" || doctor.doesADHDDiagnosis === "Yes (Provisional)") && (
-            <Badge variant="default">ADHD Testing</Badge>
-          )}
+        <div className="mt-3">
+          <DoctorBadges doctor={doctor} />
         </div>
       </button>
 
-      {expanded && (
-        <div className="px-4 pb-4 space-y-4 border-t border-border pt-4">
-          <div>
-            <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Address</p>
-            <p className="text-sm text-foreground leading-relaxed">{doctor.address}</p>
-          </div>
-
-          {(() => {
-            const bestPhone = doctor.contact ? extractBestPhone(doctor.contact) : null;
-            return bestPhone ? (
-              <div>
-                <p className="text-xs font-medium text-muted uppercase tracking-wider mb-1">Contact</p>
-                <a
-                  href={`tel:+91${bestPhone}`}
-                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-hover font-medium py-2 px-3 bg-accent/10 rounded-full transition-colors"
-                >
-                  <PhoneIcon />
-                  {formatPhoneNumber(bestPhone)}
-                </a>
-              </div>
-            ) : null;
-          })()}
-
-          <div className="grid grid-cols-2 gap-3">
-            {doctor.onlinePlatform && (
-              <div>
-                <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Online Platform</p>
-                <p className="text-sm text-foreground">{doctor.onlinePlatform}</p>
-              </div>
-            )}
-            {doctor.adhdTestFee && (
-              <div>
-                <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">ADHD Test Fee</p>
-                <p className="text-sm text-foreground">₹{doctor.adhdTestFee.toLocaleString("en-IN")}</p>
-              </div>
-            )}
-            <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Stimulants</p>
-              <p className="text-sm text-foreground">{doctor.prescribesStimulants}</p>
-            </div>
-            <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-0.5">Prior Diagnosis</p>
-              <p className="text-sm text-foreground">{doctor.acceptsPreviousDiagnosis}</p>
-            </div>
-          </div>
-
-          {doctor.reviews.length > 0 && (
-            <div>
-              <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">
-                Reviews ({doctor.reviews.length})
-              </p>
-              <div className="divide-y divide-border">
-                {doctor.reviews.map((review, i) => (
-                  <div key={i} className="py-3 first:pt-0 last:pb-0">
-                    {review.sentiment !== "Neutral" && (
-                      <span className={`text-xs font-semibold ${getSentimentColor(review.sentiment)}`}>
-                        {review.sentiment}
-                      </span>
-                    )}
-                    <p className="text-sm text-foreground mt-1 leading-relaxed">{review.text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <div className="flex items-center gap-4 pt-2 border-t border-border">
-            <button
-              onClick={() => onAction("correction")}
-              className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
-            >
-              Incorrect info? Submit correction
-            </button>
-            <span className="text-border" aria-hidden="true">|</span>
-            <button
-              onClick={() => onAction("review")}
-              className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
-            >
-              Add a review
-            </button>
-          </div>
+      {selected && (
+        <div className="lg:hidden px-4 pb-4 border-t border-border pt-4">
+          <DoctorDetail doctor={doctor} onAction={onAction} />
         </div>
       )}
     </div>
   );
 })
+
+// --- Desktop Detail Panel ---
+
+function DoctorDetailPanel({ doctor, onAction }: { doctor: Doctor | null; onAction: (type: DrawerType) => void }) {
+  if (!doctor) {
+    return (
+      <div className="flex flex-col items-center justify-center text-center rounded-2xl border border-dashed border-border px-8 py-24 min-h-[24rem]">
+        <div className="text-muted/40 mb-4" aria-hidden="true">
+          <FidgetSpinnerIcon size={44} />
+        </div>
+        <p className="text-foreground font-semibold">Pick a doctor from the list</p>
+        <p className="text-muted text-sm mt-1 max-w-xs">
+          Full details, contact info and community reviews show up here.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div key={doctor.id} className="detail-enter bg-surface rounded-2xl border border-border overflow-hidden">
+      <div className="p-6 border-b border-border">
+        <div className="flex items-start justify-between gap-4">
+          <div className="min-w-0">
+            <h2 className="text-xl font-semibold text-foreground tracking-tight leading-snug">
+              {doctor.name}
+            </h2>
+            <p className="text-muted text-sm mt-0.5">{doctor.type}</p>
+          </div>
+          {doctor.fee && (
+            <div className="text-right shrink-0">
+              <span className="text-2xl font-semibold text-foreground tabular-nums">
+                ₹{doctor.fee.toLocaleString("en-IN")}
+              </span>
+              <p className="text-xs text-muted mt-0.5">per consultation</p>
+            </div>
+          )}
+        </div>
+        <div className="flex items-center gap-1.5 mt-4 text-muted text-sm">
+          <MapPinIcon />
+          <span>{doctor.locality ? `${doctor.locality}, ${doctor.city}` : doctor.city}</span>
+          <span className="mx-1" aria-hidden="true">·</span>
+          <span>{formatMode(doctor.consultationMode)}</span>
+        </div>
+        <div className="mt-3">
+          <DoctorBadges doctor={doctor} />
+        </div>
+      </div>
+      <div className="p-6">
+        <DoctorDetail doctor={doctor} onAction={onAction} />
+      </div>
+    </div>
+  );
+}
 
 // --- Community Links ---
 
@@ -1819,6 +1882,7 @@ export default function Home() {
   const FEE_CEIL = 3000;
   const FEE_STEP = 500;
   const [drawerContext, setDrawerContext] = useState<DrawerContext | null>(null);
+  const [selectedId, setSelectedId] = useState<number | null>(null);
   const filterDrawerRef = useRef<HTMLDivElement>(null);
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(20);
@@ -1847,18 +1911,21 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    // Check if user has completed wizard before
+    // localStorage can only be read after hydration, so the wizard state has
+    // to be set from an effect — the `initialized` gate prevents a flash.
     const wizardDone = localStorage.getItem("wizardComplete");
     const savedCity = localStorage.getItem("selectedCity");
 
     if (wizardDone) {
-      // Returning user - go straight to results
       if (savedCity && savedCity !== "all") {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setCity(savedCity);
       }
+       
       setWizardStep("results");
     }
 
+     
     setInitialized(true);
   }, []);
 
@@ -2010,6 +2077,11 @@ export default function Home() {
     return result;
   }, [debouncedSearch, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, feeMin, feeMax, sort]);
 
+  const selectedDoctor = useMemo(
+    () => (selectedId != null ? filtered.find((d) => d.id === selectedId) ?? null : null),
+    [filtered, selectedId]
+  );
+
   const activeFilterCount =
     (doctorType ? 1 : 0) + (mode ? 1 : 0) + (stimulants ? 1 : 0) +
     (adultADHD ? 1 : 0) + (acceptsPrior ? 1 : 0) + (doesDiagnosis ? 1 : 0) +
@@ -2080,10 +2152,10 @@ export default function Home() {
   // --- Step 3: Results ---
 
   return (
-    <div className="min-h-screen-safe bg-background">
+    <div className="min-h-screen-safe bg-background lg:h-screen-safe lg:flex lg:flex-col lg:overflow-hidden">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
-        <div className="max-w-lg mx-auto px-4 py-3">
+      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border lg:static lg:shrink-0 lg:bg-background">
+        <div className="max-w-lg lg:max-w-6xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <SpinningLogo size={28} />
@@ -2110,8 +2182,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Search */}
-          <div className="relative mt-3">
+          {/* Search + Filter + Sort (one row on desktop) */}
+          <div className="mt-3 lg:flex lg:items-center lg:gap-3">
+          <div className="relative lg:w-[26rem] lg:shrink-0">
             <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted">
               <SearchIcon />
             </div>
@@ -2126,7 +2199,7 @@ export default function Home() {
           </div>
 
           {/* Filter + Sort row */}
-          <div className="flex items-center justify-between mt-3">
+          <div className="flex items-center justify-between mt-3 lg:mt-0 lg:flex-1">
             <button
               onClick={() => {
                 const next = !showFilters;
@@ -2199,14 +2272,15 @@ export default function Home() {
               )}
             </div>
           </div>
+          </div>
         </div>
       </header>
 
       {/* Filter Panel */}
-      <div ref={filterDrawerRef} className="grid transition-[grid-template-rows] duration-200 ease-out" style={{ gridTemplateRows: showFilters ? "1fr" : "0fr" }}>
+      <div ref={filterDrawerRef} className="grid transition-[grid-template-rows] duration-200 ease-out lg:shrink-0" style={{ gridTemplateRows: showFilters ? "1fr" : "0fr" }}>
         <div className="overflow-hidden">
           <div className="bg-surface border-b border-border">
-          <div className="max-w-lg mx-auto px-4 py-4 space-y-4">
+          <div className="max-w-lg lg:max-w-6xl mx-auto px-4 py-4 space-y-4 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-12 lg:gap-y-5">
             {/* Doctor Type */}
             <div>
               <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">Doctor Type</p>
@@ -2323,7 +2397,7 @@ export default function Home() {
               <FilterChip label="Does ADHD Testing" active={doesDiagnosis} onClick={() => setDoesDiagnosis(!doesDiagnosis)} />
             </div>
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between lg:col-span-2">
               {activeFilterCount > 0 ? (
                 <button onClick={clearFilters} className="text-sm text-accent hover:text-accent-hover font-medium rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
                   Clear all filters
@@ -2339,7 +2413,9 @@ export default function Home() {
       </div>
 
       {/* Results */}
-      <main className="max-w-lg mx-auto px-4 py-4">
+      <main className="max-w-lg lg:max-w-6xl mx-auto w-full px-4 py-4 lg:py-0 lg:flex-1 lg:min-h-0 lg:grid lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] lg:gap-10">
+        {/* List column */}
+        <div className="lg:overflow-y-auto lg:min-h-0 lg:py-5 lg:pr-1">
         <div className="flex items-center justify-between mb-3">
           <p className="text-sm text-muted">
             {filtered.length} doctor{filtered.length !== 1 ? "s" : ""} found
@@ -2368,6 +2444,8 @@ export default function Home() {
               <DoctorCard
                 key={doctor.id}
                 doctor={doctor}
+                selected={selectedId === doctor.id}
+                onSelect={() => setSelectedId(selectedId === doctor.id ? null : doctor.id)}
                 onAction={(type) => setDrawerContext({
                   type,
                   doctorName: doctor.name,
@@ -2409,6 +2487,23 @@ export default function Home() {
             </button>
           </div>
         </footer>
+        </div>
+
+        {/* Detail column (desktop only) */}
+        <aside className="hidden lg:block lg:overflow-y-auto lg:min-h-0 lg:py-5" aria-label="Doctor details">
+          <DoctorDetailPanel
+            doctor={selectedDoctor}
+            onAction={(type) =>
+              selectedDoctor &&
+              setDrawerContext({
+                type,
+                doctorName: selectedDoctor.name,
+                doctorId: selectedDoctor.id,
+                city: selectedDoctor.city,
+              })
+            }
+          />
+        </aside>
       </main>
 
       {drawerContext && (

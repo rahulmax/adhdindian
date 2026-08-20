@@ -38,12 +38,7 @@ function isAllCaps(str) {
   return letters.length > 3 && letters === letters.toUpperCase();
 }
 
-/** Convert a string to Title Case, respecting common small words */
-const SMALL_WORDS = new Set([
-  "a", "an", "the", "and", "but", "or", "for", "nor", "on", "at",
-  "to", "by", "in", "of", "up", "as", "is", "it", "no",
-]);
-
+/** Convert a string to Title Case */
 function toTitleCase(str) {
   return str
     .toLowerCase()
@@ -64,7 +59,7 @@ function fixSpacing(str) {
 /** Fix double (or more) closing parentheses */
 function fixParens(str) {
   // "Both Bangalore))" → "Both Bangalore)"
-  str = str.replace(/\)+/g, (match) => ")");
+  str = str.replace(/\)+/g, ")");
   return str;
 }
 
@@ -82,18 +77,6 @@ function isGoogleSearchPattern(str) {
 function extractFromGooglePattern(str) {
   const match = str.match(/^google\s+['"](.+?)['"]$/i);
   return match ? match[1] : null;
-}
-
-/** Determine whether an address looks like a proper street address (vs just a name) */
-function isProperAddress(addr) {
-  if (!addr) return false;
-  // Has a pincode / postal code
-  if (/\b\d{6}\b/.test(addr)) return true;
-  // Has road/street/floor/plot/sector indicators
-  if (/\b(road|rd|street|st|floor|plot|sector|sec|lane|block|nagar|layout|colony|marg|vihar|puram|enclave|chowk)\b/i.test(addr)) return true;
-  // Has a building number pattern
-  if (/\b\d+[/-]?\d*[a-zA-Z]?\s*,/.test(addr)) return true;
-  return false;
 }
 
 /** Check if address is just a contact detail (phone or email) mistakenly in address field */

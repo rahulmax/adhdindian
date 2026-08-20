@@ -113,7 +113,6 @@ function normalizeFee(raw) {
   const rangeMatch = raw.match(/(\d[\d,]*)\s*[-–to]+\s*(\d[\d,]*)/);
   if (rangeMatch) {
     const low = parseInt(rangeMatch[1].replace(/,/g, ""), 10);
-    const high = parseInt(rangeMatch[2].replace(/,/g, ""), 10);
     if (!isNaN(low) && low >= 10 && low <= 50000) return low;
   }
   // Handle "Rs ~1500", "₹800", "1500/-", "1500 per session", etc.
@@ -410,39 +409,6 @@ function normalizeOnlinePlatform(raw) {
   return raw.trim();
 }
 
-function deduplicateByName(doctors) {
-  const map = new Map();
-  for (const doc of doctors) {
-    // Normalize key: lowercase, remove "dr", remove non-alpha
-    const key = doc.name
-      .toLowerCase()
-      .replace(/^dr\.?\s*/, "")
-      .replace(/[^a-z]/g, "");
-    if (map.has(key)) {
-      const existing = map.get(key);
-      // Merge reviews
-      existing.reviews.push(...doc.reviews);
-      // Prefer non-null values for each field
-      for (const field of Object.keys(doc)) {
-        if (field === "reviews" || field === "id") continue;
-        if (
-          (existing[field] === null ||
-            existing[field] === "Unknown" ||
-            existing[field] === undefined) &&
-          doc[field] !== null &&
-          doc[field] !== "Unknown" &&
-          doc[field] !== undefined
-        ) {
-          existing[field] = doc[field];
-        }
-      }
-    } else {
-      map.set(key, { ...doc });
-    }
-  }
-  return [...map.values()].map((d, i) => ({ ...d, id: i + 1 }));
-}
-
 /** Normalize a name to a fuzzy key for matching */
 function nameKey(name) {
   return (name || "")
@@ -514,7 +480,6 @@ async function main() {
 
   // 3. Find new entries not in existing data
   const newEntries = [];
-  const newReviews = []; // additional reviews for existing doctors
 
   for (const r of dataRows) {
     const parsed = parseSheetRow(r);

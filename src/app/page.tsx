@@ -1,11 +1,15 @@
 "use client";
 
-import { useState, useMemo, useEffect, useCallback, useRef } from "react";
+import { useState, useMemo, useEffect, useCallback, useRef, memo } from "react";
 import { Stethoscope, Brain, Video, Hospital, Pill, UserCheck, ClipboardCheck, FileCheck, ArrowUpAZ, ArrowUpNarrowWide, ArrowDownNarrowWide } from "lucide-react";
 import doctors from "@/data/doctors.json";
 
 type Doctor = (typeof doctors)[number];
 type Review = Doctor["reviews"][number];
+
+function prefersReducedMotion() {
+  return typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+}
 
 // --- Icons (inline SVG, no external library) ---
 
@@ -54,6 +58,7 @@ function FidgetSpinnerIcon({ size = 24, className = "", spokes = 3 }: { size?: n
 }
 
 function emitParticles(button: HTMLElement, level: number) {
+  if (prefersReducedMotion()) return
   const rect = button.getBoundingClientRect();
   const cx = rect.left + rect.width / 2;
   const cy = rect.top + rect.height / 2;
@@ -170,6 +175,7 @@ function emitParticles(button: HTMLElement, level: number) {
 }
 
 function emitSmoke(button: HTMLElement, thickness: number) {
+  if (prefersReducedMotion()) return
   const rect = button.getBoundingClientRect();
   const cx = rect.left + rect.width / 2;
   const cy = rect.top + rect.height / 2;
@@ -205,6 +211,7 @@ function emitSmoke(button: HTMLElement, thickness: number) {
 
 let shakeRaf = 0;
 function screenShake(intensity = 4, duration = 400) {
+  if (prefersReducedMotion()) return
   cancelAnimationFrame(shakeRaf);
   const el = document.documentElement;
   const start = performance.now();
@@ -221,6 +228,7 @@ function screenShake(intensity = 4, duration = 400) {
 }
 
 function emitFireworks() {
+  if (prefersReducedMotion()) return
   const positions = [
     { x: 0.2 + Math.random() * 0.2, y: 0.2 + Math.random() * 0.3 },
     { x: 0.6 + Math.random() * 0.2, y: 0.15 + Math.random() * 0.3 },
@@ -728,7 +736,11 @@ const cities = Object.keys(cityCountMap).sort();
 const doctorCountByCity = Object.entries(cityCountMap)
   .map(([city, count]) => ({ city, count }))
   .sort((a, b) => b.count - a.count);
-const consultationModes = ["Online", "Offline", "Both"];
+const consultationModes = [
+  { label: "Online", value: "Online" },
+  { label: "In-person", value: "Offline" },
+  { label: "Both", value: "Both" },
+];
 const stimulantOptions = ["Yes", "In-person only", "No"];
 const sortOptions = [
   { label: "Rating: High", value: "rating-desc" },
@@ -750,6 +762,17 @@ type DrawerContext = {
   doctorId?: number;
   city?: string;
 };
+
+const prefColorMap: Record<PreferenceKey, { bg: string; text: string }> = {
+  psychiatrist: { bg: 'bg-rose-50 dark:bg-rose-900/15', text: 'text-rose-500 dark:text-rose-400' },
+  psychologist: { bg: 'bg-violet-50 dark:bg-violet-900/15', text: 'text-violet-500 dark:text-violet-400' },
+  online: { bg: 'bg-sky-50 dark:bg-sky-900/15', text: 'text-sky-500 dark:text-sky-400' },
+  inPerson: { bg: 'bg-amber-50 dark:bg-amber-900/15', text: 'text-amber-500 dark:text-amber-400' },
+  stimulants: { bg: 'bg-blue-50 dark:bg-blue-900/15', text: 'text-blue-500 dark:text-blue-400' },
+  adultADHD: { bg: 'bg-teal-50 dark:bg-teal-900/15', text: 'text-teal-500 dark:text-teal-400' },
+  acceptsPrior: { bg: 'bg-emerald-50 dark:bg-emerald-900/15', text: 'text-emerald-500 dark:text-emerald-400' },
+  doesDiagnosis: { bg: 'bg-indigo-50 dark:bg-indigo-900/15', text: 'text-indigo-500 dark:text-indigo-400' },
+}
 
 const preferenceCards: { key: PreferenceKey; label: string; description: string; icon: React.ReactNode }[] = [
   { key: "psychiatrist", label: "Psychiatrist", description: "Can prescribe medication", icon: <Stethoscope size={24} strokeWidth={1.5} /> },
@@ -774,11 +797,11 @@ function Badge({
   const base = "inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium whitespace-nowrap";
   const variants = {
     default: "bg-gray-100 text-gray-500 dark:bg-surface dark:text-muted",
-    accent: "bg-accent/10 text-accent/80 dark:bg-accent/10 dark:text-accent/70",
-    positive: "bg-green-50 text-green-600/80 dark:bg-green-900/15 dark:text-green-400/60",
-    negative: "bg-red-50 text-red-600/80 dark:bg-red-900/15 dark:text-red-400/60",
-    warning: "bg-amber-50 text-amber-600/80 dark:bg-amber-900/15 dark:text-amber-400/60",
-    purple: "bg-blue-50 text-blue-700/80 dark:bg-blue-900/15 dark:text-blue-300/60",
+    accent: "bg-accent/10 text-accent dark:bg-accent/10 dark:text-accent",
+    positive: "bg-green-50 text-green-700 dark:bg-green-900/15 dark:text-green-400",
+    negative: "bg-red-50 text-red-700 dark:bg-red-900/15 dark:text-red-400",
+    warning: "bg-amber-50 text-amber-700 dark:bg-amber-900/15 dark:text-amber-400",
+    purple: "bg-blue-50 text-blue-700 dark:bg-blue-900/15 dark:text-blue-300",
   };
   return <span className={`${base} ${variants[variant]}`}>{children}</span>;
 }
@@ -787,7 +810,7 @@ function FilterChip({ label, active, onClick }: { label: string; active: boolean
   return (
     <button
       onClick={onClick}
-      className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
+      className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
         active ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
       }`}
     >
@@ -808,7 +831,7 @@ function SegmentChip({ label, active, onClick }: { label: string; active: boolea
   return (
     <button
       onClick={onClick}
-      className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
+      className={`px-3.5 py-1.5 rounded-full text-sm font-medium transition-all whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
         active ? "bg-accent text-white shadow-sm" : "text-muted hover:text-foreground"
       }`}
     >
@@ -836,7 +859,7 @@ function ProgressBar({ step, totalSteps }: { step: number; totalSteps: number })
 function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
   return (
     <div className="flex flex-col h-screen-safe bg-background">
-      <div className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full px-6 py-12 overflow-y-auto">
+      <main className="flex-1 flex flex-col justify-center max-w-lg mx-auto w-full px-6 py-12 overflow-y-auto">
         {/* Logo / Title */}
         <div className="mb-12">
           <div className="mb-6">
@@ -853,7 +876,7 @@ function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
         {/* Info items */}
         <div className="space-y-6 mb-12">
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+            <div className="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-900/15 flex items-center justify-center shrink-0 text-amber-500 dark:text-amber-400">
               <LocationPinLargeIcon />
             </div>
             <div>
@@ -862,7 +885,7 @@ function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+            <div className="w-10 h-10 rounded-xl bg-violet-50 dark:bg-violet-900/15 flex items-center justify-center shrink-0 text-violet-500 dark:text-violet-400">
               <FilterLargeIcon />
             </div>
             <div>
@@ -871,7 +894,7 @@ function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 text-accent">
+            <div className="w-10 h-10 rounded-xl bg-sky-50 dark:bg-sky-900/15 flex items-center justify-center shrink-0 text-sky-500 dark:text-sky-400">
               <UsersLargeIcon />
             </div>
             <div>
@@ -880,20 +903,20 @@ function WelcomeStep({ onGetStarted }: { onGetStarted: () => void }) {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       {/* Bottom button */}
-      <div className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
+      <nav className="shrink-0 max-w-lg mx-auto w-full px-6 pb-8 pt-4">
         <button
           onClick={onGetStarted}
-          className="w-full py-4 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-base transition-colors"
+          className="w-full py-4 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-base transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           Get Started
         </button>
         <p className="text-center text-xs text-muted mt-4">
           {doctors.length} doctors across {cities.length} cities
         </p>
-      </div>
+      </nav>
     </div>
   );
 }
@@ -962,7 +985,7 @@ function LocationStep({
     <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={1} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
+      <main className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
         {/* Header */}
         <div className="mb-4">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
@@ -977,7 +1000,7 @@ function LocationStep({
         <button
           onClick={detectLocation}
           disabled={detecting}
-          className="w-full flex items-center justify-center gap-2.5 py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-medium text-base transition-colors disabled:opacity-60"
+          className="w-full flex items-center justify-center gap-2.5 py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-medium text-base transition-colors disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           {detecting ? (
             <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -1005,6 +1028,7 @@ function LocationStep({
           <input
             type="text"
             placeholder="Search cities..."
+            aria-label="Search cities"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-2 bg-surface border border-border rounded-full text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
@@ -1018,7 +1042,7 @@ function LocationStep({
               <button
                 key={city}
                 onClick={() => onSelect(city)}
-                className="flex items-center justify-between px-3.5 py-2.5 bg-surface hover:bg-surface-hover border border-border rounded-xl transition-colors text-left"
+                className="flex items-center justify-between px-3.5 py-2.5 bg-surface hover:bg-surface-hover border border-border rounded-xl transition-colors text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
               >
                 <span className="text-sm font-medium text-foreground">{city}</span>
                 <span className="text-xs text-muted">{count}</span>
@@ -1031,26 +1055,26 @@ function LocationStep({
             </p>
           )}
         </div>
-      </div>
+      </main>
 
       {/* Bottom navigation */}
-      <div className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
+      <nav className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
         <button
           onClick={onSkip}
-          className="w-full text-sm text-muted hover:text-foreground font-medium text-center py-1.5 mb-2"
+          className="w-full text-sm text-muted hover:text-foreground font-medium text-center py-1.5 mb-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           Show all cities
         </button>
         <div className="flex gap-3">
           <button
             onClick={onBack}
-            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
+            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           >
             <ArrowLeftIcon />
             Back
           </button>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }
@@ -1072,7 +1096,7 @@ function PreferencesStep({
     <div className="flex flex-col h-screen-safe bg-background">
       <ProgressBar step={2} totalSteps={3} />
 
-      <div className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
+      <main className="flex-1 flex flex-col max-w-lg mx-auto w-full px-4 pt-5 pb-3 overflow-y-auto">
         <div className="mb-4">
           <h2 className="text-2xl font-bold text-foreground tracking-tight">
             What are you looking for?
@@ -1085,18 +1109,19 @@ function PreferencesStep({
         <div className="grid grid-cols-2 gap-2.5 flex-1 content-start">
           {preferenceCards.map(({ key, label, description, icon }) => {
             const isSelected = selectedPrefs.has(key);
+            const colors = prefColorMap[key];
             return (
               <button
                 key={key}
                 onClick={() => onToggle(key)}
-                className={`flex flex-col items-start p-3.5 rounded-2xl border-2 transition-all text-left ${
+                className={`flex flex-col items-start p-3.5 rounded-2xl border-2 transition-all text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
                   isSelected
                     ? "border-accent bg-accent/15"
                     : "border-border bg-surface hover:border-accent/30 hover:bg-surface-hover"
                 }`}
               >
                 <div className={`w-9 h-9 rounded-lg flex items-center justify-center mb-2 ${
-                  isSelected ? "bg-accent/25 text-accent" : "bg-background text-muted"
+                  isSelected ? "bg-accent/25 text-accent" : `${colors.bg} ${colors.text}`
                 }`}>
                   {icon}
                 </div>
@@ -1113,38 +1138,38 @@ function PreferencesStep({
 
         <button
           onClick={onNext}
-          className="text-sm text-accent hover:underline font-medium text-center mt-4 mb-1"
+          className="text-sm text-accent hover:underline font-medium text-center mt-4 mb-1 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
           See all doctors &rarr;
         </button>
-      </div>
+      </main>
 
       {/* Bottom navigation */}
-      <div className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
+      <nav className="shrink-0 max-w-lg mx-auto w-full px-4 pb-5 pt-2">
         <div className="flex gap-3">
           <button
             onClick={onBack}
-            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2"
+            className="flex-1 py-3 border border-border text-foreground rounded-full font-medium text-sm transition-colors hover:bg-surface flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           >
             <ArrowLeftIcon />
             Back
           </button>
           <button
             onClick={onNext}
-            className="flex-[2] py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors flex items-center justify-center gap-2"
+            className="flex-[2] py-3 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
           >
             See Results
             <ArrowRightIcon />
           </button>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }
 
 // --- Doctor Card ---
 
-function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: DrawerType) => void }) {
+const DoctorCard = memo(function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: DrawerType) => void }) {
   const [expanded, setExpanded] = useState(false);
   const overallSentiment = getOverallSentiment(doctor.reviews);
   const sentimentVariant =
@@ -1154,7 +1179,7 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
 
   return (
     <div className="bg-surface rounded-2xl border border-border overflow-hidden transition-all duration-200 hover:border-accent/30">
-      <button onClick={() => setExpanded(!expanded)} className="w-full p-4 text-left cursor-pointer">
+      <button onClick={() => setExpanded(!expanded)} className="w-full p-4 text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset rounded-2xl">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0 flex-1">
             <h3 className="font-semibold text-foreground text-base leading-tight truncate">
@@ -1175,18 +1200,13 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
         <div className="flex items-center gap-1.5 mt-3 text-muted text-sm">
           <MapPinIcon />
           <span className="truncate">{doctor.locality ? `${doctor.locality}, ${doctor.city}` : doctor.city}</span>
-          <span className="mx-1 opacity-30">|</span>
-          <span>{doctor.consultationMode}</span>
+          <span className="mx-1 text-muted" aria-hidden="true">·</span>
+          <span>{doctor.consultationMode === 'Both' ? 'Online & In-person' : doctor.consultationMode === 'Offline' ? 'In-person' : doctor.consultationMode}</span>
         </div>
 
         <div className="flex flex-wrap gap-1.5 mt-3">
-          {overallSentiment !== "Unknown" && overallSentiment !== "Neutral" && (
-            <Badge variant={sentimentVariant}>
-              {overallSentiment === "Positive" ? "Positive" : overallSentiment === "Negative" ? "Negative" : "Mixed"}
-            </Badge>
-          )}
-          {doctor.prescribesStimulants === "Yes" && <Badge variant="purple"><CheckIcon />Stimulants</Badge>}
-          {doctor.prescribesStimulants === "In-person only" && <Badge variant="purple"><CheckIcon />Stimulants (In-person)</Badge>}
+          {doctor.prescribesStimulants === "Yes" && <Badge variant="purple">Stimulants</Badge>}
+          {doctor.prescribesStimulants === "In-person only" && <Badge variant="purple">Stimulants (In-person)</Badge>}
           {doctor.adultADHDSpecialist === "Yes" && <Badge variant="positive">Adult ADHD</Badge>}
           {doctor.acceptsPreviousDiagnosis === "Yes" && <Badge variant="default">Accepts Prior Dx</Badge>}
           {(doctor.doesADHDDiagnosis === "Yes" || doctor.doesADHDDiagnosis === "Yes (Standardised Tests)" || doctor.doesADHDDiagnosis === "Yes (Provisional)") && (
@@ -1246,9 +1266,9 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
               <p className="text-xs font-medium text-muted uppercase tracking-wider mb-2">
                 Reviews ({doctor.reviews.length})
               </p>
-              <div className="space-y-3">
+              <div className="divide-y divide-border">
                 {doctor.reviews.map((review, i) => (
-                  <div key={i} className="bg-background rounded-xl p-3 border border-border">
+                  <div key={i} className="py-3 first:pt-0 last:pb-0">
                     {review.sentiment !== "Neutral" && (
                       <span className={`text-xs font-semibold ${getSentimentColor(review.sentiment)}`}>
                         {review.sentiment}
@@ -1264,14 +1284,14 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
           <div className="flex items-center gap-4 pt-2 border-t border-border">
             <button
               onClick={() => onAction("correction")}
-              className="text-xs text-muted hover:text-accent transition-colors"
+              className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
             >
               Incorrect info? Submit correction
             </button>
-            <span className="text-border">|</span>
+            <span className="text-border" aria-hidden="true">|</span>
             <button
               onClick={() => onAction("review")}
-              className="text-xs text-muted hover:text-accent transition-colors"
+              className="text-xs text-muted hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 rounded"
             >
               Add a review
             </button>
@@ -1280,7 +1300,7 @@ function DoctorCard({ doctor, onAction }: { doctor: Doctor; onAction: (type: Dra
       )}
     </div>
   );
-}
+})
 
 // --- Community Links ---
 
@@ -1296,7 +1316,7 @@ function CommunityLinks({ onSubmitDoctor }: { onSubmitDoctor: () => void }) {
         <DiscordIcon />
         Discord
       </a>
-      <span className="text-border">|</span>
+      <span className="text-border" aria-hidden="true">|</span>
       <a
         href="https://www.reddit.com/r/adhdindia/"
         target="_blank"
@@ -1306,7 +1326,7 @@ function CommunityLinks({ onSubmitDoctor }: { onSubmitDoctor: () => void }) {
         <RedditIcon />
         Reddit
       </a>
-      <span className="text-border">|</span>
+      <span className="text-border" aria-hidden="true">|</span>
       <a
         href="https://forms.gle/b1VCBMtnddWUMFM87"
         target="_blank"
@@ -1316,7 +1336,7 @@ function CommunityLinks({ onSubmitDoctor }: { onSubmitDoctor: () => void }) {
         <ExternalLinkIcon />
         Contribute
       </a>
-      <span className="text-border">|</span>
+      <span className="text-border" aria-hidden="true">|</span>
       <button
         onClick={onSubmitDoctor}
         className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors"
@@ -1366,11 +1386,18 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
   const [newAdultADHD, setNewAdultADHD] = useState<string | null>(null);
   const [newOther, setNewOther] = useState("");
 
-  // Prevent body scroll when drawer is open
+  // Prevent body scroll when drawer is open + Escape to close
   useEffect(() => {
     document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
-  }, []);
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener('keydown', handleKeyDown)
+    };
+  }, [onClose]);
 
   function toggleIncorrect(item: string) {
     setIncorrect((prev) =>
@@ -1467,12 +1494,14 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
       onClick={(e) => { if (e.target === overlayRef.current) onClose(); }}
     >
       <div
+        role="dialog"
+        aria-label={title}
         className="w-full max-w-lg bg-background rounded-t-2xl max-h-[85vh] flex flex-col animate-[slideUp_0.3s_ease-out]"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 pt-5 pb-3 border-b border-border shrink-0">
           <h3 className="text-lg font-bold text-foreground">{title}</h3>
-          <button onClick={onClose} className="p-1 text-muted hover:text-foreground transition-colors">
+          <button onClick={onClose} className="p-2.5 -mr-1.5 text-muted hover:text-foreground transition-colors rounded-full hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" aria-label="Close">
             <CrossIcon />
           </button>
         </div>
@@ -1511,7 +1540,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => toggleIncorrect(opt)}
-                          className={`px-3 py-1.5 rounded-full text-sm transition-all ${
+                          className={`px-3 py-1.5 rounded-full text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             incorrect.includes(opt)
                               ? "bg-accent text-white"
                               : "bg-surface text-muted hover:bg-surface-hover"
@@ -1523,10 +1552,11 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">
+                    <label htmlFor="correct-info" className="text-sm font-medium text-foreground block mb-1">
                       Correct information <span className="text-negative">*</span>
                     </label>
                     <textarea
+                      id="correct-info"
                       value={correctInfo}
                       onChange={(e) => setCorrectInfo(e.target.value)}
                       placeholder="e.g. The consultation fee is actually ₹1500, not ₹1000"
@@ -1535,10 +1565,11 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">
+                    <label htmlFor="correction-source" className="text-sm font-medium text-foreground block mb-1">
                       How do you know? <span className="text-muted text-xs">(optional)</span>
                     </label>
                     <textarea
+                      id="correction-source"
                       value={source}
                       onChange={(e) => setSource(e.target.value)}
                       placeholder="e.g. I visited them last week"
@@ -1561,7 +1592,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => setExperience(opt)}
-                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             experience === opt
                               ? opt === "Positive" ? "bg-positive text-white"
                               : opt === "Negative" ? "bg-negative text-white"
@@ -1575,10 +1606,11 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">
+                    <label htmlFor="review-text" className="text-sm font-medium text-foreground block mb-1">
                       Your review <span className="text-negative">*</span>
                     </label>
                     <textarea
+                      id="review-text"
                       value={reviewText}
                       onChange={(e) => setReviewText(e.target.value)}
                       placeholder="Share your experience — this helps others find the right doctor"
@@ -1593,10 +1625,11 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
               {context.type === "new-doctor" && (
                 <>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">
+                    <label htmlFor="new-doctor-name" className="text-sm font-medium text-foreground block mb-1">
                       Doctor Name <span className="text-negative">*</span>
                     </label>
                     <input
+                      id="new-doctor-name"
                       type="text"
                       value={newName}
                       onChange={(e) => setNewName(e.target.value)}
@@ -1613,7 +1646,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => setNewType(opt)}
-                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             newType === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
                           }`}
                         >
@@ -1623,10 +1656,11 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">
+                    <label htmlFor="new-doctor-city" className="text-sm font-medium text-foreground block mb-1">
                       City <span className="text-negative">*</span>
                     </label>
                     <input
+                      id="new-doctor-city"
                       type="text"
                       value={newCity}
                       onChange={(e) => setNewCity(e.target.value)}
@@ -1635,8 +1669,9 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">Address / Clinic Name</label>
+                    <label htmlFor="new-doctor-address" className="text-sm font-medium text-foreground block mb-1">Address / Clinic Name</label>
                     <input
+                      id="new-doctor-address"
                       type="text"
                       value={newAddress}
                       onChange={(e) => setNewAddress(e.target.value)}
@@ -1646,8 +1681,9 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     <div>
-                      <label className="text-sm font-medium text-foreground block mb-1">Fee (&#8377;)</label>
+                      <label htmlFor="new-doctor-fee" className="text-sm font-medium text-foreground block mb-1">Fee (&#8377;)</label>
                       <input
+                        id="new-doctor-fee"
                         type="text"
                         inputMode="numeric"
                         value={newFee}
@@ -1657,8 +1693,9 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-foreground block mb-1">Contact</label>
+                      <label htmlFor="new-doctor-contact" className="text-sm font-medium text-foreground block mb-1">Contact</label>
                       <input
+                        id="new-doctor-contact"
                         type="tel"
                         value={newContact}
                         onChange={(e) => setNewContact(e.target.value)}
@@ -1674,7 +1711,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => setNewMode(newMode === opt ? null : opt)}
-                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             newMode === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
                           }`}
                         >
@@ -1690,7 +1727,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => setNewStimulants(newStimulants === opt ? null : opt)}
-                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             newStimulants === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
                           }`}
                         >
@@ -1706,7 +1743,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                         <button
                           key={opt}
                           onClick={() => setNewAdultADHD(newAdultADHD === opt ? null : opt)}
-                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all ${
+                          className={`flex-1 py-2.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
                             newAdultADHD === opt ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
                           }`}
                         >
@@ -1716,8 +1753,9 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
                     </div>
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-foreground block mb-1">Anything else?</label>
+                    <label htmlFor="new-doctor-other" className="text-sm font-medium text-foreground block mb-1">Anything else?</label>
                     <textarea
+                      id="new-doctor-other"
                       value={newOther}
                       onChange={(e) => setNewOther(e.target.value)}
                       placeholder="Online platform, ADHD testing, your experience, etc."
@@ -1738,7 +1776,7 @@ function SubmissionDrawer({ context, onClose }: { context: DrawerContext; onClos
               <button
                 onClick={handleSubmit}
                 disabled={!canSubmit()}
-                className="w-full py-3.5 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-accent hover:bg-accent-hover text-white rounded-full font-semibold text-sm transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
               >
                 {submitting ? (
                   <span className="inline-block w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -1782,6 +1820,31 @@ export default function Home() {
   const FEE_STEP = 500;
   const [drawerContext, setDrawerContext] = useState<DrawerContext | null>(null);
   const filterDrawerRef = useRef<HTMLDivElement>(null);
+  const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [visibleCount, setVisibleCount] = useState(20);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedSearch(search), 200);
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  // Intersection observer for infinite scroll
+  useEffect(() => {
+    const el = loadMoreRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleCount((prev) => prev + 20);
+        }
+      },
+      { rootMargin: '200px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     // Check if user has completed wizard before
@@ -1872,8 +1935,8 @@ export default function Home() {
   const filtered = useMemo(() => {
     let result = [...doctors];
 
-    if (search) {
-      const q = search.toLowerCase();
+    if (debouncedSearch) {
+      const q = debouncedSearch.toLowerCase();
       result = result.filter(
         (d) =>
           d.name.toLowerCase().includes(q) ||
@@ -1945,7 +2008,7 @@ export default function Home() {
     });
 
     return result;
-  }, [search, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, feeMin, feeMax, sort]);
+  }, [debouncedSearch, city, doctorType, mode, stimulants, adultADHD, acceptsPrior, doesDiagnosis, feeMin, feeMax, sort]);
 
   const activeFilterCount =
     (doctorType ? 1 : 0) + (mode ? 1 : 0) + (stimulants ? 1 : 0) +
@@ -2031,7 +2094,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <button
                 onClick={changeCity}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10 hover:bg-accent/20 transition-colors text-sm"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-accent/30 bg-accent/10 hover:bg-accent/20 transition-colors text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <span className="text-accent"><MapPinIcon /></span>
                 <span className="text-accent font-semibold">{city || "All cities"}</span>
@@ -2055,6 +2118,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search doctors, cities, hospitals..."
+              aria-label="Search doctors"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-surface border border-border rounded-full text-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors"
@@ -2071,7 +2135,7 @@ export default function Home() {
                   setTimeout(() => filterDrawerRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }), 50);
                 }
               }}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
                 showFilters || activeFilterCount > 0
                   ? "bg-accent text-white"
                   : "bg-surface text-muted hover:bg-surface-hover"
@@ -2091,7 +2155,7 @@ export default function Home() {
             <div className="relative" ref={sortRef}>
               <button
                 onClick={() => setShowSort(!showSort)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
                   showSort ? "bg-accent text-white" : "bg-surface text-muted hover:bg-surface-hover"
                 }`}
               >
@@ -2106,11 +2170,13 @@ export default function Home() {
               </button>
               {showSort && (
                 <>
-                  <div className="fixed inset-0 z-40" onClick={() => setShowSort(false)} />
-                  <div className="absolute right-0 top-full mt-1.5 z-50 min-w-[180px] bg-surface border border-border rounded-xl shadow-lg overflow-hidden py-1">
+                  <div className="fixed inset-0 z-40" onClick={() => setShowSort(false)} onKeyDown={(e) => { if (e.key === 'Escape') setShowSort(false) }} />
+                  <div role="listbox" aria-label="Sort options" className="absolute right-0 top-full mt-1.5 z-50 min-w-[180px] bg-surface border border-border rounded-xl shadow-lg overflow-hidden py-1" onKeyDown={(e) => { if (e.key === 'Escape') setShowSort(false) }}>
                     {sortOptions.map((opt) => (
                       <button
                         key={opt.value}
+                        role="option"
+                        aria-selected={sort === opt.value}
                         onClick={() => { setSort(opt.value); setShowSort(false); }}
                         className={`w-full flex items-center gap-2.5 px-3.5 py-2.5 text-sm text-left transition-colors ${
                           sort === opt.value
@@ -2157,7 +2223,7 @@ export default function Home() {
               <SegmentedControl>
                 <SegmentChip label="Any" active={mode === null} onClick={() => setMode(null)} />
                 {consultationModes.map((m) => (
-                  <SegmentChip key={m} label={m} active={mode === m} onClick={() => setMode(mode === m ? null : m)} />
+                  <SegmentChip key={m.value} label={m.label} active={mode === m.value} onClick={() => setMode(mode === m.value ? null : m.value)} />
                 ))}
               </SegmentedControl>
             </div>
@@ -2180,7 +2246,7 @@ export default function Home() {
                 {(feeMin > FEE_FLOOR || feeMax < FEE_CEIL) && (
                   <button
                     onClick={() => { setFeeMin(FEE_FLOOR); setFeeMax(FEE_CEIL); }}
-                    className="ml-auto text-muted hover:text-foreground transition-colors"
+                    className="ml-auto text-muted hover:text-foreground transition-colors rounded-full p-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                     aria-label="Reset fee range"
                   >
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -2259,11 +2325,11 @@ export default function Home() {
 
             <div className="flex items-center justify-between">
               {activeFilterCount > 0 ? (
-                <button onClick={clearFilters} className="text-sm text-accent hover:text-accent-hover font-medium">
+                <button onClick={clearFilters} className="text-sm text-accent hover:text-accent-hover font-medium rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
                   Clear all filters
                 </button>
               ) : <span />}
-              <button onClick={() => setShowFilters(false)} className="text-sm font-medium px-4 py-1.5 rounded-full bg-accent text-white hover:bg-accent-hover">
+              <button onClick={() => setShowFilters(false)} className="text-sm font-medium px-4 py-1.5 rounded-full bg-accent text-white hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2">
                 Done
               </button>
             </div>
@@ -2281,7 +2347,7 @@ export default function Home() {
           </p>
           <button
             onClick={() => setDrawerContext({ type: "new-doctor" })}
-            className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors"
+            className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-medium bg-accent/10 text-accent hover:bg-accent/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" /></svg>
             Add Doctor
@@ -2289,15 +2355,16 @@ export default function Home() {
         </div>
 
         {filtered.length === 0 ? (
-          <div className="text-center py-16">
-            <p className="text-muted text-lg">No doctors match your filters</p>
-            <button onClick={clearFilters} className="mt-3 text-accent hover:text-accent-hover text-sm font-medium">
-              Clear filters
+          <div className="text-center py-16 px-4">
+            <p className="text-foreground text-lg font-semibold">No doctors match your filters</p>
+            <p className="text-muted text-sm mt-1.5">Try adjusting your criteria or search in a different city</p>
+            <button onClick={clearFilters} className="mt-4 text-accent hover:text-accent-hover text-sm font-medium px-4 py-2 rounded-full bg-accent/10 hover:bg-accent/15 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent">
+              Clear all filters
             </button>
           </div>
         ) : (
           <div className="space-y-3">
-            {filtered.map((doctor) => (
+            {filtered.slice(0, visibleCount).map((doctor) => (
               <DoctorCard
                 key={doctor.id}
                 doctor={doctor}
@@ -2309,6 +2376,11 @@ export default function Home() {
                 })}
               />
             ))}
+            {visibleCount < filtered.length && (
+              <div ref={loadMoreRef} className="flex justify-center py-4">
+                <p className="text-sm text-muted">Loading more doctors...</p>
+              </div>
+            )}
           </div>
         )}
 
@@ -2331,7 +2403,7 @@ export default function Home() {
             </p>
             <button
               onClick={resetWizard}
-              className="text-xs text-muted hover:text-accent underline underline-offset-2"
+              className="text-xs text-muted hover:text-accent underline underline-offset-2 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               Restart setup wizard
             </button>

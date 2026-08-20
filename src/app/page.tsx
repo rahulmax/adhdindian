@@ -2152,7 +2152,7 @@ export default function Home() {
   // --- Step 3: Results ---
 
   return (
-    <div className="min-h-screen-safe bg-background lg:h-screen-safe lg:flex lg:flex-col lg:overflow-hidden">
+    <div className="min-h-screen-safe bg-background lg:h-dvh lg:flex lg:flex-col lg:overflow-hidden">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border lg:static lg:shrink-0 lg:bg-background">
         <div className="max-w-lg lg:max-w-6xl mx-auto px-4 py-3">

@@ -2490,7 +2490,11 @@ export default function Home() {
         </div>
 
         {/* Detail column (desktop only) */}
-        <aside className="hidden lg:block lg:overflow-y-auto lg:min-h-0 lg:py-5" aria-label="Doctor details">
+        <aside
+          key={selectedDoctor?.id ?? "empty"}
+          className="hidden lg:block lg:overflow-y-auto lg:min-h-0 lg:py-5"
+          aria-label="Doctor details"
+        >
           <DoctorDetailPanel
             doctor={selectedDoctor}
             onAction={(type) =>

@@ -12,12 +12,13 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      issues: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Sync doctors from Google Sheet
         run: node scripts/sync-sheet.mjs
@@ -27,23 +28,51 @@ jobs:
         run: |
           git diff --quiet src/data/doctors.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Create PR with new doctors
+      - name: Open PR with new doctors
         if: steps.changes.outputs.changed == 'true'
-        run: |
-          BRANCH="sync/sheet-$(date +%Y%m%d)"
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
-          git add src/data/doctors.json
-          git commit -m "chore: add new doctors from Google Sheet"
-          git push -u origin "$BRANCH"
-          gh pr create \
-            --title "New doctors from Google Sheet" \
-            --body "$(cat <<'EOF'
-          Automated sync found new doctor entries in the Google Sheet Responses.
-
-          **Please review each new entry before merging** — check names, cities, and formatting.
-          EOF
-          )"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Fixed branch name so reruns update in place instead of piling up dated branches
+          BRANCH="sync/sheet"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add src/data/doctors.json
+          git commit -m "chore: add new doctors from Google Sheet"
+          git push -f -u origin "$BRANCH"
+
+          # If a PR for this branch is already open, the force-push updated it — done.
+          EXISTING=$(gh pr list --head "$BRANCH" --state open --json number --jq 'length')
+          if [ "$EXISTING" -gt 0 ]; then
+            echo "Open sync PR already exists; branch updated."
+            exit 0
+          fi
+
+          BODY="Automated sync found new doctor entries in the Google Sheet Responses.
+
+          **Please review each new entry before merging** — check names, cities, and formatting."
+
+          if gh pr create --title "New doctors from Google Sheet" --body "$BODY"; then
+            echo "PR created."
+            exit 0
+          fi
+
+          # GITHUB_TOKEN may be blocked from creating PRs (repo setting:
+          # "Allow GitHub Actions to create and approve pull requests").
+          # Fall back to an issue with a one-click PR link so the sync never fails silently.
+          echo "PR creation blocked; falling back to an issue."
+          TITLE="Sync: new doctors ready for review"
+          ISSUE=$(gh issue list --state open --search "$TITLE in:title" --json number --jq '.[0].number // empty')
+          LINK="https://github.com/${GITHUB_REPOSITORY}/pull/new/${BRANCH}"
+          ISSUE_BODY="The scheduled sheet sync found new doctors, but GitHub Actions is not permitted to open PRs in this repo.
+
+          Open the PR here: ${LINK}
+
+          (Or enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** to make this automatic.)"
+          if [ -n "$ISSUE" ]; then
+            gh issue comment "$ISSUE" --body "Sync branch updated with more new doctors: ${LINK}"
+          else
+            gh issue create --title "$TITLE" --body "$ISSUE_BODY"
+          fi

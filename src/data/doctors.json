@@ -4069,5 +4069,3157 @@
         "text": "I had adhd which led me to becoming a psychiatrist\nU can check my explanations and details on my youtube channel"
       }
     ]
+  },
+  {
+    "id": 171,
+    "name": "Dr. Bhushan Chaudhari",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Pune",
+    "address": "Dr. Bhushan Chaudhari Clinic, 25, First Floor, Premier Plaza, B Wing, Mumbai-Pune Highway, Pimpri-Chinchwad, 411019",
+    "contact": "",
+    "fee": 800,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/pune/doctor/dr-bhushan-chaudhari-psychiatrist",
+      "https://www.drbhushanchaudhari.com/about",
+      "https://www.1mg.com/doctors/dr-bhushan-chaudhari-psychiatry-in-pune/DR-4w3e3"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Bhushan%20Chaudhari%20Clinic%2C%2025%2C%20First%20Floor%2C%20Premier%20Plaza%2C%20B%20Wing%2C%20Mumbai-Pune%20Highway%2C%20Pimpri-Chinchwad%2C%20411019%2C%20Pune",
+    "locality": "Pimpri-Chinchwad"
+  },
+  {
+    "id": 172,
+    "name": "Dr. Hamza Hussain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Pune",
+    "address": "Insight - The Mind Clinic, Number 201, Opus B, Near La Foyer Society, Undri, 411060",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/pune/doctor/dr-hamza-hussain-general-physician",
+      "https://insightmind.in/aboutus",
+      "https://www.lybrate.com/pune/clinic/insight-the-mind-clinic-undri"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Insight%20-%20The%20Mind%20Clinic%2C%20Number%20201%2C%20Opus%20B%2C%20Near%20La%20Foyer%20Society%2C%20Undri%2C%20411060%2C%20Pune",
+    "locality": "Undri"
+  },
+  {
+    "id": 173,
+    "name": "Dr. Ruth Fernandes",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Heal and Bloom, Office 21, 3rd Floor, B Wing, City Vista, Fountain Road, Kharadi, 411014",
+    "contact": "",
+    "fee": 1700,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/pune/doctor/ruth-fernandes-psychiatrist",
+      "https://www.lybrate.com/pune/clinic/heal-and-bloom-kharadi",
+      "https://www.bajajfinservhealth.in/doctor/pune/psychiatrist/dr-ruth-fernandes-3"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Heal%20and%20Bloom%2C%20Office%2021%2C%203rd%20Floor%2C%20B%20Wing%2C%20City%20Vista%2C%20Fountain%20Road%2C%20Kharadi%2C%20411014%2C%20Pune",
+    "locality": "Kharadi"
+  },
+  {
+    "id": 174,
+    "name": "Dr. Vini Vivek",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Trivandrum",
+    "address": "The Mind, Kivi Medical Centre, Tutors Lane, Statue, Palayam, 695001",
+    "contact": "9446010188",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/thiruvananthapuram/doctor/dr-vini-vivek-psychiatrist",
+      "https://www.lybrate.com/trivandrum/clinic/the-mind-tutors-lane-statue",
+      "https://www.eka.care/doctor/dr-vini-vivek-psychiatrist-thiruvananthapuram"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Mind%2C%20Kivi%20Medical%20Centre%2C%20Tutors%20Lane%2C%20Statue%2C%20Palayam%2C%20695001%2C%20Trivandrum",
+    "locality": "Palayam"
+  },
+  {
+    "id": 175,
+    "name": "Dr. Preeti Patil",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "KIMS Hospitals, Survey No. 37 & 38, PES University EC Campus, Hosur Road, Konappana Agrahara, Electronic City, 560100",
+    "contact": "",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/bangalore/doctor/dr-preeti-patal-dentist-psychiatrist",
+      "https://www.kimshospitals.com/doctor-profile/dr-preeti-patil/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=KIMS%20Hospitals%2C%20Survey%20No.%2037%20%26%2038%2C%20PES%20University%20EC%20Campus%2C%20Hosur%20Road%2C%20Konappana%20Agrahara%2C%20Electronic%20City%2C%20560100%2C%20Bangalore",
+    "locality": "Electronics City"
+  },
+  {
+    "id": 176,
+    "name": "Ms. Divya Gupta",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Hyderabad",
+    "address": "Divya V Guptaa Clinic, B1, 106 My Home Vihanga, Gachibowli, 500032",
+    "contact": "7207100340",
+    "fee": 3300,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/hyderabad/therapist/divya-v-guptaa-psychologist",
+      "https://continentalhospitals.com/doctors/ms-divya-gupta",
+      "https://www.linkedin.com/in/divya-gupta-4108b378/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Divya%20V%20Guptaa%20Clinic%2C%20B1%2C%20106%20My%20Home%20Vihanga%2C%20Gachibowli%2C%20500032%2C%20Hyderabad",
+    "locality": "Gachibowli"
+  },
+  {
+    "id": 177,
+    "name": "Dr. G B Singh",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Noida",
+    "address": "Dyslexia Association of India, MZ-47, Center Stage Mall, Plot Number 01, Block L, Sector 18, 201303",
+    "contact": "",
+    "fee": 3000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/noida/special-educator/gb-singh-psychologist",
+      "https://profgbsingh.com/about_us.html",
+      "https://www.lybrate.com/noida/doctor/dr-g-b-singh-psychologist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dyslexia%20Association%20of%20India%2C%20MZ-47%2C%20Center%20Stage%20Mall%2C%20Plot%20Number%2001%2C%20Block%20L%2C%20Sector%2018%2C%20201303%2C%20Noida",
+    "locality": "Sector 18"
+  },
+  {
+    "id": 178,
+    "name": "Dr. Kiran Kumar PK",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Bangalore",
+    "address": "PK Neuropsychiatry Counselling Centre, Shree Agari Bhandary Complex, 1st Floor, Opp Children Park, Vijay Bank Layout, Behind IIMB, Bannerghatta Road, Bilekahalli, 560076",
+    "contact": "",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/bangalore/doctor/dr-kiran-kumar-pk-psychiatrist",
+      "https://www.pkncblore.com/",
+      "https://in.linkedin.com/in/dr-kiran-kumar-pk-789567246"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=PK%20Neuropsychiatry%20Counselling%20Centre%2C%20Shree%20Agari%20Bhandary%20Complex%2C%201st%20Floor%2C%20Opp%20Children%20Park%2C%20Vijay%20Bank%20Layout%2C%20Behind%20IIMB%2C%20Bannerghatta%20Road%2C%20Bilekahalli%2C%20560076%2C%20Bangalore",
+    "locality": "Bilekahalli"
+  },
+  {
+    "id": 179,
+    "name": "Dr. Lav Kaushik",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Gurgaon",
+    "address": "Maarga Mind Care, A14, Golf Course Extension Road, Block A, Sector 57, Sushant Lok III, 122003",
+    "contact": "",
+    "fee": 1600,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/delhi/doctor/lav-kaushik-psychiatrist",
+      "https://www.maargamindcare.com/psychiatrist/dr-lav-kaushik-gurgaon"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Maarga%20Mind%20Care%2C%20A14%2C%20Golf%20Course%20Extension%20Road%2C%20Block%20A%2C%20Sector%2057%2C%20Sushant%20Lok%20III%2C%20122003%2C%20Gurgaon",
+    "locality": "Sushant Lok III"
+  },
+  {
+    "id": 180,
+    "name": "Dr. Sumit Kumar Gupta",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "Psychiatry Clinic, RU-172, Pitampura, Delhi, 110034",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/delhi/doctor/sumit-kumar-gupta-psychiatrist",
+      "https://sumitclinic.com/dr-sumit-kumar-gupta",
+      "https://www.lybrate.com/delhi/doctor/dr-sumit-kumar-gupta-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Psychiatry%20Clinic%2C%20RU-172%2C%20Pitampura%2C%20Delhi%2C%20110034%2C%20Delhi",
+    "locality": "Pitampura"
+  },
+  {
+    "id": 181,
+    "name": "Dr. Dharmesh V Patel",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Ahmedabad",
+    "address": "GIPS Clinic, 1st Floor, DEV Complex, Parimal Garden Cross Road, C.G. Road, Ellisbridge, 380006",
+    "contact": "",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/ahmedabad/doctor/dharmesh-v-patel-psychiatrist",
+      "https://gipshospital.com/dr-dharmesh-patel-best-psychiatrist-in-ahmedabad",
+      "https://www.lybrate.com/ahmedabad/clinic/gips-psychiatric-clinic-and-de-addiction-center-ellisbridge"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=GIPS%20Clinic%2C%201st%20Floor%2C%20DEV%20Complex%2C%20Parimal%20Garden%20Cross%20Road%2C%20C.G.%20Road%2C%20Ellisbridge%2C%20380006%2C%20Ahmedabad",
+    "locality": "Ellisbridge"
+  },
+  {
+    "id": 182,
+    "name": "Dr. Naazneen Ladak",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Mumbai",
+    "address": "Mind Tree, Creado Cooperative Housing Society, Amboli, Ceasar Road, Vahatuk Nagar, Andheri West, 400053",
+    "contact": "",
+    "fee": 2500,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/mumbai/doctor/dr-nazneen-psychiatrist-1",
+      "https://mindtree.org.in/about-us/",
+      "https://drnaazneenladak.co.in/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mind%20Tree%2C%20Creado%20Cooperative%20Housing%20Society%2C%20Amboli%2C%20Ceasar%20Road%2C%20Vahatuk%20Nagar%2C%20Andheri%20West%2C%20400053%2C%20Mumbai",
+    "locality": "Andheri West"
+  },
+  {
+    "id": 183,
+    "name": "Dr. Bhushan Ambadkar",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Hope Mind Care, Office No. 108, First Floor, A Wing, Bhaktamar Residency, Near HDFC Bank, Wadgaon Sheri, 411014",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/pune/doctor/dr-bhushan-ambadkar-psychiatrist",
+      "https://www.hopemindcare.in/about.html",
+      "https://www.medindia.net/dr/bhushanambadkar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Hope%20Mind%20Care%2C%20Office%20No.%20108%2C%20First%20Floor%2C%20A%20Wing%2C%20Bhaktamar%20Residency%2C%20Near%20HDFC%20Bank%2C%20Wadgaon%20Sheri%2C%20411014%2C%20Pune",
+    "locality": "Wadgaon Sheri"
+  },
+  {
+    "id": 184,
+    "name": "Dr. Suneet Upadhyaya",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Jaipur",
+    "address": "Maheshwari Hospital, Plot Number 166, Ram Nagariya Road, Near SK IT College, Jagatpura, 302017",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/jaipur/doctor/dr-suneet-upadhyaya-psychiatrist",
+      "https://www.lybrate.com/jaipur/doctor/dr-suneet-upadhyaya-psychiatrist",
+      "https://www.justdial.com/Jaipur/Dr-Suneet-Upadhyaya-Near-SKIT-College-Jagatpura-Flyover-Road/0141PX141-X141-240924211626-H7W6_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Maheshwari%20Hospital%2C%20Plot%20Number%20166%2C%20Ram%20Nagariya%20Road%2C%20Near%20SK%20IT%20College%2C%20Jagatpura%2C%20302017%2C%20Jaipur",
+    "locality": "Jagatpura"
+  },
+  {
+    "id": 185,
+    "name": "Dr. V.U. Karthikeyan",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Indira Mind Clinic, First Floor, 2/70, Sothupakkam Road, Palavoyal, Red Hills, 600052 (also consults at RIMS Hospital, GNT Road, Padiyanallur, Red Hills)",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/chennai/doctor/v-u-karthikeyan-psychiatrist-1-psychiatrist",
+      "https://mindmenderdoctor.com/",
+      "https://www.justdial.com/Chennai/Indira-Mind-Clinic-Dr-V-U-Karthikeyan-Redhills/044PXX44-XX44-200807202033-W3F3_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Indira%20Mind%20Clinic%2C%20First%20Floor%2C%202%2F70%2C%20Sothupakkam%20Road%2C%20Palavoyal%2C%20Red%20Hills%2C%20600052%20(also%20consults%20at%20RIMS%20Hospital%2C%20GNT%20Road%2C%20Padiyanallur%2C%20Red%20Hills)%2C%20Chennai",
+    "locality": "Red Hills"
+  },
+  {
+    "id": 186,
+    "name": "Dr. Ennapadam S. Krishnamoorthy",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Coimbatore",
+    "address": "Buddhi Clinic, ESJAY Arcade, Number 78-79, Sathyamoorthy Road, Ramnagar, 641044",
+    "contact": "",
+    "fee": 2500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/chennai/doctor/dr-ennapadam-krishnamurthy-neurologist",
+      "https://buddhiclinic.com/our-people/",
+      "https://en.wikipedia.org/wiki/Ennapadam_Srinivas_Krishnamoorthy"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Buddhi%20Clinic%2C%20ESJAY%20Arcade%2C%20Number%2078-79%2C%20Sathyamoorthy%20Road%2C%20Ramnagar%2C%20641044%2C%20Coimbatore",
+    "locality": "Ramnagar"
+  },
+  {
+    "id": 187,
+    "name": "Dr. Rajeev Trehan",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Chandigarh",
+    "address": "Dr. Trehan's Neuro-Psychiatry and Deaddiction Clinic, 3370, Sector 27/D, Near Radha Swami Satsang Bhawan, 160019",
+    "contact": "",
+    "fee": 700,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/chandigarh/doctor/dr-rajeev-trehan-1-psychiatrist",
+      "https://www.drrajeevtrehan.com/",
+      "https://www.drlogy.com/chandigarh/doctor/dr-rajeev-trehan"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Trehan's%20Neuro-Psychiatry%20and%20Deaddiction%20Clinic%2C%203370%2C%20Sector%2027%2FD%2C%20Near%20Radha%20Swami%20Satsang%20Bhawan%2C%20160019%2C%20Chandigarh",
+    "locality": "Sector 27"
+  },
+  {
+    "id": 188,
+    "name": "Dr. Sannidhya Varma",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Chandigarh",
+    "address": "Helios Psychiatry Clinic, SCO 180, First Floor, Sector 39-D, 160036",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/chandigarh/doctor/sannidhya-varma-psychiatrist",
+      "https://www.drlogy.com/chandigarh/doctor/dr-sannidhya-varma",
+      "https://www.lybrate.com/chandigarh/clinic/helios-psychiatry-clinic-sector-33d"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Helios%20Psychiatry%20Clinic%2C%20SCO%20180%2C%20First%20Floor%2C%20Sector%2039-D%2C%20160036%2C%20Chandigarh",
+    "locality": "Sector 39D"
+  },
+  {
+    "id": 189,
+    "name": "Dr. Khushboo Dewani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Bangalore",
+    "address": "Carna Health Centre, ISIRI, 571/J, Ground Floor, 7th Main, 6th Cross, 11th Block, Vinayaka Layout, Nagarbhavi, 560072",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/bangalore/doctor/khushboo-dewani-psychiatrist-1",
+      "https://www.carnahealthcentre.com/",
+      "https://www.eka.care/doctor/dr-khushboo-dewani-psychiatrist-bengaluru"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Carna%20Health%20Centre%2C%20ISIRI%2C%20571%2FJ%2C%20Ground%20Floor%2C%207th%20Main%2C%206th%20Cross%2C%2011th%20Block%2C%20Vinayaka%20Layout%2C%20Nagarbhavi%2C%20560072%2C%20Bangalore",
+    "locality": "Nagarbhavi"
+  },
+  {
+    "id": 190,
+    "name": "Dr. Sucheta Saha",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Cadabams Hospitals, 280, 15th Cross, Prasanti Nagar, JP Nagar 5th Phase, 560078",
+    "contact": "",
+    "fee": 1250,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/bangalore/doctor/sucheta-saha-psychiatrist",
+      "https://www.cadabamshospitals.com/doctor/dr-sucheta-saha/",
+      "https://www.mindtalk.in/doctors/psychiatrist-adhd-bangalore"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cadabams%20Hospitals%2C%20280%2C%2015th%20Cross%2C%20Prasanti%20Nagar%2C%20JP%20Nagar%205th%20Phase%2C%20560078%2C%20Bangalore",
+    "locality": "JP Nagar"
+  },
+  {
+    "id": 191,
+    "name": "Dr. Adita Agrawal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consult",
+    "city": "Mumbai",
+    "address": "Mindsight Clinic, 3rd Floor, Sunita Kutir / Divine Castle, Mamlatdar Wadi Cross Road Number 4, Liberty Garden, Malad West, 400064",
+    "contact": "",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/mumbai/doctor/adita-agarwal-psychiatrist",
+      "https://mindsightclinic.com/psychiatrist/adita-agarwal",
+      "https://www.justdial.com/Mumbai/Dr-Adita-Agarwal-Mindsight-Malad-West/022PXX22-XX22-200811094847-K3I6_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mindsight%20Clinic%2C%203rd%20Floor%2C%20Sunita%20Kutir%20%2F%20Divine%20Castle%2C%20Mamlatdar%20Wadi%20Cross%20Road%20Number%204%2C%20Liberty%20Garden%2C%20Malad%20West%2C%20400064%2C%20Mumbai",
+    "locality": "Malad West"
+  },
+  {
+    "id": 192,
+    "name": "Dr. Nikhil M. Pande",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Nagpur",
+    "address": "Manovikas Behavioral Sciences Clinic, 210, 2nd Floor, Ghatate Chambers, Beside Care Hospital, Panchasheel Square, Wardha Road, Ramdaspeth, 440012",
+    "contact": "",
+    "fee": 600,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/nagpur/doctor/nikhil-pande-psychiatrist",
+      "https://www.drpandespsychiatry.com/",
+      "https://www.drlogy.com/nagpur/doctor/dr-nikhil-pande"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Manovikas%20Behavioral%20Sciences%20Clinic%2C%20210%2C%202nd%20Floor%2C%20Ghatate%20Chambers%2C%20Beside%20Care%20Hospital%2C%20Panchasheel%20Square%2C%20Wardha%20Road%2C%20Ramdaspeth%2C%20440012%2C%20Nagpur",
+    "locality": "Ramdaspeth"
+  },
+  {
+    "id": 193,
+    "name": "Dr. Rahul Mathur",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Indore",
+    "address": "Dr. Rahul Mathur's Anand Neuropsychiatry Clinic, B-14, Ratlam Kothi, Opposite Santoor Hotel, Kanchan Bag, 452001",
+    "contact": "",
+    "fee": 1100,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/indore/doctor/rahul-mathur-3-psychiatrist",
+      "https://www.indorepsychiatriccentre.com/",
+      "https://www.lybrate.com/indore/clinic/dr-rahul-mathur-s-anand-neuropsychiatry-clinic-kanchan-bag"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Rahul%20Mathur's%20Anand%20Neuropsychiatry%20Clinic%2C%20B-14%2C%20Ratlam%20Kothi%2C%20Opposite%20Santoor%20Hotel%2C%20Kanchan%20Bag%2C%20452001%2C%20Indore",
+    "locality": "Kanchan Bag"
+  },
+  {
+    "id": 194,
+    "name": "Dr. Saurabh Upadhyay",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Lucknow",
+    "address": "Revive Mind Care Clinic, UGF-28, Vasundhara Complex, Tedhi Pulia Ring Road, Near Munshi Pulia, Sector 16, Indira Nagar, 226016",
+    "contact": "7017784451",
+    "fee": 600,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.practo.com/lucknow/doctor/saurabh-upadhyay-psychiatrist",
+      "https://drsaurabhupadhyay.com/",
+      "https://www.justdial.com/Lucknow/Revive-Mind-Care-Clinic-Near-Munshi-Pulia-Near-Indian-Petrol-Pump-Indira-Nagar-Lucknow/0522PX522-X522-220104165941-H7C8_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Revive%20Mind%20Care%20Clinic%2C%20UGF-28%2C%20Vasundhara%20Complex%2C%20Tedhi%20Pulia%20Ring%20Road%2C%20Near%20Munshi%20Pulia%2C%20Sector%2016%2C%20Indira%20Nagar%2C%20226016%2C%20Lucknow",
+    "locality": "Indira Nagar"
+  },
+  {
+    "id": 195,
+    "name": "Dr. Roshan Jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Own website booking (online or face-to-face consultation, hello@roshanjain.com)",
+    "city": "Bangalore",
+    "address": "MindSense at Cardea Super-speciality Hospital, 56, 6th Main, 40th Cross, 5th Block, Jayanagar, Bangalore (also consults at Apollo Hospitals, Bannerghatta Road)",
+    "contact": "7349518896",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://roshanjain.com/services/adult-adhd-assessments/",
+      "https://roshanjain.com/contact/",
+      "https://www.apollohospitals.com/doctors/psychiatrist/bangalore/dr-roshan-jain"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=MindSense%20at%20Cardea%20Super-speciality%20Hospital%2C%2056%2C%206th%20Main%2C%2040th%20Cross%2C%205th%20Block%2C%20Jayanagar%2C%20Bangalore%20(also%20consults%20at%20Apollo%20Hospitals%2C%20Bannerghatta%20Road)%2C%20Bangalore",
+    "locality": "Jayanagar"
+  },
+  {
+    "id": 196,
+    "name": "Ms. Aindrila Das",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Clinic online consultation (Google Meet)",
+    "city": "Bangalore",
+    "address": "Beautiful Mind Healthcare, 161, 9th Cross Road, Indiranagar 1st Stage, Hoysala Nagar, Bangalore",
+    "contact": "7760420485",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.beautifulmindhealthcare.com/blog/adult-adhd-bangalore-professionals",
+      "https://www.linkedin.com/in/aindrila-das-996315205/",
+      "https://www.practo.com/bangalore/clinic/beautiful-mind-indiranagar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Beautiful%20Mind%20Healthcare%2C%20161%2C%209th%20Cross%20Road%2C%20Indiranagar%201st%20Stage%2C%20Hoysala%20Nagar%2C%20Bangalore%2C%20Bangalore",
+    "locality": "Indiranagar"
+  },
+  {
+    "id": 197,
+    "name": "Dr. Kriti Anand",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Panchkula",
+    "address": "Manokriti Psychiatry and Deaddiction Clinic, DSS 186, First Floor, Sector 21, Panchkula, Haryana 134112",
+    "contact": "8146532930",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://kritianand.com/adhd.php",
+      "https://www.parashospitals.com/panchkula/doctor-near-me/psychiatrist/dr-kriti-anand",
+      "https://www.indianyellowpages.com/panchkula/manokriti-psychiatry-and-deaddiction-clinic-by-dr-kriti-anand-sector-21-panchkula-15785171/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Manokriti%20Psychiatry%20and%20Deaddiction%20Clinic%2C%20DSS%20186%2C%20First%20Floor%2C%20Sector%2021%2C%20Panchkula%2C%20Haryana%20134112%2C%20Panchkula",
+    "locality": "Sector 21"
+  },
+  {
+    "id": 198,
+    "name": "Dr. Paramjeet Singh",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Delhi Mind Clinic online appointment (appointment.delhimindclinic.com)",
+    "city": "Delhi",
+    "address": "Delhi Mind Clinic, 7A/67, West Extension Area, Karol Bagh, New Delhi 110005",
+    "contact": "7838387944",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.delhimindclinic.com/adhd/",
+      "https://www.delhimindclinic.com/dr-paramjeet-singh/",
+      "https://www.practo.com/delhi/doctor/paramjeet-singh-2-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Delhi%20Mind%20Clinic%2C%207A%2F67%2C%20West%20Extension%20Area%2C%20Karol%20Bagh%2C%20New%20Delhi%20110005%2C%20Delhi",
+    "locality": "Karol Bagh"
+  },
+  {
+    "id": 199,
+    "name": "Dr. Manish Sarkar",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "Ehsaas Centre for Comprehensive Psychiatric Care, D-653 / J-1976, Chittaranjan Park, New Delhi 110019",
+    "contact": "9717755296",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.drmanishsarkar.com/adhd/",
+      "https://www.practo.com/delhi/doctor/drmanish-sarkar-1-gmail-com-psychiatrist",
+      "https://www.drlogy.com/new-delhi/doctor/dr-manish-sarkar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Ehsaas%20Centre%20for%20Comprehensive%20Psychiatric%20Care%2C%20D-653%20%2F%20J-1976%2C%20Chittaranjan%20Park%2C%20New%20Delhi%20110019%2C%20Delhi",
+    "locality": "Chittaranjan Park"
+  },
+  {
+    "id": 200,
+    "name": "Dr. Radhika Murugesan",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Tele-psychiatry / online consultation via Chennai Minds",
+    "city": "Chennai",
+    "address": "Chennai Minds, Thoraipakkam, Chennai",
+    "contact": "9677004220",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://chennaiminds.com/adult-adhd-treatment/",
+      "https://chennaiminds.com/about-dr-radhika-murugesan/",
+      "https://www.justdial.com/Chennai/Dr-Radhika-Murugesan-Chennai-Minds-Saligramam/044PXX44-XX44-211116115356-F4X5_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Chennai%20Minds%2C%20Thoraipakkam%2C%20Chennai%2C%20Chennai",
+    "locality": "Thoraipakkam"
+  },
+  {
+    "id": 201,
+    "name": "Dr. Shariq Qureshi",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Jaipur",
+    "address": "J 2/37, Pandya Hospital, Mahavir Marg, Opposite Jai Club, C Scheme, Jaipur, Rajasthan 302001",
+    "contact": "7027815567",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.drshariqpsychiatrist.com/page/adhd-diagnosis-and-a/673c197502335ea1ecd55d8d",
+      "https://www.drshariqpsychiatrist.com/page/adhd-treatment-by-ps/6676b4c25b3f3101fe9cf6c1",
+      "https://www.justdial.com/Jaipur/Dr-Shariq-Qureshi-Mind-and-Brain-Clinic-Opposite-Jai-Club-C-Scheme/0141P141STD45618_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=J%202%2F37%2C%20Pandya%20Hospital%2C%20Mahavir%20Marg%2C%20Opposite%20Jai%20Club%2C%20C%20Scheme%2C%20Jaipur%2C%20Rajasthan%20302001%2C%20Jaipur",
+    "locality": "C Scheme"
+  },
+  {
+    "id": 202,
+    "name": "Dr. Nandita Hazari",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "VIMHANS, Plot Number 1, Institutional Area, Nehru Nagar, New Delhi 110065",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I visited Dr.Nandita Hazari from VIMHANS, the charges are Rs1500 per session. She is experienced in ADHD so you can give it a shot."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Dr.Nandita is a gem super friendly and understanding. She gave me stimulants on the 1st day might not be the case with everyone because in my case i carried a detailed list of symptoms"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Nandita hazari herself is a nice doctor, she's understanding and kind and gets your symptoms without being too critical about them. She priscribed me atomoxitine along with rexipra with varying concentration as my treatment progress."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I would recommend Dr.Nandita Hazari from VIMHANS. She is doing my treatment for ADHD currently so I can confidently recommend her."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Just went today, she is good and very sweet to talk to. She won't push you towards meds but you can get prescribed if you want."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1se105u/looking_for_a_psychiatrist_in_delhi/",
+      "https://www.reddit.com/r/adhdindia/comments/1pkoz9g/i_need_female_friendly_adhd_specialist_near_delhi/",
+      "https://www.reddit.com/r/adhdindia/comments/1tjfk9n/please_recommend_good_psychiatrists_in_delhi_for/",
+      "https://www.justdial.com/Delhi/Dr-Nandita-Hazari-Vidya-Sagar-Institute-For-Mental-Health-Neuro-Allied-Sciences-Behind-PG-DAV-College-Institutional-Area-Nehru-Nagar/011PXX11-XX11-240314140137-L2G2_BZDET",
+      "https://www.sehat.com/dr-nandita-hazari-psychiatrist-delhi"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=VIMHANS%2C%20Plot%20Number%201%2C%20Institutional%20Area%2C%20Nehru%20Nagar%2C%20New%20Delhi%20110065%2C%20Delhi",
+    "locality": "Nehru Nagar"
+  },
+  {
+    "id": 203,
+    "name": "Dr. Hema Tharoor",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Apollo Spectra Hospitals, 12, CP Ramaswamy Road, Near Mookambika Complex, Alwarpet, Chennai 600018",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I have severe ADHD/executive dysfunction issues myself and I go to Dr. Hema Tharoor in Apollo Spectra."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I have ADHD too and I go to Dr. Hema Tharoor in Apollo Spectra Alwarpet. I'm also on methylphenidate. ... I'm just a person who's very happy to have a psychiatrist who listened to my concerns and diagnosed me with ADHD. My life has been better since the diagnosis."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "you can try Dr. Hema Tharoor in Apollo Spectra Alwarpet. I have someone who's going to her for ADHD and her prescribed meds have been helping a lot."
+      },
+      {
+        "sentiment": "Negative",
+        "text": "She did not dive into medication for me, unlike Doctor Hema Tharoor who just loaded me with drugs (that did not work). Even for my ADHD she asked me to wait and go through sessions"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Chennai/comments/14s5h68/adhd_specialist_for_adult_21m/",
+      "https://www.reddit.com/r/Chennai/comments/14syzmn/looking_for_a_psychiatrist/",
+      "https://www.reddit.com/r/Chennai/comments/wwbc8l/looking_for_the_best/",
+      "https://www.reddit.com/r/Chennai/comments/vymrjm/does_anyone_know_any_good_psychiatrist_in_chennai/",
+      "https://www.apollospectra.com/chennai/alwarpet/doctors/dr-hema-tharoor"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Apollo%20Spectra%20Hospitals%2C%2012%2C%20CP%20Ramaswamy%20Road%2C%20Near%20Mookambika%20Complex%2C%20Alwarpet%2C%20Chennai%20600018%2C%20Chennai",
+    "locality": "Alwarpet"
+  },
+  {
+    "id": 204,
+    "name": "Dr. Sanjay Pattanayak",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "VIMHANS, Plot Number 1, Institutional Area, Nehru Nagar, New Delhi 110065",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "after 3.5 years of failed treatments and nobody being able to help me I visited Dr Sanjay Pattanayak at VIMHANS who within 10 mins of conversation diagnosed me with ADHD, the diagnosis that I have received for the first time ever which was missed always… he started me on the correct medication and my life has not been the same"
+      },
+      {
+        "sentiment": "Negative",
+        "text": "I heard some negetive reviews about dr.Pattanayak so i avoided him."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1to5wjh/experience_with_vimhans_delhi_for_adhd_assessment/",
+      "https://www.reddit.com/r/adhdindia/comments/1se105u/looking_for_a_psychiatrist_in_delhi/",
+      "https://www.1mg.com/doctors/dr-sanjay-pattanayak-psychiatry-in-delhi/DR-n03mm",
+      "https://www.sehat.com/dr-sanjay-pattanayak-psychiatrist-delhi"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=VIMHANS%2C%20Plot%20Number%201%2C%20Institutional%20Area%2C%20Nehru%20Nagar%2C%20New%20Delhi%20110065%2C%20Delhi",
+    "locality": "Nehru Nagar"
+  },
+  {
+    "id": 205,
+    "name": "Dr. Rajarshi Neogi",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "R. G. Kar Medical College and Hospital, Department of Psychiatry, Kolkata",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My grades were going down, so I contacted Dr. Rajarshi Neogi (psychiatrist). What a great doctor he is, not like other arrogant-ass doctors, because I heard that when some psychiatrists hear about ADHD, they just deny it"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1ujpcmd/for_those_seeking_an_adhd_here_is_my_story/",
+      "https://www.researchgate.net/profile/Rajarshi-Neogi",
+      "https://www.practo.com/kolkata/doctor/rajarshi-neogi-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=R.%20G.%20Kar%20Medical%20College%20and%20Hospital%2C%20Department%20of%20Psychiatry%2C%20Kolkata%2C%20Kolkata"
+  },
+  {
+    "id": 206,
+    "name": "Dr. Pubali Chaudhuri",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Online consultation offered by her clinic",
+    "city": "Kolkata",
+    "address": "DL 133, 1st Floor, Sector 2, Salt Lake, Kolkata",
+    "contact": "",
+    "fee": 1000,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Pubali Chaudhuri is a good choice, helped me a lot. Very patient and willing to listen to everything you have to say. Can already feel a huge difference in sleep, quality of life and ability to stay at a task and work function."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/kolkata/comments/1r3vj5a/serious_19f_undiagnosed_adhd/",
+      "https://in.linkedin.com/in/dr-pubali-chaudhuri-psychiatrist-422022208",
+      "https://www.justdial.com/Kolkata/Dr-Pubali-Chaudhuri-Neuro-Psychiatrist-Near-Bd-Bus-Stop-Salt-Lake-City-Bidhan-Nagar/033PXX33-XX33-210709180031-W3B7_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=DL%20133%2C%201st%20Floor%2C%20Sector%202%2C%20Salt%20Lake%2C%20Kolkata%2C%20Kolkata",
+    "locality": "Salt Lake"
+  },
+  {
+    "id": 207,
+    "name": "Dr. Chhitij Srivastava",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Prayagraj",
+    "address": "Allahabad Child Development Centre, 353/183/9 Tagore Town, Near Colonelganj Inter College, Prayagraj, Uttar Pradesh 211002",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "No",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Chitij Srivastava. I consulted him for ADHD."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "He childhood development disorders specialist. ADHD? Yes. I don't know if he consults online, probably yes."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/14kdi6r/any_doctor_recommendation_for_adhd_in_allahabad/",
+      "https://allahabadcdc.wixsite.com/allahabadcdc/items/our-child-&-adolescent-psychiatrist",
+      "https://www.practo.com/allahabad/doctor/dr-chhitij-srivastava-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Allahabad%20Child%20Development%20Centre%2C%20353%2F183%2F9%20Tagore%20Town%2C%20Near%20Colonelganj%20Inter%20College%2C%20Prayagraj%2C%20Uttar%20Pradesh%20211002%2C%20Prayagraj",
+    "locality": "Tagore Town"
+  },
+  {
+    "id": 208,
+    "name": "Dr. Sandip Deshpande",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Cloudnine Hospital, Malleshwaram, Bangalore (also consults at People Tree Hospitals, Yeshwanthpur)",
+    "contact": "",
+    "fee": 1300,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "One of the best doctors for ADHD diagnosis ( experience+ personhood + affordability) is Dr Sandip Despande, he offers offline sessions in Malleshwaram, Bangalore and online sessions as well. He charges between 1.3K to 1.6K for first session, and follow up sessions are lesser. ... His slots are pretty hard to get immediately, so please try and book one or two weeks prior."
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "Hey, Dr Sandip Deshpande is primarily a Sexologist as per Google search. Is he good for ADHD, OCD symptoms outside of sex related things?"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/bangalore/comments/10fxa3n/suggest_a_good_psychiatrist_for_adhd_who_provides/",
+      "https://www.reddit.com/r/bangalore/comments/pnaoix/screening_for_adult_adhd/",
+      "https://www.credihealth.com/doctor/sandip-deshpande-psychiatrist",
+      "https://www.practo.com/bangalore/doctor/dr-sandip-deshpande-psychiatrist-2"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cloudnine%20Hospital%2C%20Malleshwaram%2C%20Bangalore%20(also%20consults%20at%20People%20Tree%20Hospitals%2C%20Yeshwanthpur)%2C%20Bangalore",
+    "locality": "Malleshwaram"
+  },
+  {
+    "id": 209,
+    "name": "Dr. Yesheswini Kamaraju",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "The Reach Clinic, 63, Splendid Plaza, 3rd Floor, 100 Feet Road, 5th Block, Koramangala, Bangalore",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "The Reach Clinic, Koramangala. Dr Yesheswini. ... Been going to her for four years now. She's great. Changed my life."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/bangalore/comments/ch41ak/list_of_psychiatrist_doctors/",
+      "https://thereachclinic.com/director/",
+      "https://www.practo.com/bangalore/doctor/dr-yesheswini-kamaraju-psychiatrist-1"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20Reach%20Clinic%2C%2063%2C%20Splendid%20Plaza%2C%203rd%20Floor%2C%20100%20Feet%20Road%2C%205th%20Block%2C%20Koramangala%2C%20Bangalore%2C%20Bangalore",
+    "locality": "Koramangala"
+  },
+  {
+    "id": 210,
+    "name": "Dr. Vijaya Raman",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Department of Psychiatry, St John's Medical College Hospital, Sarjapur Road, Koramangala, Bangalore 560034",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "While I was diagnosed as a child, my mother was diagnosed with ADHD after me by Dr. Vijaya Raman in St John's. It took like a month to complete all tests for diagnosis."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/bangalore/comments/zqfvxk/adult_adhd_diagnosis_in_south_bangalore/",
+      "https://sjri.res.in/keypersonnel/Dr.%20Vijaya%20Raman",
+      "https://sjri.res.in/admin/images/public_resource_uploads/CARE-ADDTeam.pdf"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Department%20of%20Psychiatry%2C%20St%20John's%20Medical%20College%20Hospital%2C%20Sarjapur%20Road%2C%20Koramangala%2C%20Bangalore%20560034%2C%20Bangalore",
+    "locality": "Koramangala"
+  },
+  {
+    "id": 211,
+    "name": "Dr. Suhas Ganesh",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Manosuraksha Nurturing Minds, No 771, 1st Floor, 34th Cross, 10th Main Road, 4th Block, Jayanagar, Bengaluru 560011",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I go to Dr. Suhas at Manosuraksha Therapy in Jayanagar. Been with him for about 3 years now and honestly they've got a pretty good service. He's a psychiatrist, not a specialist I don't think but works primarily with ADHD patients."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1vg43n3/need_a_new_adhd_specialist_in_bangalore/",
+      "https://www.practo.com/bangalore/doctor/suhas-ganesh-psychiatrist",
+      "https://www.practo.com/bangalore/clinic/manosuraksha-nurturing-minds-jayanagar-4-block"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Manosuraksha%20Nurturing%20Minds%2C%20No%20771%2C%201st%20Floor%2C%2034th%20Cross%2C%2010th%20Main%20Road%2C%204th%20Block%2C%20Jayanagar%2C%20Bengaluru%20560011%2C%20Bangalore",
+    "locality": "Jayanagar"
+  },
+  {
+    "id": 212,
+    "name": "Dr. Adithya T S",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Allo Mental and Sexual Health Clinic, 4th Floor, 266/C, 80 Feet Road, HAL 3rd Stage, Indiranagar, Bengaluru 560075",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Adithya at Allo Indiranagar was really nice, affordable also"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1t9deh4/looking_for_a_good_psychiatrist_in_bangalore_for/",
+      "https://www.practo.com/bangalore/doctor/adithya-t-s-psychiatrist",
+      "https://www.practo.com/bangalore/clinic/allo-health-sexual-wellness-clinic-indiranagar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Allo%20Mental%20and%20Sexual%20Health%20Clinic%2C%204th%20Floor%2C%20266%2FC%2C%2080%20Feet%20Road%2C%20HAL%203rd%20Stage%2C%20Indiranagar%2C%20Bengaluru%20560075%2C%20Bangalore",
+    "locality": "Indiranagar"
+  },
+  {
+    "id": 213,
+    "name": "Dr. Aditya Mahindru",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha",
+    "city": "Bangalore",
+    "address": "Amaha Mental Health Centre, 501 Chinmaya Mission Hospital Road, Indiranagar, Bengaluru",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Amaha indiranagar- Dr Aditya Mahindru did my assessment for ADHD- he is good- you will have to go through the process again but"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1o3lf8g/adult_adhd_and_professional_help_in_bangalore/",
+      "https://www.practo.com/bangalore/doctor/dr-aditya-mahindru-sexologist",
+      "https://www.amahahealth.com/profile/psychiatrist/284d3737-6531-4108-ad55-4724724698e4/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Amaha%20Mental%20Health%20Centre%2C%20501%20Chinmaya%20Mission%20Hospital%20Road%2C%20Indiranagar%2C%20Bengaluru%2C%20Bangalore",
+    "locality": "Indiranagar"
+  },
+  {
+    "id": 214,
+    "name": "Dr. Annie Mathew",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bangalore",
+    "address": "Inara Collective, No. 1109, Ground Floor, 13th Cross, 2nd Stage, Indiranagar, Bangalore 560038",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Annie Mathew at the Inara collective"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1eqf74f/need_a_doctor_recommendation_in_bangalore/",
+      "https://www.inaracollective.in/portfolio/items/dr-annie-mathew",
+      "https://www.practo.com/bangalore/doctor/dr-annie-jayanth-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Inara%20Collective%2C%20No.%201109%2C%20Ground%20Floor%2C%2013th%20Cross%2C%202nd%20Stage%2C%20Indiranagar%2C%20Bangalore%20560038%2C%20Bangalore",
+    "locality": "Indiranagar"
+  },
+  {
+    "id": 215,
+    "name": "Dr. Vishal Kasal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Cadabam's virtual sessions",
+    "city": "Bangalore",
+    "address": "Cadabam's Hospitals, 280, 15th Cross, 5th Phase, JP Nagar, Bangalore 560078",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I've been diagnosed with both Bipolar Disorder and ADHD. I recommend going to the Cadabam's Hospital in JP Nagar. They even have virtual sessions. Dr. Vishal is great."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/bangalore/comments/sjstzc/docs_with_addadhd_experience/",
+      "https://www.cadabams.org/professionals/dr-vishal-kasal",
+      "https://www.cadabamshospitals.com/psychiatrist/bangalore/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Cadabam's%20Hospitals%2C%20280%2C%2015th%20Cross%2C%205th%20Phase%2C%20JP%20Nagar%2C%20Bangalore%20560078%2C%20Bangalore",
+    "locality": "JP Nagar"
+  },
+  {
+    "id": 216,
+    "name": "Dr. Sagar Mundada",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "",
+    "contact": "",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I know of Dr Sagar Mundada (2k for first session) and Dr Chinmay kulkarni (1300 for first session), both are experienced with treating and diagnosing ADHD. ... They will basically ask you a bunch of questions regarding ADHD symptoms and will try to see if there are any other underlying issues. You will also have to fill out a short questionnaire."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/wt9iec/please_suggest_any_psychiatrists_or_therapists/",
+      "https://www.practo.com/mumbai/doctor/dr-sagar-mundada-psychiatrist",
+      "https://www.drsagarmundada.com/"
+    ]
+  },
+  {
+    "id": 217,
+    "name": "Dr. Chinmay Kulkarni",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Curatus Mindcare Clinic, 204 Shivkrupa Building, IIT Market, Powai, Mumbai",
+    "contact": "",
+    "fee": 1300,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I know of Dr Sagar Mundada (2k for first session) and Dr Chinmay kulkarni (1300 for first session), both are experienced with treating and diagnosing ADHD."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/wt9iec/please_suggest_any_psychiatrists_or_therapists/",
+      "https://www.practo.com/mumbai/doctor/dr-chinmay-kulkarni",
+      "https://www.lybrate.com/mumbai/doctor/dr-chinmay-kulkarni-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Curatus%20Mindcare%20Clinic%2C%20204%20Shivkrupa%20Building%2C%20IIT%20Market%2C%20Powai%2C%20Mumbai%2C%20Mumbai",
+    "locality": "Powai"
+  },
+  {
+    "id": 218,
+    "name": "Dr. Parth Nagda",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Online follow-ups",
+    "city": "Navi Mumbai",
+    "address": "OPD 6, First Floor, Kokilaben Dhirubhai Ambani Hospital, Opposite Kopar Khairane Station, Navi Mumbai",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "This is whom I consulted when I was in Mumbai. Dr Parth Nagda - Psychiatrist at Kokilaben Dhirubhai Ambani Hospital, Navi Mumbai ... I don't know if he's \"the best\" option but he's pretty good from my experience. Since I'm not in Mumbai right now, I've been consulting him online for the past few months."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Dr Malay Dave in Ghatkopar / Dr Parth Nagda in Navi Mumbai / Both even accept adhd in adults as well , which many doctors are sceptical about as well"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/16pn039/desperately_need_help_loc_mumbai/",
+      "https://www.reddit.com/r/mumbai/comments/1f39rzf/best_psychiatrist_for_adhd_in_mumbai/",
+      "https://navimumbai.kokilabenhospital.com/professionals/parthnagda.html",
+      "https://namineuropsychiatryclinic.in/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=OPD%206%2C%20First%20Floor%2C%20Kokilaben%20Dhirubhai%20Ambani%20Hospital%2C%20Opposite%20Kopar%20Khairane%20Station%2C%20Navi%20Mumbai%2C%20Navi%20Mumbai"
+  },
+  {
+    "id": 219,
+    "name": "Dr. Malay Dave",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "201/A, Gayatri Dham Apartment, M G Road, Rajawadi, Ghatkopar East, Mumbai 400077",
+    "contact": "9821293616",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Malay Dave in Ghatkopar / Dr Parth Nagda in Navi Mumbai / Both even accept adhd in adults as well , which many doctors are sceptical about as well"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/1f39rzf/best_psychiatrist_for_adhd_in_mumbai/",
+      "https://www.justdial.com/Mumbai/Dr-Malay-Dave-Ghatkopar-East/022PXX22-XX22-120723145402-T7S3_BZDET",
+      "https://www.medindia.net/directories/doctors/dr-malay-dave-d-psychiatrist-mumbai-maharashtra-186981.htm"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=201%2FA%2C%20Gayatri%20Dham%20Apartment%2C%20M%20G%20Road%2C%20Rajawadi%2C%20Ghatkopar%20East%2C%20Mumbai%20400077%2C%20Mumbai",
+    "locality": "Ghatkopar"
+  },
+  {
+    "id": 220,
+    "name": "Dr. Mansi Jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Manarogya Psychiatry Clinic, Borivali, Mumbai",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My Psychiatrist was Dr. Mansi Jain, in Borivali."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/184f6v9/adhd_meds_side_effects/",
+      "https://www.practo.com/mumbai/doctor/dr-mansi-jain-psychiatrist-1-psychiatrist",
+      "https://manarogyapsychiatryclinic.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Manarogya%20Psychiatry%20Clinic%2C%20Borivali%2C%20Mumbai%2C%20Mumbai",
+    "locality": "Borivali"
+  },
+  {
+    "id": 221,
+    "name": "Dr. Anshu Kulkarni",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Dr. Anshu Kulkarni's Psychiatry Clinic, Bandra West, Mumbai; also The Sion Circle Speciality Clinic, Sion East",
+    "contact": "",
+    "fee": 3000,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I go to Dr Anshu Kulkarni in Mumbai and shes put me on Inspiral SR and Zosert (SSRI) for my ADD. It took me about a week to get used to them but they've helped me greatly! ... you can find dr Kulkarni on practo, she's got two clinics, one in Bandra and one in Sion and she's really really good. Only downside is she's a bit expensive, 3k for one session"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/184f6v9/adhd_meds_side_effects/",
+      "https://www.practo.com/mumbai/doctor/dr-anshu-kulkarni-psychiatrist",
+      "https://www.dranshukulkarni.in/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Anshu%20Kulkarni's%20Psychiatry%20Clinic%2C%20Bandra%20West%2C%20Mumbai%3B%20also%20The%20Sion%20Circle%20Speciality%20Clinic%2C%20Sion%20East%2C%20Mumbai",
+    "locality": "Bandra West"
+  },
+  {
+    "id": 222,
+    "name": "Dr. Avinash De Sousa",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Consulting rooms, Santacruz West, Mumbai",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Avinash desouza, I got my adhd diagnosed from his clinic."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/1b2zn07/hi_i_need_a_little_advice_for_a_good_doctor_for/",
+      "https://dravinashdesousa.com/about-dr-avinash-desousa/",
+      "https://www.credihealth.com/doctor/avinash-desousa-psychiatrist/overview"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Consulting%20rooms%2C%20Santacruz%20West%2C%20Mumbai%2C%20Mumbai",
+    "locality": "Santacruz West"
+  },
+  {
+    "id": 223,
+    "name": "Dr. Milan Balakrishnan",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha",
+    "city": "Mumbai",
+    "address": "Masina Hospital, Sant Savta Marg, Byculla East, Mumbai 400027",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "You can go to Dr Milan Balakrishnan in Masina Hospital. Going there will ensure that it doesn't pinch your pocket too much. But of course, you'll probably have to do an assessment or something with a clinical psychologist to diagnose whether or not you have ADHD. But Dr Milan is good. I've interned with him so I can vouch for that at least."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/zdrjyq/a_good_psychiatrist_in_mumbai_who_wont_pinch_my/",
+      "https://www.masinahospital.com/doctors/dr.-milan-h-balakrishnan",
+      "https://www.amahahealth.com/psychiatrist/dr-milan-balakrishnan/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Masina%20Hospital%2C%20Sant%20Savta%20Marg%2C%20Byculla%20East%2C%20Mumbai%20400027%2C%20Mumbai",
+    "locality": "Byculla"
+  },
+  {
+    "id": 224,
+    "name": "Dr. Priyadarshani Jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo video consultation",
+    "city": "Mumbai",
+    "address": "Happy Life Clinic, 302, 3rd Floor, Centre Point, JB Nagar, Andheri Kurla Road, Andheri East, Mumbai",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "hey I recently got diagonised by adhd and today literally is my first day of takings meds . I am seeing Dr. Priyadarshini Jain ,She is from Andheri"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/mumbai/comments/zdrjyq/a_good_psychiatrist_in_mumbai_who_wont_pinch_my/",
+      "https://www.practo.com/mumbai/doctor/dr-priyadarshni-jain-psychiatrist",
+      "https://www.lybrate.com/mumbai/doctor/dr-priyadarshani-jain-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Happy%20Life%20Clinic%2C%20302%2C%203rd%20Floor%2C%20Centre%20Point%2C%20JB%20Nagar%2C%20Andheri%20Kurla%20Road%2C%20Andheri%20East%2C%20Mumbai%2C%20Mumbai",
+    "locality": "Andheri East"
+  },
+  {
+    "id": 225,
+    "name": "Dr. Dean Creado",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha",
+    "city": "Mumbai",
+    "address": "Amaha Mental Health Centre, Bandra West, Mumbai",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Dean Creado at Amaha Health is good but expensive. He will only start treatment after a Diva-5 test (which costs 5-6K), and at least with me we started first with non-stimulants."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1lpzzf0/where_to_get_diagnosed_in_mumbai/",
+      "https://www.amahahealth.com/psychiatrist/dr-dean-creado/",
+      "https://www.practo.com/mumbai/doctor/dean-creado-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Amaha%20Mental%20Health%20Centre%2C%20Bandra%20West%2C%20Mumbai%2C%20Mumbai",
+    "locality": "Bandra West"
+  },
+  {
+    "id": 226,
+    "name": "Dr. Somil Savla",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Kamala Kunj, Sir Bhalchandra Road, Wadala West, Mumbai 400031 (behind Ruia College)",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Hey i added an ADHD psychiatrist to the database a couple of days ago. Dr. Somil Savla from Mumbai. He's been treating me and is pretty awesome."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1rcqrmh/updated_website_for_adhd_friendly_therapists_and/",
+      "https://drsomilsavla.com/services/adhd/",
+      "https://www.lybrate.com/mumbai/doctor/dr-somil-savla-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Kamala%20Kunj%2C%20Sir%20Bhalchandra%20Road%2C%20Wadala%20West%2C%20Mumbai%20400031%20(behind%20Ruia%20College)%2C%20Mumbai",
+    "locality": "Wadala West"
+  },
+  {
+    "id": 227,
+    "name": "Dr. Sanjay Jain",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Voice call Rs 1100 / video call Rs 1600",
+    "city": "Jaipur",
+    "address": "Jain Neuropsychiatry and De-addiction Clinic, 31 Mangal Vihar, Near Riddhi Siddhi Chauraha, Gopalpura Bypass Road, Jaipur 302018",
+    "contact": "",
+    "fee": 600,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "If in Jaipur go to Dr. Sanjay Jain good psychiatrist for ADHD first visit fee is 600 after that 400 if not visited for 6 months then 600 again. He also does online consultation at 1100 for voice call and 1600 for video call. And I myself got diagnosed with ADHD from there only. ... then they'll do the ADHD Screening that takes time."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Go to Dr. Sanjay Jain buddy I went there last month for ADHD it was good."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1uournt/could_you_suggest_the_best_psychiatrist_the_one/",
+      "https://www.practo.com/jaipur/clinic/dr-sanjay-jain-2-gopalpura",
+      "https://psychiatristjaipur.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Jain%20Neuropsychiatry%20and%20De-addiction%20Clinic%2C%2031%20Mangal%20Vihar%2C%20Near%20Riddhi%20Siddhi%20Chauraha%2C%20Gopalpura%20Bypass%20Road%2C%20Jaipur%20302018%2C%20Jaipur",
+    "locality": "Gopalpura"
+  },
+  {
+    "id": 228,
+    "name": "Dr. Shivam Gupta",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha",
+    "city": "Delhi",
+    "address": "Amaha Your Mental Health Centre, A-2/35, 3rd Floor, Safdarjung Enclave, Delhi",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Shivam Gupta from Amaha. In Safdarjung enclave Delhi"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1tjfk9n/please_recommend_good_psychiatrists_in_delhi_for/",
+      "https://www.practo.com/delhi/doctor/shivam-gupta-psychiatrist",
+      "https://www.amahahealth.com/psychiatrist/dr-shivam-gupta/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Amaha%20Your%20Mental%20Health%20Centre%2C%20A-2%2F35%2C%203rd%20Floor%2C%20Safdarjung%20Enclave%2C%20Delhi%2C%20Delhi",
+    "locality": "Safdarjung Enclave"
+  },
+  {
+    "id": 229,
+    "name": "Dr. Ankit Gupta",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Apollo 24|7 / clinic online booking",
+    "city": "Delhi",
+    "address": "InnerPeace Psychiatry Clinic, 776 Bipin Chandra Pal Marg, opposite Market No. 2, Chittaranjan Park, New Delhi",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "If in Delhi -> [Inner Peace Psychiatric Clinic -> Dr Ankit Gupta] is where I got diagnosed, and my experience has been really good. ... My test got taken by a psychologist and it took a solid hour and involved both me and my mom (one parent)."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1qhx4da/i_went_in_to_a_govt_psychiatrist_and_got_evaluated/",
+      "https://www.practo.com/delhi/doctor/ankit-gupta-3-psychiatrist",
+      "https://www.apollo247.com/doctors/dr-ankit-gupta-4147ba4d-e7c1-49e2-8a4e-8880286e4362"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=InnerPeace%20Psychiatry%20Clinic%2C%20776%20Bipin%20Chandra%20Pal%20Marg%2C%20opposite%20Market%20No.%202%2C%20Chittaranjan%20Park%2C%20New%20Delhi%2C%20Delhi",
+    "locality": "CR Park"
+  },
+  {
+    "id": 230,
+    "name": "Dr. Jatin Tarwani",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Online consultations available",
+    "city": "Delhi",
+    "address": "Fortis Hospital, Shalimar Bagh, New Delhi; also Sukoon Health, Sector 56, Gurgaon",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Yes",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "If anyone in Delhi is looking for a psychiatrist, the only one I found that didn't shrug at adult adhd and judge me (and others) Dr Jatin Tarwani. Also literally one of the only handful of people in Asia with a DM in addiction psychiatry. Pretty helpful for me."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1lula4i/adhd_in_india_a_survival_guide/",
+      "https://www.fortishealthcare.com/doctors/dr-jatin-tarwani-6307",
+      "https://www.practo.com/delhi/doctor/jatin-tarwani-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Fortis%20Hospital%2C%20Shalimar%20Bagh%2C%20New%20Delhi%3B%20also%20Sukoon%20Health%2C%20Sector%2056%2C%20Gurgaon%2C%20Delhi"
+  },
+  {
+    "id": 231,
+    "name": "Dr. Ashti Emran",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "VIMHANS, Institutional Area, Nehru Nagar, New Delhi",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "My psychiatrist is Dr.Nandita Hazari and psychologist is Dr.Ashiti Emran. ... I have been seeking treatment for ADHD at VIMHANS since last October both of my psychiatrist and psychologist are from VIMHANS. My experience has been great so far i never experienced any issues."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1to5wjh/experience_with_vimhans_delhi_for_adhd_assessment/",
+      "https://www.vimhans.com/our-consultants",
+      "https://docvita.com/institution/vimhans"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=VIMHANS%2C%20Institutional%20Area%2C%20Nehru%20Nagar%2C%20New%20Delhi%2C%20Delhi",
+    "locality": "Nehru Nagar"
+  },
+  {
+    "id": 232,
+    "name": "Dr. Mantosh Kumar",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Gurgaon",
+    "address": "Fortis Memorial Research Institute, Sector 44, Gurgaon",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Mantosh at Fortis Gurgaon. Personally consulting with him and I got my diagnosis there."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "Somebody on this forum itself suggested Dr Mantosh at fortis ggn or you could go to emoneeds ggn."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/delhi/comments/1v9wrqs/looking_for_the_best_doctor_in_north_india_for/",
+      "https://www.reddit.com/r/adhdindia/comments/1t4f2y8/guys_i_really_need_a_good_psychiatrist_for_adhd/",
+      "https://www.fortishealthcare.com/doctors/dr-mantosh-kumar-9072",
+      "https://adayu.com/clinical-team/dr-mantosh-kumar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Fortis%20Memorial%20Research%20Institute%2C%20Sector%2044%2C%20Gurgaon%2C%20Gurgaon"
+  },
+  {
+    "id": 233,
+    "name": "Jyoti Bernard",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Online and offline across NCR",
+    "city": "Noida",
+    "address": "",
+    "contact": "9118558629",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 5000,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "if you want diagnosis of both ADHD and ASD, you want an AuDHD friendly doc, Then I recommend Jyoti Bernard +91 91185 58629 (diagnosis, NCR, ONLINE AND OFFLINE BOTH) (5000 for both autism and ADHD, NOIDA) She knows AuDHD well There are very few AuDHD affirming docs in India"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1rn79zw/psychiatrist_who_can_treat_adhd_in_chennai/",
+      "https://www.linkedin.com/in/jyoti-glory-bernard-30b82210a/"
+    ]
+  },
+  {
+    "id": 234,
+    "name": "Dr. Geeta Bhatt",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "E-Wing, 5th Floor, Rahul Complex, Paud Road, Bavdhan, Pune 411038 (near Krishna Hospital)",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Geeta Bhatt has a clinic at paud road. She is an excellent psychiatrist, I have used her consultation in the past."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "My family friend who is a psychiatrist herself suggested I go visit Dr. Geeta Bhatt at Krishna Hospital, Paud Road"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1g1qbbj/any_good_clinical_psychiatrist_in_pune_for_adhd/",
+      "https://www.reddit.com/r/adhdindia/comments/1nlukhp/any_good_doctors_for_adhd_and_autism_in_pune/",
+      "https://www.lybrate.com/pune/doctor/dr-geeta-bhatt-psychiatrist",
+      "https://www.1mg.com/doctors/dr-geeta-bhat-psychiatry-in-pune/DR-dw9x8"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=E-Wing%2C%205th%20Floor%2C%20Rahul%20Complex%2C%20Paud%20Road%2C%20Bavdhan%2C%20Pune%20411038%20(near%20Krishna%20Hospital)%2C%20Pune",
+    "locality": "Paud Road"
+  },
+  {
+    "id": 235,
+    "name": "Dr. Mridula Apte",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Vidula Psychological Consultancy, Pune",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I highly recommend Dr. Mridula Apte and her team at Vidula Psychological Consultancy. ... My diagnosis was done there. The clinic is in Erandwane."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I am an adult with ADHD. Dr. Apte at Vidula Psychological Consultancy is my therapist. I definitely recommend the team."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1psyjzu/adhd_diagnosis_and_treatment/",
+      "https://www.reddit.com/r/pune/comments/1ipr8db/psychologists_of_adult_adhd/",
+      "https://www.vidulapsychologicalconsultancy.com/book-an-appointment/",
+      "https://www.gigadocs.com/doctors/pune/mridula-apte"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Vidula%20Psychological%20Consultancy%2C%20Pune%2C%20Pune",
+    "locality": "Erandwane"
+  },
+  {
+    "id": 236,
+    "name": "Dr. Arvind Panchanadikar",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "KEM Hospital, 489 Sardar Moodliar Road, Rasta Peth, Pune 411011; own clinic at Mhatre Pul",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "If you think you want to see a psychiatrist first, you can see Dr Arvind Panchanadikar. He is a consultant psychiatrist with KEM and has his own clinic at Mhatre Pul."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1psyjzu/adhd_diagnosis_and_treatment/",
+      "https://www.kemhospitalpune.org/specialities/psychiatry/",
+      "https://www.justdial.com/Pune/Dr-Arvind-Panchanadikar-Kem-Hospital-Near-Mseb-Rasta-Peth/020PXX20-XX20-000684026341-N8C5_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=KEM%20Hospital%2C%20489%20Sardar%20Moodliar%20Road%2C%20Rasta%20Peth%2C%20Pune%20411011%3B%20own%20clinic%20at%20Mhatre%20Pul%2C%20Pune",
+    "locality": "Rasta Peth"
+  },
+  {
+    "id": 237,
+    "name": "Dr. Prakash Bhambure",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "F-115, First Floor, Ashoka Centre, Satara Road, Pune (opposite City Pride Multiplex)",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I too have been seeing a psychiatrist for my ADHD and I suggest you give Dr. Prakash Bhambore a try. He is calm, composed, knows his stuff and can be very helpful through out the process of getting your dose adjusted, which can take 4-5 months(at least, it took me that long) to get it right. Only caveat is that he practices on Satara road."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1g8jwco/looking_for_adhd_specialist/",
+      "https://www.practo.com/pune/doctor/prakash-bhambure-psychiatrist-1",
+      "https://www.drprakashbhambure.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=F-115%2C%20First%20Floor%2C%20Ashoka%20Centre%2C%20Satara%20Road%2C%20Pune%20(opposite%20City%20Pride%20Multiplex)%2C%20Pune",
+    "locality": "Satara Road"
+  },
+  {
+    "id": 238,
+    "name": "Dr. Swapnil Deshmukh",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Shreeyash Hospital, 2nd Floor, opposite Chitale Bandhu Mithaiwale, near Garware Bridge, Deccan Gymkhana, Pune 411004",
+    "contact": "",
+    "fee": 500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Dnyaynda Deshpande and Dr Swapnil Deshmukh at Shreeyash hospital, Deccan are good."
+      },
+      {
+        "sentiment": "Mixed",
+        "text": "I came across Dr. Swapnil Deshmukh online—has anyone here consulted him for ADHD?"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1i7xt63/recommend_good_psychiatrist_for_adhdadd/",
+      "https://www.reddit.com/r/adhdindia/comments/1n6orwd/good_doctor_for_adhd_treatment_in_pune/",
+      "https://www.practo.com/pune/doctor/dr-swapnil-deshmukh-psychiatrist-1",
+      "https://www.1mg.com/doctors/dr-swapnil-deshmukh-psychiatry-in-pune/DR-9lx1z"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Shreeyash%20Hospital%2C%202nd%20Floor%2C%20opposite%20Chitale%20Bandhu%20Mithaiwale%2C%20near%20Garware%20Bridge%2C%20Deccan%20Gymkhana%2C%20Pune%20411004%2C%20Pune",
+    "locality": "Deccan Gymkhana"
+  },
+  {
+    "id": 239,
+    "name": "Dr. Dnyanda Deshpande",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Shreeyash Hospital, 2nd Floor, Roopam Corner, near Garware Bridge, opposite Chitale Bandhu Mithaiwale, Deccan Gymkhana, Pune 411004",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Dnyaynda Deshpande and Dr Swapnil Deshmukh at Shreeyash hospital, Deccan are good."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/1i7xt63/recommend_good_psychiatrist_for_adhdadd/",
+      "https://www.practo.com/pune/doctor/dnyanda-nakul-deshpande-psychiatrist",
+      "https://www.practo.com/pune/hospital/shreeyash-hospital-deccan-gymkhana-1"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Shreeyash%20Hospital%2C%202nd%20Floor%2C%20Roopam%20Corner%2C%20near%20Garware%20Bridge%2C%20opposite%20Chitale%20Bandhu%20Mithaiwale%2C%20Deccan%20Gymkhana%2C%20Pune%20411004%2C%20Pune",
+    "locality": "Deccan Gymkhana"
+  },
+  {
+    "id": 240,
+    "name": "Dr. Shailesh Chowgule",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "S-4, Rohan Chamber, near Karve Statue, opposite Kothrud Petrol Pump, Kothrud, Pune 411029",
+    "contact": "9422001070",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Okay, so a good adhd specialist psychiatrist in pune? ... Dr. Shailesh Chowgule, Kothrud"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/pune/comments/ot3soa/adhd_psychiatrist_near_katraj/",
+      "https://www.justdial.com/Pune/Dr-Shailesh-Chowgule-Near-Karve-Statue-Opposite-To-Kothrud-Petrol-Pump-Kothrud/020PXX20-XX20-090526124723-S4U8_BZDET",
+      "https://www.sulekha.com/dr-shailesh-chowgule-kothrud-pune-contact-address"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=S-4%2C%20Rohan%20Chamber%2C%20near%20Karve%20Statue%2C%20opposite%20Kothrud%20Petrol%20Pump%2C%20Kothrud%2C%20Pune%20411029%2C%20Pune",
+    "locality": "Kothrud"
+  },
+  {
+    "id": 241,
+    "name": "Dr. Pragnya Pillarisetti",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Pune",
+    "address": "Allo Mental and Sexual Health Clinic, Hadapsar, Pune",
+    "contact": "",
+    "fee": 999,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Most Psychiatrists in India do not understand ADHD, and tend to see it as a discipline problem. Please be careful while choosing the doc. I would recommend Dr. Pragnya- she is a bit younger and looks beyond the typical depression anxiety diagnosis and \"wake up early\" kind of treatment. She practices at Allo health in Hadapsar"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1tlhlhk/looking_for_a_psychiatrist_for_possible_adhd/",
+      "https://www.practo.com/pune/clinic/allo-health-clinic-hadapsar"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Allo%20Mental%20and%20Sexual%20Health%20Clinic%2C%20Hadapsar%2C%20Pune%2C%20Pune",
+    "locality": "Hadapsar"
+  },
+  {
+    "id": 242,
+    "name": "Dr. Kranthi Kiran",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Banjara Hills, Hyderabad",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I'd recommend Dr.Kranthi Kiran from Epic Medical Center B.Hills. He's empathetic and prescribed me the perfect medication I needed"
+      },
+      {
+        "sentiment": "Positive",
+        "text": "I got my Addwize and Bupropion Px from my previous Dr. Kranthi Kiran"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1paaew5/psychiatrists_in_hyderabad/",
+      "https://www.practo.com/hyderabad/doctor/dr-kranthi-kiran-boyapati-psychiatrist",
+      "https://www.americancenterforneuropsychiatry.com/experts/dr-kranthi-kiran"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Banjara%20Hills%2C%20Hyderabad%2C%20Hyderabad",
+    "locality": "Banjara Hills"
+  },
+  {
+    "id": 243,
+    "name": "Dr. Shwetha Purkanti",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Apollo Medical Centre, Kondapur, Hyderabad",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr Shwetha Purkanti , Apollo kondapur. Helped me and my colleagues very much with ADHD, anxiety ."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/hyderabad/comments/1qikw1z/good_psychiatrist_for_adhd/",
+      "https://www.apollo247.com/doctors/dr-shwetha-purkanti-c25a9dd1-2b58-4a39-afec-4b0108037d6d",
+      "https://www.practo.com/hyderabad/doctor/shwetha-purkanti-psychiatrist-1"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Apollo%20Medical%20Centre%2C%20Kondapur%2C%20Hyderabad%2C%20Hyderabad",
+    "locality": "Kondapur"
+  },
+  {
+    "id": 244,
+    "name": "Dr. Mazher Ali",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "CARE Outpatient Centre, Road No 10, Avenue 4, Banjara Hills, Hyderabad 500034",
+    "contact": "04068106529",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Mazher Ali, Care outpatient centre, Jubilee hills, Hyderabad ... my elder brother 22M was diagnosed with ADHD and the whole process was really amazing and understanding."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/hyderabad/comments/v69l3l/need_a_psychiatrist_who_treats_adhd_and_add/",
+      "https://www.carehospitals.com/doctor/hyderabad/banjara-hills/mazher-ali-psychiatrist",
+      "https://www.skedoc.com/hyderabad/doctor/dr-mazher-ali-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=CARE%20Outpatient%20Centre%2C%20Road%20No%2010%2C%20Avenue%204%2C%20Banjara%20Hills%2C%20Hyderabad%20500034%2C%20Hyderabad",
+    "locality": "Banjara Hills"
+  },
+  {
+    "id": 245,
+    "name": "Dr. Charan Teja Koganti",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Hyderabad",
+    "address": "KIMS Hospitals, Kondapur Village, Serilingampally Mandal, Hyderabad",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Consult Dr. Charan teja koganti from KIMS KONDAPUR! according to me, he is the best psychologist out there!! ... He is very patient!! Unlike other psychiatrists, he gets to the root cause and will diagnose the right problem! I was diagnosed wrongly as bipolar, but then listening to my problems and conditions, it was mood disorder! Got treated properly and I don't suffer anymore"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/hyderabad/comments/1myshuh/people_with_adhd_how_did_you_get_diagnosed_in/",
+      "https://www.kimshospitals.com/doctor-profile/dr-charan-teja-koganti/",
+      "https://www.practo.com/hyderabad/doctor/dr-charan-teja-koganti-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=KIMS%20Hospitals%2C%20Kondapur%20Village%2C%20Serilingampally%20Mandal%2C%20Hyderabad%2C%20Hyderabad",
+    "locality": "Kondapur"
+  },
+  {
+    "id": 246,
+    "name": "Dr. Aana Shah",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Aster Prime Hospital, Ameerpet, Hyderabad; also Asha Neuromodulation Clinic, Kokapet",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I went to Dr Aana Shah in Aster prime hospital ... She was really friendly and I've gotten my diagnosis and Referral to other doctors as well! ... you can go alone, She did ask me to bring my parents but that's entirely on me"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/hyderabad/comments/1m6hjuw/psychologist_or_psychiatrist_suggestions_for/",
+      "https://www.asterhospitals.in/doctors/aster-prime-hyderabad/dr-aana-shaunak-shah",
+      "https://www.draanashah.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Aster%20Prime%20Hospital%2C%20Ameerpet%2C%20Hyderabad%3B%20also%20Asha%20Neuromodulation%20Clinic%2C%20Kokapet%2C%20Hyderabad",
+    "locality": "Ameerpet"
+  },
+  {
+    "id": 247,
+    "name": "Dr. Gowri Devi M",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Asha Hospital, Plot No. 298, Road No. 14, Banjara Hills, Hyderabad 500034",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Provisional)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Got diagnosed at ASHA Hospital near KBR Park ... Dr Gowri Devi M."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1ihdq7z/going_to_nimhans_from_hyderabad_for_adult_adhd/",
+      "https://ashahospital.org/Doctor/dr-m-gowri-devi/",
+      "https://www.skedoc.com/hyderabad/doctor/dr-m-gowri-devi-psychiatrist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Asha%20Hospital%2C%20Plot%20No.%20298%2C%20Road%20No.%2014%2C%20Banjara%20Hills%2C%20Hyderabad%20500034%2C%20Hyderabad",
+    "locality": "Banjara Hills"
+  },
+  {
+    "id": 248,
+    "name": "Dr. Jayanti Sunder Rajan",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Roshni Counselling Centre, Begumpet, Hyderabad",
+    "contact": "9849982963",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I've got Adult ADHD too and the psychologist at Roshni Counciling Centre, Dr. Jayanti Sunder Rajan, helped me identify it. She's really great."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/hyderabad/comments/1dd8ior/adult_adhd_and_mental_health/",
+      "https://roshinitrust.com/building-resilience/",
+      "https://nayi-disha.org/business/jayanti-sundar-rajan/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Roshni%20Counselling%20Centre%2C%20Begumpet%2C%20Hyderabad%2C%20Hyderabad",
+    "locality": "Begumpet"
+  },
+  {
+    "id": 249,
+    "name": "Dr. Vishnu Gade",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "Kamineni Hospitals, King Koti, Hyderabad",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "here in Hyderabad, the psych said the maximum he can prescribe is for 40 days ... Dr Vishnu Gade"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1ehh0do/question_about_adhd_medication_in_india/",
+      "https://www.practo.com/hyderabad/doctor/dr-vishnu-gade-psychiatrist",
+      "https://kaminenihospitals.com/doctor/dr-vishnu-gade/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Kamineni%20Hospitals%2C%20King%20Koti%2C%20Hyderabad%2C%20Hyderabad"
+  },
+  {
+    "id": 250,
+    "name": "Dr. Janani",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Chennai Meenakshi Multispeciality Hospital, New No 72, Luz Church Road, Mylapore, Chennai 600004",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "his doctor is also amazing, her name is Dr. Janani in Mylapore. Please consider her too. Dr. Janani specialises in ADHD and I've met her myself, she is very nice too!"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1jjhtek/how_to_get_a_proper_diagnosis_in_chennai_20f/",
+      "https://www.credihealth.com/doctor/s-janani-psychiatrist",
+      "https://www.justdial.com/Chennai/Dr-Janani-Chennai-Meenakshi-Multispeciality-Hospital-Ltd-Opposite-Indian-Bank-Mylapore/044PXX44-XX44-170523081448-E3W1_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Chennai%20Meenakshi%20Multispeciality%20Hospital%2C%20New%20No%2072%2C%20Luz%20Church%20Road%2C%20Mylapore%2C%20Chennai%20600004%2C%20Chennai",
+    "locality": "Mylapore"
+  },
+  {
+    "id": 251,
+    "name": "Dr. V. Jayanthini",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Mind Space, 15, 13th Street, Nandanam Extension, Near Venkateshwara Hospital, Chennai 600035",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": 4000,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Fellow ADHD neurodivergent here, try Mind space clinic Nandanam extension, Dr Jeyanthini is very good."
+      },
+      {
+        "sentiment": "Positive",
+        "text": "when I got diagnosed it was around 4000 for the initial assessment and I think it's around 1000-1500 for each visit afterwards"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Chennai/comments/11vh0i0/recommendations_for_psychologistspsychiatrist_who/",
+      "https://www.practo.com/chennai/doctor/dr-v-jayanthini",
+      "http://www.themindspaceclinic.com/about.html"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mind%20Space%2C%2015%2C%2013th%20Street%2C%20Nandanam%20Extension%2C%20Near%20Venkateshwara%20Hospital%2C%20Chennai%20600035%2C%20Chennai",
+    "locality": "Nandanam Extension"
+  },
+  {
+    "id": 252,
+    "name": "Dr. Lakshmi Venkatraman",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "SCARF India, Anna Nagar, Chennai; also SMF Mogappair and Apollo Kotturpuram",
+    "contact": "9486526256",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "we have found an excellent psychiatrist who has genuinely had a big positive impact on our life. Her name is Dr. Lakshmi venkatraman. She works at three places in chennai - SCARF Annanagar, SMF Mogappair and Apollo Kotturpuram."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1rmkv7b/suspected_adhd_nimhans_consultation_bpd_diagnosis/",
+      "https://smf.in/doctor-details/dr-lakshmi-venkatraman",
+      "https://indianpsychiatricsociety.org/user/lakshmivenkatraman/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=SCARF%20India%2C%20Anna%20Nagar%2C%20Chennai%3B%20also%20SMF%20Mogappair%20and%20Apollo%20Kotturpuram%2C%20Chennai",
+    "locality": "Anna Nagar"
+  },
+  {
+    "id": 253,
+    "name": "Tinu Thamby T",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "Apollo Clinic, Phoenix Mall, Velachery, Chennai",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Got diagnosed recently with ADHD at Apollo Clinic Velachery from psychologist Dr Tinu Thamby ... She did an ADHD assessment and sent the report to my Psychiatrist."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Chennai/comments/1p6atjl/adhd_diagnosis_for_adults/",
+      "https://www.apolloclinic.com/find-a-doctor/best-psychologist-in-chennai-tamil-nadu/mrs-tinu-thamby-t",
+      "https://www.practo.com/chennai/therapist/mrs-tinu-thamby-t-psychologist"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Apollo%20Clinic%2C%20Phoenix%20Mall%2C%20Velachery%2C%20Chennai%2C%20Chennai",
+    "locality": "Velachery"
+  },
+  {
+    "id": 254,
+    "name": "Dr. Mithun Prasad V",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Chennai",
+    "address": "ThoughtsWill Clinic, 133/71, NSK Salai, Arcot Road, Kodambakkam, Chennai 600024; also SIMS Hospital, Vadapalani",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I consulted him for my Depression in 2021 for about 6-8 months. He is a good person and will hear you patiently and spend around 20-30 mins every time."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Chennai/comments/1p6atjl/adhd_diagnosis_for_adults/",
+      "https://thoughtswillclinic.com/psychiatry/",
+      "https://www.simshospitals.com/doctors/dr-mithun-prasad"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=ThoughtsWill%20Clinic%2C%20133%2F71%2C%20NSK%20Salai%2C%20Arcot%20Road%2C%20Kodambakkam%2C%20Chennai%20600024%3B%20also%20SIMS%20Hospital%2C%20Vadapalani%2C%20Chennai",
+    "locality": "Kodambakkam"
+  },
+  {
+    "id": 255,
+    "name": "Dr. Mridula Pradeep",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Coimbatore",
+    "address": "Dr. Pradeep's Psychiatric Clinic, No 219, Cowley Brown Road, RS Puram, Coimbatore 641002",
+    "contact": "04222550787",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Yes",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "I would suggest Dr. Mridula Pradeep, Cowley Brown road. I went to her two three times for my stimulant prescriptions."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Coimbatore/comments/1vco2xa/22m_any_psychiatristpsychologist_to_diagnose_adhd/",
+      "https://www.pradeepdpsychiatry.com/lady-psychiatrist-in-coimbatore.php",
+      "https://www.justdial.com/Coimbatore/Dr-Mridula-Pradeep-Md-Psych-Dr-Pradeeps-Psychiatric-Clinic-RS-Puram-Coimbatore/0422PX422-X422-150804182947-M7M0_BZDET"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Pradeep's%20Psychiatric%20Clinic%2C%20No%20219%2C%20Cowley%20Brown%20Road%2C%20RS%20Puram%2C%20Coimbatore%20641002%2C%20Coimbatore",
+    "locality": "RS Puram"
+  },
+  {
+    "id": 256,
+    "name": "Dr. Jayaprakash P",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Trivandrum",
+    "address": "Trivandrum General Hospital; also Devasree, Vanchiyoor Junction, Thiruvananthapuram",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Jayaprakash P was the senior psychiatrist there and I was beckoned into his cabin ... TLDR: Surprisingly sensitive, caring and thorough."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/14da40m/my_experience_visiting_a_government_hospital_for/",
+      "https://www.practo.com/thiruvananthapuram/doctor/jayaprakash-p-psychiatrist",
+      "https://www.drlogy.com/thiruvananthapuram/doctor/dr-jayaprakash-p"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Trivandrum%20General%20Hospital%3B%20also%20Devasree%2C%20Vanchiyoor%20Junction%2C%20Thiruvananthapuram%2C%20Trivandrum"
+  },
+  {
+    "id": 257,
+    "name": "Dr. Spandan Thaker",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Ahmedabad",
+    "address": "Mood and Mind Clinic, 8/1 Jalaram Park Society, Near Pranshankar Hall, Pushpkunj Road, Kankaria, Ahmedabad 380022",
+    "contact": "",
+    "fee": 600,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Dr. Spandan Thaker. Mind and Mood clinic. ... Adhd and concentration focus me issues hai unke related help kr skte hai? ... Yes, he's good."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/ahmedabad/comments/1v1gi5o/need_a_good_psychiatrist_in_ahmedabad_for_adhd/",
+      "https://www.practo.com/ahmedabad/doctor/spandan-thaker-psychiatrist",
+      "https://www.drlogy.com/ahmedabad/doctor/dr-spandan-thaker"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mood%20and%20Mind%20Clinic%2C%208%2F1%20Jalaram%20Park%20Society%2C%20Near%20Pranshankar%20Hall%2C%20Pushpkunj%20Road%2C%20Kankaria%2C%20Ahmedabad%20380022%2C%20Ahmedabad",
+    "locality": "Maninagar"
+  },
+  {
+    "id": 258,
+    "name": "Dr. Mitali Soni Loya",
+    "type": "Psychiatrist",
+    "consultationMode": "Unknown",
+    "onlinePlatform": null,
+    "city": "Bhopal",
+    "address": "Dr. Mitali Soni Loya's Psychiatry and De-Addiction Clinic, Lalghati, Bhopal",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "ayyyy ADHD gang dkhkdjdjdkdjfk <33 check out Dr Mitali Soni, she diagnosed mine"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/Bhopal/comments/12lnkwo/recommendations_for_a_psychiatrist/",
+      "https://www.practo.com/bhopal/doctor/dr-mitali-loya-psychiatrist",
+      "https://www.mentalhealthbhopal.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Dr.%20Mitali%20Soni%20Loya's%20Psychiatry%20and%20De-Addiction%20Clinic%2C%20Lalghati%2C%20Bhopal%2C%20Bhopal",
+    "locality": "Lalghati"
+  },
+  {
+    "id": 259,
+    "name": "Dr. Madalsa Agrawal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Mindscape Thoughtcare online consultations",
+    "city": "Bangalore",
+    "address": "Mindscape Thoughtcare, Horamavu, Bangalore",
+    "contact": "",
+    "fee": 1200,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": 2400,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "You can try Dr. Madalsa from Mindscape Thoughtcare. She does online consultations too. She charges 1200 for a 25 min call but for ADHD assessment you'll need a 50 min session for 2400"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1v1im1w/looking_for_good_psychiatrist_for_adhd_assessment/",
+      "https://www.practo.com/bangalore/doctor/madalsa-agrawal-psychiatrist",
+      "http://www.themindscapethoughtcare.com/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Mindscape%20Thoughtcare%2C%20Horamavu%2C%20Bangalore%2C%20Bangalore",
+    "locality": "Horamavu"
+  },
+  {
+    "id": 260,
+    "name": "Gargi Chakraborty",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Practo",
+    "city": "Bangalore",
+    "address": "Phoenix Psychiatry & Psychotherapy, No 883, Level 3, Chinmayee Arcade, 9th A Cross, RBI Layout, JP Nagar 7th Phase, Bangalore 560078",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [
+      {
+        "sentiment": "Mixed",
+        "text": "I followed through and had a session with his colleague, Dr. Gargi, who very plainly and positively confirmed that I surely have OCD (and something like a manifested ADHD symptoms) and mentioned that a more detailed evaluation is required ... Though the session was insightful, it left me with more questions than answers"
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/bangalore/comments/1717ezg/clinicdoctor_recommendations_full_psychometric/",
+      "https://www.practo.com/bangalore/doctor/gargi-chakraborty-psychologist",
+      "https://phoenixpsychiatry.co.in/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Phoenix%20Psychiatry%20%26%20Psychotherapy%2C%20No%20883%2C%20Level%203%2C%20Chinmayee%20Arcade%2C%209th%20A%20Cross%2C%20RBI%20Layout%2C%20JP%20Nagar%207th%20Phase%2C%20Bangalore%20560078%2C%20Bangalore",
+    "locality": "JP Nagar 7th Phase"
+  },
+  {
+    "id": 261,
+    "name": "Dr. Sudheendra Huddar",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [
+      {
+        "sentiment": "Positive",
+        "text": "Try ADHD chapter, Dr Sudheendra Huddar. I found him to be empathetic. He is a good doctor and I am happy to take treatment with him."
+      }
+    ],
+    "sources": [
+      "https://www.reddit.com/r/adhdindia/comments/1tgimcq/trying_to_get_help_but_unable_to_find_a_good/",
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 262,
+    "name": "Dr. Abhinav Monga",
+    "type": "Psychiatrist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 263,
+    "name": "Dr. Tanya Anand",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 264,
+    "name": "Dr. Sneha Goyal",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 265,
+    "name": "Dr. Mahima Sukhwal",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 266,
+    "name": "Saee Patwardhan",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": 1800,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic",
+      "https://themindclan.com/find/neurodivergent-therapists-support-groups-india/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 267,
+    "name": "Smrithi M.",
+    "type": "Psychologist",
+    "consultationMode": "Online",
+    "onlinePlatform": "The ADHD Chapter (adhdchapter.com)",
+    "city": "Unknown",
+    "address": "The ADHD Chapter (online-only adult ADHD clinic, India)",
+    "contact": "9270036089",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://adhdchapter.com/our-team",
+      "https://adhdchapter.com/adult-adhd-clinic"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=The%20ADHD%20Chapter%20(online-only%20adult%20ADHD%20clinic%2C%20India)%2C%20Unknown"
+  },
+  {
+    "id": 268,
+    "name": "Kudrat Sachdeva",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "CoachForMind (coachformind.com)",
+    "city": "Gurgaon",
+    "address": "CoachForMind, Sector 70, Gurgaon (in-person); online pan-India",
+    "contact": "7838438360",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 6500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://coachformind.com/adhd-assessment"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=CoachForMind%2C%20Sector%2070%2C%20Gurgaon%20(in-person)%3B%20online%20pan-India%2C%20Gurgaon",
+    "locality": "Sector 70"
+  },
+  {
+    "id": 269,
+    "name": "Anasuya",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "CoachForMind (coachformind.com)",
+    "city": "Gurgaon",
+    "address": "CoachForMind, Sector 70, Gurgaon (in-person); online pan-India",
+    "contact": "7838438360",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 6500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://coachformind.com/adhd-assessment"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=CoachForMind%2C%20Sector%2070%2C%20Gurgaon%20(in-person)%3B%20online%20pan-India%2C%20Gurgaon",
+    "locality": "Sector 70"
+  },
+  {
+    "id": 270,
+    "name": "Lekh Bajaj",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "CoachForMind (coachformind.com)",
+    "city": "Gurgaon",
+    "address": "CoachForMind, Sector 70, Gurgaon (in-person); online pan-India",
+    "contact": "7838438360",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": 6500,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://coachformind.com/adhd-assessment"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=CoachForMind%2C%20Sector%2070%2C%20Gurgaon%20(in-person)%3B%20online%20pan-India%2C%20Gurgaon",
+    "locality": "Sector 70"
+  },
+  {
+    "id": 271,
+    "name": "Dr. Sunil Mittal",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "BetterPlace Health (betterplacehealth.com)",
+    "city": "Delhi",
+    "address": "BetterPlace Health, National Heart Institute, First Floor Annexe Building, D Block, East of Kailash, New Delhi; also Neelkanth Hospital, DLF Phase 3, Gurugram",
+    "contact": "9773996888",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://betterplacehealth.com/services/adhd-diagnosis-test-for-adults-in-india/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=BetterPlace%20Health%2C%20National%20Heart%20Institute%2C%20First%20Floor%20Annexe%20Building%2C%20D%20Block%2C%20East%20of%20Kailash%2C%20New%20Delhi%3B%20also%20Neelkanth%20Hospital%2C%20DLF%20Phase%203%2C%20Gurugram%2C%20Delhi",
+    "locality": "East of Kailash"
+  },
+  {
+    "id": 272,
+    "name": "Dr. Siddharth Sethi",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "BetterPlace Health (betterplacehealth.com)",
+    "city": "Delhi",
+    "address": "BetterPlace Health, National Heart Institute, First Floor Annexe Building, D Block, East of Kailash, New Delhi; also Neelkanth Hospital, DLF Phase 3, Gurugram",
+    "contact": "9773996888",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://betterplacehealth.com/services/adhd-diagnosis-test-for-adults-in-india/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=BetterPlace%20Health%2C%20National%20Heart%20Institute%2C%20First%20Floor%20Annexe%20Building%2C%20D%20Block%2C%20East%20of%20Kailash%2C%20New%20Delhi%3B%20also%20Neelkanth%20Hospital%2C%20DLF%20Phase%203%2C%20Gurugram%2C%20Delhi",
+    "locality": "East of Kailash"
+  },
+  {
+    "id": 273,
+    "name": "Dr. Akul Gupta",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "BetterPlace Health (betterplacehealth.com)",
+    "city": "Delhi",
+    "address": "BetterPlace Health, National Heart Institute, First Floor Annexe Building, D Block, East of Kailash, New Delhi; also Neelkanth Hospital, DLF Phase 3, Gurugram",
+    "contact": "9773996888",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://betterplacehealth.com/services/adhd-diagnosis-test-for-adults-in-india/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=BetterPlace%20Health%2C%20National%20Heart%20Institute%2C%20First%20Floor%20Annexe%20Building%2C%20D%20Block%2C%20East%20of%20Kailash%2C%20New%20Delhi%3B%20also%20Neelkanth%20Hospital%2C%20DLF%20Phase%203%2C%20Gurugram%2C%20Delhi",
+    "locality": "East of Kailash"
+  },
+  {
+    "id": 274,
+    "name": "Dr. Purva Agarwal",
+    "type": "Psychologist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Anvaya Healthcare (anvayahealthcare.com)",
+    "city": "Delhi",
+    "address": "Anvaya Healthcare, Second Floor, Plot 28, Sector-12A Road, Block A, Dwarka, Delhi",
+    "contact": "9810659825",
+    "fee": 2000,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://anvayahealthcare.com/adhd-specialist-near-me-in-delhi/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Anvaya%20Healthcare%2C%20Second%20Floor%2C%20Plot%2028%2C%20Sector-12A%20Road%2C%20Block%20A%2C%20Dwarka%2C%20Delhi%2C%20Delhi",
+    "locality": "Dwarka"
+  },
+  {
+    "id": 275,
+    "name": "Dr. Poulami Basu",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Anvaya Healthcare (anvayahealthcare.com)",
+    "city": "Delhi",
+    "address": "Anvaya Healthcare, Second Floor, Plot 28, Sector-12A Road, Block A, Dwarka, Delhi",
+    "contact": "9810659825",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://anvayahealthcare.com/adhd-specialist-near-me-in-delhi/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Anvaya%20Healthcare%2C%20Second%20Floor%2C%20Plot%2028%2C%20Sector-12A%20Road%2C%20Block%20A%2C%20Dwarka%2C%20Delhi%2C%20Delhi",
+    "locality": "Dwarka"
+  },
+  {
+    "id": 276,
+    "name": "Dr. Divya G Nallur",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Amaha (amahahealth.com)",
+    "city": "Bangalore",
+    "address": "Amaha, Bengaluru; Amaha Mental Health Hospital, Thanisandra, Bengaluru",
+    "contact": "2071171501",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://www.amahahealth.com/psychiatrist/dr-divya-g-nallur/",
+      "https://journals.sagepub.com/doi/10.1177/09731342251393970",
+      "https://journals.sagepub.com/doi/10.1177/09731342251394840"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Amaha%2C%20Bengaluru%3B%20Amaha%20Mental%20Health%20Hospital%2C%20Thanisandra%2C%20Bengaluru%2C%20Bangalore"
+  },
+  {
+    "id": 277,
+    "name": "Dr. Pratibha Bezwada",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Own clinic video consultation",
+    "city": "Pune",
+    "address": "Livwell Happier Minds, Shop 106/108/110, First Floor, White Square Building, Hinjawadi-Wakad Road, Hinjawadi Village, Pune 411057",
+    "contact": "9172078857",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Yes",
+    "reviews": [],
+    "sources": [
+      "https://www.livwellhappierminds.com/adult-adhd-treatment-pune-pratibha-bezwada/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Livwell%20Happier%20Minds%2C%20Shop%20106%2F108%2F110%2C%20First%20Floor%2C%20White%20Square%20Building%2C%20Hinjawadi-Wakad%20Road%2C%20Hinjawadi%20Village%2C%20Pune%20411057%2C%20Pune",
+    "locality": "Hinjawadi"
+  },
+  {
+    "id": 278,
+    "name": "Dr. Sugandha Gupta",
+    "type": "Psychiatrist",
+    "consultationMode": "Both",
+    "onlinePlatform": "Delhi Mind Clinic (delhimindclinic.com)",
+    "city": "Delhi",
+    "address": "Delhi Mind Clinic, 7A/67, West Extension Area, Karol Bagh, New Delhi 110005",
+    "contact": "7838387944",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.delhimindclinic.com/adhd/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Delhi%20Mind%20Clinic%2C%207A%2F67%2C%20West%20Extension%20Area%2C%20Karol%20Bagh%2C%20New%20Delhi%20110005%2C%20Delhi",
+    "locality": "Karol Bagh"
+  },
+  {
+    "id": 279,
+    "name": "Siddika Panjwani",
+    "type": "Psychologist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Lilavati Hospital & Research Centre, A-791 Bandra Reclamation, Bandra West, Mumbai 400050",
+    "contact": "",
+    "fee": 1500,
+    "doesADHDDiagnosis": "Yes (Standardised Tests)",
+    "adhdTestFee": null,
+    "prescribesStimulants": "No",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.lilavatihospital.com/find-a-doctor/dr-siddika-m-panjwani",
+      "https://www.practo.com/mumbai/doctor/dr-siddika-panjwani-psychologist",
+      "https://podcasts.apple.com/in/podcast/attention-deficit-hyper-desi/id1861484686"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Lilavati%20Hospital%20%26%20Research%20Centre%2C%20A-791%20Bandra%20Reclamation%2C%20Bandra%20West%2C%20Mumbai%20400050%2C%20Mumbai",
+    "locality": "Bandra West"
+  },
+  {
+    "id": 280,
+    "name": "Dr. Pervin Dadachanji",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "R N Gamadia Polyclinic, Room No 12, Gamadia Colony, Tardeo, Mumbai 400034; also Aviva Hospital, Andheri West",
+    "contact": "9820001939",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://nayi-disha.org/business/psychiatrist/dr-pervin-dadachanji/",
+      "https://www.justdial.com/Mumbai/Dr-Pervin-Dadachanji-R-N-Gamadia-Polyclinic-Gamadia-Colony-tardeo/022P5600519_BZDET",
+      "https://podcasts.apple.com/in/podcast/attention-deficit-hyper-desi/id1861484686"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=R%20N%20Gamadia%20Polyclinic%2C%20Room%20No%2012%2C%20Gamadia%20Colony%2C%20Tardeo%2C%20Mumbai%20400034%3B%20also%20Aviva%20Hospital%2C%20Andheri%20West%2C%20Mumbai",
+    "locality": "Tardeo"
+  },
+  {
+    "id": 281,
+    "name": "Dr. Amulya Shetty",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Shop No 9, Rodium Xone, Shankar Lane, Guru Nanak, SVP Road, Bhagat Colony, Kandivali West, Mumbai 400067",
+    "contact": "9167033190",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://psychiatrymumbai.in/adhd/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Shop%20No%209%2C%20Rodium%20Xone%2C%20Shankar%20Lane%2C%20Guru%20Nanak%2C%20SVP%20Road%2C%20Bhagat%20Colony%2C%20Kandivali%20West%2C%20Mumbai%20400067%2C%20Mumbai",
+    "locality": "Kandivali West"
+  },
+  {
+    "id": 282,
+    "name": "Dr. Shaunak Ajinkya",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Mumbai",
+    "address": "Kokilaben Dhirubhai Ambani Hospital, Four Bungalows, Andheri West, Mumbai 400053",
+    "contact": "",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.kokilabenhospital.com/professionals/shaunakajinkya.html"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Kokilaben%20Dhirubhai%20Ambani%20Hospital%2C%20Four%20Bungalows%2C%20Andheri%20West%2C%20Mumbai%20400053%2C%20Mumbai",
+    "locality": "Andheri West"
+  },
+  {
+    "id": 283,
+    "name": "Dr. Prashant Goyal",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Delhi",
+    "address": "GG-1/193A, Behind PVR Complex, Opposite HDFC Bank, Vikas Puri, New Delhi",
+    "contact": "9818278200",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.drprashantgoyal.com/adhd/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=GG-1%2F193A%2C%20Behind%20PVR%20Complex%2C%20Opposite%20HDFC%20Bank%2C%20Vikas%20Puri%2C%20New%20Delhi%2C%20Delhi",
+    "locality": "Vikas Puri"
+  },
+  {
+    "id": 284,
+    "name": "Dr. Supriya Mathur",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Gurgaon",
+    "address": "Second Floor, Santosh Plaza, OPD 2, B728, near Sushant Shopping Arcade, Phase 1, Sector 27, Gurugram, Haryana 122002",
+    "contact": "9414055110",
+    "fee": null,
+    "doesADHDDiagnosis": "Yes",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://drsupriyapsychiatrist.com/adhd/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Second%20Floor%2C%20Santosh%20Plaza%2C%20OPD%202%2C%20B728%2C%20near%20Sushant%20Shopping%20Arcade%2C%20Phase%201%2C%20Sector%2027%2C%20Gurugram%2C%20Haryana%20122002%2C%20Gurgaon",
+    "locality": "Sector 27"
+  },
+  {
+    "id": 285,
+    "name": "Dr. Manish Borasi",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Bhopal",
+    "address": "Serenity Neuropsychiatry Clinic, MIG 58, Old MLA Quarters, behind Aastha Hospital, Jawahar Chowk, Bhopal",
+    "contact": "7987273500",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://neuropsychiatry.co.in/services/adhd/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Serenity%20Neuropsychiatry%20Clinic%2C%20MIG%2058%2C%20Old%20MLA%20Quarters%2C%20behind%20Aastha%20Hospital%2C%20Jawahar%20Chowk%2C%20Bhopal%2C%20Bhopal",
+    "locality": "Jawahar Chowk"
+  },
+  {
+    "id": 286,
+    "name": "Dr. Syed Ummar",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Coimbatore",
+    "address": "80-B3, Balasundaram Road, Avarampalayam, Coimbatore 641006",
+    "contact": "9894769914",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.syedpsychiatrist.com/adhd-treatment-in-coimbatore.php"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=80-B3%2C%20Balasundaram%20Road%2C%20Avarampalayam%2C%20Coimbatore%20641006%2C%20Coimbatore",
+    "locality": "Avarampalayam"
+  },
+  {
+    "id": 287,
+    "name": "Dr. Arijit Dutta Chowdhury",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Kolkata",
+    "address": "Medica Super Specialty Hospital, Mukundapur, E M Bypass, Kolkata; also Sunrays Healthcare, Neotia Mediplus and North City Hospital",
+    "contact": "9836268960",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.toppsychiatristkolkata.com/adhd-treatment/"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=Medica%20Super%20Specialty%20Hospital%2C%20Mukundapur%2C%20E%20M%20Bypass%2C%20Kolkata%3B%20also%20Sunrays%20Healthcare%2C%20Neotia%20Mediplus%20and%20North%20City%20Hospital%2C%20Kolkata",
+    "locality": "Mukundapur"
+  },
+  {
+    "id": 288,
+    "name": "Dr. B. Kranthi Kiran",
+    "type": "Psychiatrist",
+    "consultationMode": "Offline",
+    "onlinePlatform": null,
+    "city": "Hyderabad",
+    "address": "American Center for Neuropsychiatry, H.No 8-2-277/B/1, Road No 2, opposite New Rainbow Children's Hospital, Banjara Hills, Hyderabad 500034",
+    "contact": "8520001753",
+    "fee": null,
+    "doesADHDDiagnosis": "Unknown",
+    "adhdTestFee": null,
+    "prescribesStimulants": "Unknown",
+    "acceptsPreviousDiagnosis": "Unknown",
+    "adultADHDSpecialist": "Unknown",
+    "reviews": [],
+    "sources": [
+      "https://www.americancenterforneuropsychiatry.com/attention-deficit-disorders-treatment"
+    ],
+    "mapsLink": "https://www.google.com/maps/search/?api=1&query=American%20Center%20for%20Neuropsychiatry%2C%20H.No%208-2-277%2FB%2F1%2C%20Road%20No%202%2C%20opposite%20New%20Rainbow%20Children's%20Hospital%2C%20Banjara%20Hills%2C%20Hyderabad%20500034%2C%20Hyderabad",
+    "locality": "Banjara Hills"
   }
 ]
